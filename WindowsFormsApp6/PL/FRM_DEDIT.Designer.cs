@@ -43,7 +43,7 @@ namespace WindowsFormsApp6.PL
             this.Lb_Title.Font = new System.Drawing.Font("Rockwell", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb_Title.ForeColor = System.Drawing.Color.White;
             this.Lb_Title.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Lb_Title.Location = new System.Drawing.Point(59, 136);
+            this.Lb_Title.Location = new System.Drawing.Point(336, 267);
             this.Lb_Title.Name = "Lb_Title";
             this.Lb_Title.Size = new System.Drawing.Size(286, 38);
             this.Lb_Title.TabIndex = 7;
@@ -61,7 +61,7 @@ namespace WindowsFormsApp6.PL
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(405, 311);
+            this.ClientSize = new System.Drawing.Size(959, 572);
             this.Controls.Add(this.Lb_Title);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FRM_DEDIT";

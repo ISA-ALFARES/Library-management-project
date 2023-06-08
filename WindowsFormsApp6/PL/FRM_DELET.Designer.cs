@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp6.PL
 {
-    partial class FRM_ERROR_INSERT
+    partial class FRM_DELET
     {
         /// <summary>
         /// Required designer variable.
@@ -42,43 +42,45 @@ namespace WindowsFormsApp6.PL
             // 
             // Lb_Title
             // 
-            this.Lb_Title.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Lb_Title.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Lb_Title.AutoSize = true;
             this.Lb_Title.BackColor = System.Drawing.Color.Transparent;
-            this.Lb_Title.Font = new System.Drawing.Font("Rockwell", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lb_Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Lb_Title.Font = new System.Drawing.Font("Rockwell", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lb_Title.ForeColor = System.Drawing.Color.White;
             this.Lb_Title.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Lb_Title.Location = new System.Drawing.Point(181, 198);
+            this.Lb_Title.Location = new System.Drawing.Point(55, 211);
             this.Lb_Title.Name = "Lb_Title";
-            this.Lb_Title.Size = new System.Drawing.Size(378, 25);
-            this.Lb_Title.TabIndex = 8;
-            this.Lb_Title.Text = "Girişlerin geri kalanını tamamlayın !\r\n";
+            this.Lb_Title.Size = new System.Drawing.Size(520, 38);
+            this.Lb_Title.TabIndex = 7;
+            this.Lb_Title.Text = "Başarıyla Bir şekilde Silinmiştir !";
             this.Lb_Title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Lb_Title.Click += new System.EventHandler(this.Lb_Title_Click);
             // 
-            // FRM_ERROR_INSERT
+            // FRM_DELET
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(741, 420);
+            this.ClientSize = new System.Drawing.Size(630, 461);
             this.Controls.Add(this.Lb_Title);
-            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FRM_ERROR_INSERT";
+            this.MinimizeBox = false;
+            this.Name = "FRM_DELET";
             this.Opacity = 0.8D;
-            this.Text = "FRM_ERROR_INSERT";
+            this.ShowIcon = false;
+            this.Text = "FRM_DELET";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FRM_ERROR_INSERT_Load);
+            this.Load += new System.EventHandler(this.FRM_DELET_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label Lb_Title;
+
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label Lb_Title;
     }
 }

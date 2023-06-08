@@ -181,10 +181,12 @@ namespace WindowsFormsApp6.PL
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
+            //ekleme işlemi
             if (state == "CAT") //Bu düğme kategoriler sayfasındaysa uygulanacaktır.
             {
                 PL.FRM_ADDCAT FCAT = new FRM_ADDCAT(); 
                 FCAT.ADD_YENİ_CAT.ButtonText = "EKLE";
+                FCAT.ID = 0;
                 bunifuTransition1.ShowSync(FCAT);
                 
             }
@@ -193,6 +195,60 @@ namespace WindowsFormsApp6.PL
         private void P_HOME_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void F_MAIN_Activated(object sender, EventArgs e)
+        {
+            if(state == "CAT")
+            {
+                try
+                {
+                    /*
+                       * DataTable, verileri bir tablo şeklinde depolamak ve düzenlemek için kullanılan bir veri yapısıdır.
+                       *"dt" adında bir DataTable türünde bir değişken oluşturuyoruz
+                       *DataTable, verileri bir tablo şeklinde depolamak ve düzenlemek için kullanılan bir veri yapısıdır.
+                       *dataGridView1.DataSource = dt;  DataTable "dt" yi "dataGridView1" adlı bir DataGridView kontrolüne veri kaynağı olarak atıyoruz
+                       *dataGridView1.Columns[0].HeaderText = "Numarası"    => Bu satır, tablodaki ilk veri sütununu adlandırmak için kullanılır.
+                       *dataGridView1.Columns[1].HeaderText = "Catigories"  =>Bu satır, tablodaki ikinci veri sütununu adlandırmak için kullanılır.
+                    */
+                    DataTable dt = new DataTable();
+                    dt = BLCAT.Load();
+                    dataGridView1.DataSource = dt;
+                    dataGridView1.Columns[0].HeaderText = "Numarası";
+                    dataGridView1.Columns[1].HeaderText = "Catigories";
+                }
+                catch (Exception ex) //Herhangi bir hata görünürse, görünecektir
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            //Güncelleme  işlemi
+            if (state == "CAT") //Bu düğme kategoriler sayfasındaysa uygulanacaktır.
+            {
+                PL.FRM_ADDCAT FCAT = new FRM_ADDCAT();
+                FCAT.ADD_YENİ_CAT.ButtonText = "Güncelleme";
+                FCAT.txt_kat_name.Text =Convert.ToString( dataGridView1.CurrentRow.Cells[1].Value);
+                FCAT.ID = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+                bunifuTransition1.ShowSync(FCAT);
+
+            }
+        }
+
+        private void bunifuThinButton23_Click(object sender, EventArgs e)
+        {
+            //Silme  işlemi
+            if (state == "CAT") //Bu düğme kategoriler sayfasındaysa uygulanacaktır.
+            {
+                BLCAT.Delet(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
+                PL.FRM_DELET FDELET = new FRM_DELET();
+                FDELET.Show();
+
+
+            }
         }
     }
 }

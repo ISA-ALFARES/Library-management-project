@@ -17,7 +17,7 @@ namespace WindowsFormsApp6.BL
         {
             SqlParameter[] pr = null;
             DataTable dt = new DataTable();
-            dt = DAL.read("Pr_LOADCAT", pr); // Pr_LOADCAT => SELECT * FROM T_CAT(katigotıler tablo) 
+            dt = DAL.read("Pr_LOADCATSS",pr); // Pr_LOADCAT => SELECT * FROM T_CAT(katigotıler tablo) 
             return dt;
         }
 
@@ -31,5 +31,26 @@ namespace WindowsFormsApp6.BL
             DAL.execute("CAT_ADDss", pr); // P_ADDCAT => INSERRT NTO T_CAT VALUES(CAT_NAME);
             DAL.close();
         }
+
+        //Update işlevi: CLS_DAL sınıfında bulunan execute işlevini kullanarak yeni verileri veritabanına G]nceller.
+        public void Update(string CAT_NAME , int ID)
+        {
+            SqlParameter[] pr = new SqlParameter[2];
+            pr[0] = new SqlParameter("CAT_NAME", CAT_NAME);
+            pr[1] = new SqlParameter("ID", ID);
+            DAL.open();
+            DAL.execute("CAT_EDIT", pr); // CAT_EDIT => update  T_CAT set @CAT_NAME =@CAT_NAME
+            DAL.close(); 
+        }
+        //Silme işlevi: CLS_DAL sınıfında bulunan execute işlevini kullanarak yeni verileri veritabanına G]nceller.
+        public void Delet( int ID)
+        {
+            SqlParameter[] pr = new SqlParameter[1];
+            pr[0] = new SqlParameter("ID", ID);
+            DAL.open();
+            DAL.execute("CAT_DELET", pr); // CAT_EDIT => update  T_CAT set @CAT_NAME =@CAT_NAME
+            DAL.close();
+        }
+
     }
 }

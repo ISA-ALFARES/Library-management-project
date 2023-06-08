@@ -33,7 +33,7 @@ namespace WindowsFormsApp6.PL
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_ADDCAT));
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.insert_txt = new System.Windows.Forms.Label();
-            this.add_cat = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_kat_name = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.ADD_YENİ_CAT = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -69,26 +69,26 @@ namespace WindowsFormsApp6.PL
             this.insert_txt.Text = "Catigori Ad";
             this.insert_txt.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // add_cat
+            // txt_kat_name
             // 
-            this.add_cat.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.add_cat.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.add_cat.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
-            this.add_cat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.add_cat.HintForeColor = System.Drawing.Color.Empty;
-            this.add_cat.HintText = "";
-            this.add_cat.isPassword = false;
-            this.add_cat.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.add_cat.LineIdleColor = System.Drawing.Color.Gray;
-            this.add_cat.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
-            this.add_cat.LineThickness = 6;
-            this.add_cat.Location = new System.Drawing.Point(53, 176);
-            this.add_cat.Margin = new System.Windows.Forms.Padding(4);
-            this.add_cat.Name = "add_cat";
-            this.add_cat.Size = new System.Drawing.Size(465, 43);
-            this.add_cat.TabIndex = 6;
-            this.add_cat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.add_cat.OnValueChanged += new System.EventHandler(this.arama_OnValueChanged);
+            this.txt_kat_name.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_kat_name.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_kat_name.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+            this.txt_kat_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_kat_name.HintForeColor = System.Drawing.Color.Empty;
+            this.txt_kat_name.HintText = "";
+            this.txt_kat_name.isPassword = false;
+            this.txt_kat_name.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txt_kat_name.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_kat_name.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
+            this.txt_kat_name.LineThickness = 6;
+            this.txt_kat_name.Location = new System.Drawing.Point(53, 176);
+            this.txt_kat_name.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_kat_name.Name = "txt_kat_name";
+            this.txt_kat_name.Size = new System.Drawing.Size(465, 43);
+            this.txt_kat_name.TabIndex = 6;
+            this.txt_kat_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_kat_name.OnValueChanged += new System.EventHandler(this.arama_OnValueChanged);
             // 
             // ADD_YENİ_CAT
             // 
@@ -130,7 +130,7 @@ namespace WindowsFormsApp6.PL
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(597, 454);
             this.Controls.Add(this.ADD_YENİ_CAT);
-            this.Controls.Add(this.add_cat);
+            this.Controls.Add(this.txt_kat_name);
             this.Controls.Add(this.insert_txt);
             this.Controls.Add(this.bunifuImageButton1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -140,6 +140,7 @@ namespace WindowsFormsApp6.PL
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_ADDCAT";
+            this.Load += new System.EventHandler(this.FRM_ADDCAT_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -150,8 +151,8 @@ namespace WindowsFormsApp6.PL
 
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private System.Windows.Forms.Label insert_txt;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox add_cat;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         public Bunifu.Framework.UI.BunifuThinButton2 ADD_YENİ_CAT;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox txt_kat_name;
     }
 }

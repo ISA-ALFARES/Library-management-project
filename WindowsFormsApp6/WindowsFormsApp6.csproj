@@ -70,6 +70,12 @@
     <Compile Include="PL\FRM_DEDIT.Designer.cs">
       <DependentUpon>FRM_DEDIT.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\FRM_DELET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_DELET.Designer.cs">
+      <DependentUpon>FRM_DELET.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\FRM_ERROR_INSERT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_DEDIT.resx">
       <DependentUpon>FRM_DEDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_DELET.resx">
+      <DependentUpon>FRM_DELET.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_ERROR_INSERT.resx">
       <DependentUpon>FRM_ERROR_INSERT.cs</DependentUpon>

@@ -12,6 +12,7 @@ namespace WindowsFormsApp6.PL
 {
     public partial class FRM_ADDCAT : Form
     {
+        public int ID;
         public FRM_ADDCAT()
         {
             InitializeComponent();
@@ -30,19 +31,38 @@ namespace WindowsFormsApp6.PL
 
         private void ADD_YENİ_CAT_Click(object sender, EventArgs e)
         {
-            if(add_cat.Text == "")
+            if(txt_kat_name.Text == "")
             {
                 PL.FRM_ERROR_INSERT Ferror =new FRM_ERROR_INSERT();
                 Ferror.Show();
             }
             else
             {
-                BL.CLS_CAT BLCAT = new BL.CLS_CAT();
-                BLCAT.Insert(add_cat.Text);
-                PL.FROM_DADD Fadd = new FROM_DADD();
-                Fadd.Show();
-                this.Close();
+                if(ID ==  0)
+                {
+                    //ekleme işlemi
+                    BL.CLS_CAT BLCAT = new BL.CLS_CAT();
+                    BLCAT.Insert(txt_kat_name.Text);
+                    PL.FROM_DADD Fadd = new FROM_DADD();
+                    Fadd.Show();
+                    this.Close();
+                }
+                else
+                {
+                    //Güncelleme  işlemi
+                    BL.CLS_CAT BLCAT = new BL.CLS_CAT();
+                    BLCAT.Update(txt_kat_name.Text,ID);
+                    PL.FRM_DEDIT Fedit = new FRM_DEDIT();
+                    Fedit.Show();
+                    this.Close();
+                }
+
             }
+        }
+
+        private void FRM_ADDCAT_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

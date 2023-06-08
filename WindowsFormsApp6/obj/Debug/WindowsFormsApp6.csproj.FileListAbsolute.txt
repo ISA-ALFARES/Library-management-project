@@ -14,3 +14,4 @@ C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FRM_DEDIT.resources
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FRM_ERROR_INSERT.resources
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FROM_DADD.resources
+C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FRM_DELET.resources
