@@ -13,38 +13,43 @@ namespace WindowsFormsApp6.PL
 {
     public partial class F_MAIN : Form
     {
-        string state ;
-        string ID ;
-        BL.CLS_CAT BLCAT = new BL.CLS_CAT();
+        string state;  //Geçerli sayfanın adını saklar
+        ///string ID ;
+
+         BL.CLS_CAT BLCAT = new BL.CLS_CAT(); // Bu kodun işlevi, CLS_CAT sınıfının yeni bir örneğini(BLCAT) oluşturmaktır.
+        /*
+            * BLCAT nesnesini kullanarak verileri bir veritabanından yükler ve bunları DataGridView kontrolünde görüntüler.
+            
+        */
         public F_MAIN()
         {
             InitializeComponent();
             
         }
-        // form yer değişterme değerler 
+        // Bu değişkenler formun boyutlarına özeldir.
         int move;
         int movx;
         int movy;
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            Environment.Exit(0);                    //Çıkış simgesine tıkladığınızda program kapanır
         }
 
         private void bunifuImageButton3_Click(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Minimized;
-            
+            WindowState = FormWindowState.Minimized; //Küçült simgesine tıkladığınızda, program gizlenir
+
         }
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
-            if (WindowState == FormWindowState.Normal)
+            if (WindowState == FormWindowState.Normal) //Genişlet simgesine basıldığında program ekranı doldurur
             {
                 WindowState = FormWindowState.Maximized;
             }
             else
             {
-                WindowState = FormWindowState.Normal;
+                WindowState = FormWindowState.Normal; //tam tersi
 
             }
         }
@@ -54,21 +59,21 @@ namespace WindowsFormsApp6.PL
 
         }
 
-        private void P_TB_MouseDown(object sender, MouseEventArgs e)
+        private void P_TB_MouseDown(object sender, MouseEventArgs e)// P_TB sayfa Event
         {
             move = 1;
             movx = e.X;
             movy = e.Y;
         }
 
-        private void P_TB_MouseUp(object sender, MouseEventArgs e)
+        private void P_TB_MouseUp(object sender, MouseEventArgs e) // P_TB sayfa Event
         {
             move = 0;
         }
 
-        private void P_TB_MouseMove(object sender, MouseEventArgs e)
+        private void P_TB_MouseMove(object sender, MouseEventArgs e)// P_TB sayfa Event
         {
-            if (move == 1)
+            if (move == 1) //P_TB'de fare hareketiyle sayfayı hareket ettirin
             {
                 this.SetDesktopLocation(MousePosition.X - movx, MousePosition.Y - movy);
             }
@@ -76,7 +81,7 @@ namespace WindowsFormsApp6.PL
 
         private void bunifuImageButton6_Click(object sender, EventArgs e)
         {
-            if(P_MB.Size.Width  == 175)
+            if(P_MB.Size.Width  == 175) //Basıldığında, kelimeler kaybolur ve simgeler görünür kalır
             {
                 P_MB.Width = 50;
                 button1.RightToLeft = RightToLeft.Yes;
@@ -87,7 +92,7 @@ namespace WindowsFormsApp6.PL
                 button6.RightToLeft = RightToLeft.Yes;
                 button11.RightToLeft = RightToLeft.Yes;
             }
-            else
+            else // //tam tersi
             {
                 P_MB.Width = 175;
                 button1.RightToLeft = RightToLeft.No;
@@ -102,9 +107,9 @@ namespace WindowsFormsApp6.PL
 
         private void button1_Click(object sender, EventArgs e)
         {
-            P_HOME.Visible = true;
-            P_MAIN.Visible = false;
-            Lb_Title.Text = "Anasayfa       ";
+            P_HOME.Visible = true;              // Bu ana sayfasıdır
+            P_MAIN.Visible = false;             // Bu kategoriler sayfasıdır
+            Lb_Title.Text = "Anasayfa       "; //Sayfa ismi
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -129,27 +134,35 @@ namespace WindowsFormsApp6.PL
 
         private void button11_Click(object sender, EventArgs e)
         {
-            P_HOME.Visible    = false ; 
-            P_MAIN.Visible    = true ;
+            P_HOME.Visible    = false;              //Ana sayfayı gizledik
+            P_MAIN.Visible    = true;              //Kategori sayfasını gösterdik 
             state = "CAT"; 
-            Lb_Title.Text = "  Kategoriler    ";
-            //Load Data 
+            Lb_Title.Text = "  Kategoriler    ";  //Sayfa ismi
+            //Veritabanlarında depolanan verileri getirme
             try
             {
-                DataTable dt = new DataTable();
+                /*
+                   * DataTable, verileri bir tablo şeklinde depolamak ve düzenlemek için kullanılan bir veri yapısıdır.
+                   *"dt" adında bir DataTable türünde bir değişken oluşturuyoruz
+                   *DataTable, verileri bir tablo şeklinde depolamak ve düzenlemek için kullanılan bir veri yapısıdır.
+                   *dataGridView1.DataSource = dt;  DataTable "dt" yi "dataGridView1" adlı bir DataGridView kontrolüne veri kaynağı olarak atıyoruz
+                   *dataGridView1.Columns[0].HeaderText = "Numarası"    => Bu satır, tablodaki ilk veri sütununu adlandırmak için kullanılır.
+                   *dataGridView1.Columns[1].HeaderText = "Catigories"  =>Bu satır, tablodaki ikinci veri sütununu adlandırmak için kullanılır.
+                */
+                DataTable dt = new DataTable(); 
                 dt = BLCAT.Load();
                 dataGridView1.DataSource = dt;
                 dataGridView1.Columns[0].HeaderText = "Numarası";
                 dataGridView1.Columns[1].HeaderText = "Catigories";
             }
-            catch(Exception ex)
+            catch(Exception ex) //Herhangi bir hata görünürse, görünecektir
             {
                 MessageBox.Show(ex.Message);
             }
 
         }
 
-        private void F_MAIN_Load(object sender, EventArgs e)
+        private void F_MAIN_Load(object sender, EventArgs e) //Bux olay(Event), programı ilk çalıştırdığımızda ana sayfa açılacaktır.
         {
             P_HOME.Visible = true  ;
             P_MAIN.Visible = false ;
@@ -168,13 +181,18 @@ namespace WindowsFormsApp6.PL
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            if (state == "CAT")
+            if (state == "CAT") //Bu düğme kategoriler sayfasındaysa uygulanacaktır.
             {
-                PL.FRM_ADDCAT FCAT = new FRM_ADDCAT();
+                PL.FRM_ADDCAT FCAT = new FRM_ADDCAT(); 
                 FCAT.ADD_YENİ_CAT.ButtonText = "EKLE";
                 bunifuTransition1.ShowSync(FCAT);
                 
             }
+        }
+
+        private void P_HOME_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

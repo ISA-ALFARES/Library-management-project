@@ -64,13 +64,41 @@
     <Compile Include="PL\FRM_ADDCAT.Designer.cs">
       <DependentUpon>FRM_ADDCAT.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\FRM_DEDIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_DEDIT.Designer.cs">
+      <DependentUpon>FRM_DEDIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_ERROR_INSERT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_ERROR_INSERT.Designer.cs">
+      <DependentUpon>FRM_ERROR_INSERT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FROM_DADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FROM_DADD.Designer.cs">
+      <DependentUpon>FROM_DADD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Proje referansı\CodeFile1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="PL\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_ADDCAT.resx">
       <DependentUpon>FRM_ADDCAT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_DEDIT.resx">
+      <DependentUpon>FRM_DEDIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_ERROR_INSERT.resx">
+      <DependentUpon>FRM_ERROR_INSERT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FROM_DADD.resx">
+      <DependentUpon>FROM_DADD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

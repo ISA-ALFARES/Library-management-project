@@ -32,8 +32,8 @@ namespace WindowsFormsApp6.PL
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_ADDCAT));
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.Lb_Title = new System.Windows.Forms.Label();
-            this.arama = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.insert_txt = new System.Windows.Forms.Label();
+            this.add_cat = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.ADD_YENİ_CAT = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -53,42 +53,42 @@ namespace WindowsFormsApp6.PL
             this.bunifuImageButton1.Zoom = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
-            // Lb_Title
+            // insert_txt
             // 
-            this.Lb_Title.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.insert_txt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Lb_Title.AutoSize = true;
-            this.Lb_Title.BackColor = System.Drawing.Color.Transparent;
-            this.Lb_Title.Font = new System.Drawing.Font("Rockwell", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lb_Title.ForeColor = System.Drawing.Color.Black;
-            this.Lb_Title.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Lb_Title.Location = new System.Drawing.Point(140, 83);
-            this.Lb_Title.Name = "Lb_Title";
-            this.Lb_Title.Size = new System.Drawing.Size(317, 60);
-            this.Lb_Title.TabIndex = 5;
-            this.Lb_Title.Text = "Catigori Ad";
-            this.Lb_Title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.insert_txt.AutoSize = true;
+            this.insert_txt.BackColor = System.Drawing.Color.Transparent;
+            this.insert_txt.Font = new System.Drawing.Font("Rockwell", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.insert_txt.ForeColor = System.Drawing.Color.Black;
+            this.insert_txt.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.insert_txt.Location = new System.Drawing.Point(140, 83);
+            this.insert_txt.Name = "insert_txt";
+            this.insert_txt.Size = new System.Drawing.Size(317, 60);
+            this.insert_txt.TabIndex = 5;
+            this.insert_txt.Text = "Catigori Ad";
+            this.insert_txt.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // arama
+            // add_cat
             // 
-            this.arama.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.arama.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.arama.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
-            this.arama.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.arama.HintForeColor = System.Drawing.Color.Empty;
-            this.arama.HintText = "";
-            this.arama.isPassword = false;
-            this.arama.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.arama.LineIdleColor = System.Drawing.Color.Gray;
-            this.arama.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
-            this.arama.LineThickness = 6;
-            this.arama.Location = new System.Drawing.Point(57, 176);
-            this.arama.Margin = new System.Windows.Forms.Padding(4);
-            this.arama.Name = "arama";
-            this.arama.Size = new System.Drawing.Size(465, 43);
-            this.arama.TabIndex = 6;
-            this.arama.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.arama.OnValueChanged += new System.EventHandler(this.arama_OnValueChanged);
+            this.add_cat.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.add_cat.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.add_cat.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+            this.add_cat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.add_cat.HintForeColor = System.Drawing.Color.Empty;
+            this.add_cat.HintText = "";
+            this.add_cat.isPassword = false;
+            this.add_cat.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.add_cat.LineIdleColor = System.Drawing.Color.Gray;
+            this.add_cat.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
+            this.add_cat.LineThickness = 6;
+            this.add_cat.Location = new System.Drawing.Point(53, 176);
+            this.add_cat.Margin = new System.Windows.Forms.Padding(4);
+            this.add_cat.Name = "add_cat";
+            this.add_cat.Size = new System.Drawing.Size(465, 43);
+            this.add_cat.TabIndex = 6;
+            this.add_cat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.add_cat.OnValueChanged += new System.EventHandler(this.arama_OnValueChanged);
             // 
             // ADD_YENİ_CAT
             // 
@@ -109,12 +109,13 @@ namespace WindowsFormsApp6.PL
             this.ADD_YENİ_CAT.IdleFillColor = System.Drawing.Color.White;
             this.ADD_YENİ_CAT.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.ADD_YENİ_CAT.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.ADD_YENİ_CAT.Location = new System.Drawing.Point(57, 363);
+            this.ADD_YENİ_CAT.Location = new System.Drawing.Point(53, 358);
             this.ADD_YENİ_CAT.Margin = new System.Windows.Forms.Padding(20, 19, 20, 19);
             this.ADD_YENİ_CAT.Name = "ADD_YENİ_CAT";
             this.ADD_YENİ_CAT.Size = new System.Drawing.Size(465, 82);
             this.ADD_YENİ_CAT.TabIndex = 7;
             this.ADD_YENİ_CAT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ADD_YENİ_CAT.Click += new System.EventHandler(this.ADD_YENİ_CAT_Click);
             // 
             // bunifuElipse1
             // 
@@ -125,15 +126,16 @@ namespace WindowsFormsApp6.PL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(605, 459);
+            this.ClientSize = new System.Drawing.Size(597, 454);
             this.Controls.Add(this.ADD_YENİ_CAT);
-            this.Controls.Add(this.arama);
-            this.Controls.Add(this.Lb_Title);
+            this.Controls.Add(this.add_cat);
+            this.Controls.Add(this.insert_txt);
             this.Controls.Add(this.bunifuImageButton1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FRM_ADDCAT";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -147,8 +149,8 @@ namespace WindowsFormsApp6.PL
         #endregion
 
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
-        private System.Windows.Forms.Label Lb_Title;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox arama;
+        private System.Windows.Forms.Label insert_txt;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox add_cat;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         public Bunifu.Framework.UI.BunifuThinButton2 ADD_YENİ_CAT;
     }

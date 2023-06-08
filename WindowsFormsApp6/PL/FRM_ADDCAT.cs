@@ -27,5 +27,22 @@ namespace WindowsFormsApp6.PL
             Environment.Exit(0);
 
         }
+
+        private void ADD_YENİ_CAT_Click(object sender, EventArgs e)
+        {
+            if(add_cat.Text == "")
+            {
+                PL.FRM_ERROR_INSERT Ferror =new FRM_ERROR_INSERT();
+                Ferror.Show();
+            }
+            else
+            {
+                BL.CLS_CAT BLCAT = new BL.CLS_CAT();
+                BLCAT.Insert(add_cat.Text);
+                PL.FROM_DADD Fadd = new FROM_DADD();
+                Fadd.Show();
+                this.Close();
+            }
+        }
     }
 }
