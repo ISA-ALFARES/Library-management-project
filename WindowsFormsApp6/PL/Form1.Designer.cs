@@ -457,6 +457,7 @@ namespace WindowsFormsApp6.PL
             this.arama.TabIndex = 2;
             this.arama.Text = "Arama ";
             this.arama.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.arama.OnValueChanged += new System.EventHandler(this.arama_OnValueChanged);
             // 
             // dataGridView1
             // 

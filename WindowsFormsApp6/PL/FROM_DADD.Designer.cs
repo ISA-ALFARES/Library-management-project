@@ -43,12 +43,12 @@ namespace WindowsFormsApp6.PL
             this.Lb_Title.Font = new System.Drawing.Font("Rockwell", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb_Title.ForeColor = System.Drawing.Color.White;
             this.Lb_Title.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Lb_Title.Location = new System.Drawing.Point(88, 124);
+            this.Lb_Title.Location = new System.Drawing.Point(142, 176);
             this.Lb_Title.Name = "Lb_Title";
             this.Lb_Title.Size = new System.Drawing.Size(286, 38);
             this.Lb_Title.TabIndex = 6;
             this.Lb_Title.Text = "Başarıyla eklendi";
-            this.Lb_Title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Lb_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer1
             // 
@@ -62,7 +62,7 @@ namespace WindowsFormsApp6.PL
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(463, 287);
+            this.ClientSize = new System.Drawing.Size(571, 390);
             this.Controls.Add(this.Lb_Title);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FROM_DADD";

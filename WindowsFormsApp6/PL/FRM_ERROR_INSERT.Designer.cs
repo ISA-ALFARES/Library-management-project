@@ -54,7 +54,7 @@ namespace WindowsFormsApp6.PL
             this.Lb_Title.Size = new System.Drawing.Size(378, 25);
             this.Lb_Title.TabIndex = 8;
             this.Lb_Title.Text = "Girişlerin geri kalanını tamamlayın !\r\n";
-            this.Lb_Title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Lb_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Lb_Title.Click += new System.EventHandler(this.Lb_Title_Click);
             // 
             // FRM_ERROR_INSERT

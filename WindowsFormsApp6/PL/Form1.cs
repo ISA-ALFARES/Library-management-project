@@ -250,5 +250,17 @@ namespace WindowsFormsApp6.PL
 
             }
         }
+
+        private void arama_OnValueChanged(object sender, EventArgs e)
+        {
+            //Arama  işlemi
+            if (state == "CAT") //Bu düğme kategoriler sayfasındaysa uygulanacaktır.
+            {
+                DataTable dt = new DataTable();
+                dt = BLCAT.Search(arama.Text);
+                dataGridView1.DataSource = dt;
+
+            }
+        }
     }
 }

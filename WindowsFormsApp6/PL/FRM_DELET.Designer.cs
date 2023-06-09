@@ -42,9 +42,7 @@ namespace WindowsFormsApp6.PL
             // 
             // Lb_Title
             // 
-            this.Lb_Title.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Lb_Title.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Lb_Title.AutoSize = true;
             this.Lb_Title.BackColor = System.Drawing.Color.Transparent;
             this.Lb_Title.Font = new System.Drawing.Font("Rockwell", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -55,7 +53,7 @@ namespace WindowsFormsApp6.PL
             this.Lb_Title.Size = new System.Drawing.Size(520, 38);
             this.Lb_Title.TabIndex = 7;
             this.Lb_Title.Text = "Başarıyla Bir şekilde Silinmiştir !";
-            this.Lb_Title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Lb_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Lb_Title.Click += new System.EventHandler(this.Lb_Title_Click);
             // 
             // FRM_DELET

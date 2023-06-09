@@ -13,11 +13,22 @@ namespace WindowsFormsApp6.BL
         //CLS_DAL sınıfının bir nesnesi olan DAL nesnesi oluşturulmuştur. Veritabanı işlemleriyle ilgilenmek için kullanılır.
         DAL.CLS_DAL DAL = new WindowsFormsApp6.DAL.CLS_DAL();
         //Verileri CLS_DAL sınıfında bulunan read işlevi kullanarak veritabanından getirir. Verileri DataTable olarak döndürür.
+        //select işlevi:
         public DataTable Load() 
         {
             SqlParameter[] pr = null;
             DataTable dt = new DataTable();
             dt = DAL.read("Pr_LOADCATSS",pr); // Pr_LOADCAT => SELECT * FROM T_CAT(katigotıler tablo) 
+            return dt;
+        }
+
+        //select işlevi:
+        public DataTable Search(string Search)
+        {
+            SqlParameter[] pr = new SqlParameter[1];
+            pr[0] = new SqlParameter("SEARCH", Search);
+            DataTable dt = new DataTable();
+            dt = DAL.read("CAT_SEARCH", pr); // Pr_LOADCAT => select * from  T_CAT where  CAT_NAME like '%'+ @SEARCH +'%' 
             return dt;
         }
 

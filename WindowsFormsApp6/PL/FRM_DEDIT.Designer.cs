@@ -48,7 +48,7 @@ namespace WindowsFormsApp6.PL
             this.Lb_Title.Size = new System.Drawing.Size(286, 38);
             this.Lb_Title.TabIndex = 7;
             this.Lb_Title.Text = "Başarıyla eklendi";
-            this.Lb_Title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Lb_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer1
             // 
