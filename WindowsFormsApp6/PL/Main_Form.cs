@@ -16,7 +16,8 @@ namespace WindowsFormsApp6.PL
         string state;  //Geçerli sayfanın adını saklar
         ///string ID ;
 
-         BL.CLS_CAT BLCAT = new BL.CLS_CAT(); // Bu kodun işlevi, CLS_CAT sınıfının yeni bir örneğini(BLCAT) oluşturmaktır.
+         BL.CLS_CAT BLCAT = new BL.CLS_CAT(); 
+         BL.CLASS_KITABLAR BL_KITABLAR = new BL.CLASS_KITABLAR(); 
         /*
             * BLCAT nesnesini kullanarak verileri bir veritabanından yükler ve bunları DataGridView kontrolünde görüntüler.
             
@@ -124,7 +125,27 @@ namespace WindowsFormsApp6.PL
 
         private void button2_Click(object sender, EventArgs e)
         {
+            P_HOME.Visible = false;              //Ana sayfayı gizledik
+            P_MAIN.Visible = true;              //Kategori sayfasını gösterdik 
+            state = "KITABLAR";
+            Lb_Title.Text = "  Kitablar    ";  //Sayfa ismi
+            //Veritabanlarında depolanan verileri getirme
+            try
+            {
+                DataTable dt = new DataTable();
+                dt = BL_KITABLAR.Load();
+                dataGridView1.DataSource = dt;
+                dataGridView1.Columns[0].HeaderText = "Kitab ıd";
+                dataGridView1.Columns[1].HeaderText = "kıtab ad";
+                dataGridView1.Columns[2].HeaderText = "Yazar ad";
+                dataGridView1.Columns[3].HeaderText = "Katıgore";
+                dataGridView1.Columns[4].HeaderText = "kıtab Fıyatı";
 
+            }
+            catch (Exception ex) //Herhangi bir hata görünürse, görünecektir
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -216,6 +237,30 @@ namespace WindowsFormsApp6.PL
                     dataGridView1.DataSource = dt;
                     dataGridView1.Columns[0].HeaderText = "Numarası";
                     dataGridView1.Columns[1].HeaderText = "Catigories";
+                }
+                catch (Exception ex) //Herhangi bir hata görünürse, görünecektir
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else if(state == "KITABLAR")
+            {
+                P_HOME.Visible = false;              //Ana sayfayı gizledik
+                P_MAIN.Visible = true;              //Kategori sayfasını gösterdik 
+                state = "KITABLAR";
+                Lb_Title.Text = "  Kitablar    ";  //Sayfa ismi
+                                                   //Veritabanlarında depolanan verileri getirme
+                try
+                {
+                    DataTable dt = new DataTable();
+                    dt = BL_KITABLAR.Load();
+                    dataGridView1.DataSource = dt;
+                    dataGridView1.Columns[0].HeaderText = "Kitab ıd";
+                    dataGridView1.Columns[1].HeaderText = "kıtab ad";
+                    dataGridView1.Columns[2].HeaderText = "Yazar ad";
+                    dataGridView1.Columns[3].HeaderText = "Katıgore";
+                    dataGridView1.Columns[4].HeaderText = "kıtab Fıyatı";
+
                 }
                 catch (Exception ex) //Herhangi bir hata görünürse, görünecektir
                 {

@@ -50,13 +50,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\CLASS_KITABLAR.cs" />
     <Compile Include="BL\CLS_CAT.cs" />
     <Compile Include="DAL\CLS_DAL.cs" />
-    <Compile Include="PL\Form1.cs">
+    <Compile Include="PL\Main_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PL\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="PL\Main_Form.Designer.cs">
+      <DependentUpon>Main_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\FRM_ADDCAT.cs">
       <SubType>Form</SubType>
@@ -91,8 +92,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Proje referansı\CodeFile1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="PL\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="PL\Main_Form.resx">
+      <DependentUpon>Main_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_ADDCAT.resx">
       <DependentUpon>FRM_ADDCAT.cs</DependentUpon>
