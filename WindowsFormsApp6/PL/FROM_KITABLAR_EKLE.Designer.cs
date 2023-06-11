@@ -144,7 +144,7 @@ namespace WindowsFormsApp6.PL
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(140, 327);
+            this.comboBox1.Location = new System.Drawing.Point(120, 280);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(154, 21);
             this.comboBox1.TabIndex = 14;
@@ -418,9 +418,6 @@ namespace WindowsFormsApp6.PL
         public Bunifu.Framework.UI.BunifuMaterialTextbox txt_yazar_name;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.PictureBox txt_kitap_resım;
-        private Bunifu.Framework.UI.BunifuRating txt_kitap_Degerlendırme;
-        private Bunifu.Framework.UI.BunifuDatepicker txt_kitap_Tarih;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -428,6 +425,9 @@ namespace WindowsFormsApp6.PL
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.PictureBox txt_kitap_resım;
+        public Bunifu.Framework.UI.BunifuRating txt_kitap_Degerlendırme;
+        public Bunifu.Framework.UI.BunifuDatepicker txt_kitap_Tarih;
+        public System.Windows.Forms.ComboBox comboBox1;
     }
 }

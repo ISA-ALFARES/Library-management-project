@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.IO;
 namespace WindowsFormsApp6.PL
 
 {
@@ -280,7 +281,7 @@ namespace WindowsFormsApp6.PL
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
-            //Güncelleme  işlemi
+             //Güncelleme  işlemi
             if (state == "CAT") //Bu düğme kategoriler sayfasındaysa uygulanacaktır.
             {
                 PL.FROM_KATIGORI_EKLE FCAT = new FROM_KATIGORI_EKLE();
@@ -290,12 +291,68 @@ namespace WindowsFormsApp6.PL
                 bunifuTransition1.ShowSync(FCAT);
 
             }
+            //Güncelleme  işlemi
+            else if(state == "F_KITAPLAR")
+            {
+                PL.FROM_KITABLAR_EKLE DUZENLE_KITAP = new FROM_KITABLAR_EKLE();
+                DUZENLE_KITAP.ADD_YENİ_CAT.ButtonText = "Güncelleme";
+                DUZENLE_KITAP.ID = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+                DataTable dt = new DataTable();
+                dt = BL_KITABLAR.LoadDuzenle(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
+                // Veritabanından değerleri çekme
+                object opj1 = dt.Rows[0]["K_AD"];         // Kitap adı
+                object opj2 = dt.Rows[0]["YAZAR"];        // Yazar adı
+                object opj3 = dt.Rows[0]["KATEGORI"];     // Kategori
+                object opj4 = dt.Rows[0]["K_FIATI"];      // Kitap fiyatı
+                object opj5 = dt.Rows[0]["TARIH"];        // Kitap tarihi
+                object opj6 = dt.Rows[0]["DEGERLENDIRME"];// Kitap değerlendirmesi
+                object opj7 = dt.Rows[0]["K_RESIM"];      // Kitap resmi
+
+                // Değerleri form elemanlarına atama
+                DUZENLE_KITAP.txt_kitap_ad.Text = opj1.ToString();
+                DUZENLE_KITAP.txt_yazar_name.Text = opj2.ToString();
+                DUZENLE_KITAP.comboBox1.Text = opj3.ToString();
+                DUZENLE_KITAP.txt_kitap_Fiati.Text = opj4.ToString();
+                DUZENLE_KITAP.txt_kitap_Tarih.Value = Convert.ToDateTime(opj5);
+
+                if (opj6 != DBNull.Value)
+                {
+                    DUZENLE_KITAP.txt_kitap_Degerlendırme.Value = Convert.ToInt32(opj6);
+                }
+                else
+                {
+                    DUZENLE_KITAP.txt_kitap_Degerlendırme.Value = 0;
+                }
+
+                byte[] op = null;
+                if (opj7 != DBNull.Value)
+                {
+                    op = (byte[])opj7;
+                }
+
+                if (op != null)
+                {
+                    MemoryStream ma = new MemoryStream(op);
+                    DUZENLE_KITAP.txt_kitap_resım.Image = Image.FromStream(ma);
+                }
+
+                bunifuTransition1.ShowSync(DUZENLE_KITAP);
+
+            }
         }
 
         private void bunifuThinButton23_Click(object sender, EventArgs e)
         {
             //Silme  işlemi
             if (state == "CAT") //Bu düğme kategoriler sayfasındaysa uygulanacaktır.
+            {
+                BLCAT.Delet(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
+                PL.FRM_DELET FDELET = new FRM_DELET();
+                FDELET.Show();
+
+
+            }
+            if (state == "F_KITAPLAR") //Bu düğme kategoriler sayfasındaysa uygulanacaktır.
             {
                 BLCAT.Delet(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
                 PL.FRM_DELET FDELET = new FRM_DELET();

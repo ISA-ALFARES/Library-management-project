@@ -89,8 +89,8 @@ namespace WindowsFormsApp6.PL
                     MemoryStream ma = new MemoryStream();
                     txt_kitap_resım.Image.Save(ma, System.Drawing.Imaging.ImageFormat.Jpeg);
                     //ekleme işlemi
-                    BL.CLASS_KITABLAR BLCAT = new BL.CLASS_KITABLAR();
-                    BLCAT.Insert(txt_kitap_ad.Text, txt_yazar_name.Text, comboBox1.Text, txt_kitap_Fiati.Text, txt_kitap_Tarih.Value.ToString(), txt_kitap_Degerlendırme.Value, ma);
+                    BL.CLASS_KITABLAR BL_KITAP_EKLE = new BL.CLASS_KITABLAR();
+                    BL_KITAP_EKLE.Insert(txt_kitap_ad.Text, txt_yazar_name.Text, comboBox1.Text, txt_kitap_Fiati.Text, txt_kitap_Tarih.Value.ToString(), txt_kitap_Degerlendırme.Value, ma);
                     PL.FROM_DADD Fadd = new FROM_DADD();
                     Fadd.Show();
                     this.Close();

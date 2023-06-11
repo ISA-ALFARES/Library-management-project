@@ -46,6 +46,14 @@ namespace WindowsFormsApp6.BL
             DAL.execute("INSERT_COMBOBOX",pr); // P_ADDCAT => INSERRT NTO T_CAT VALUES(CAT_NAME);
             DAL.close();
         }
-
+        //select işlevi :
+        public DataTable LoadDuzenle(int ID)
+        {
+            SqlParameter[] pr =  new SqlParameter[1];
+            pr[0] = new SqlParameter("ID", ID);
+            DataTable dt = new DataTable();
+            dt = DAL.read("SELECT_KITAPLAR", pr); // Pr_LOADCAT => SELECT * FROM T_CAT(katigotıler tablo) 
+            return dt;
+        }
     }
 }
