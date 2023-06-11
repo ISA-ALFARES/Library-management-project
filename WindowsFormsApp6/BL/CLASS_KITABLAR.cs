@@ -32,18 +32,18 @@ namespace WindowsFormsApp6.BL
         }
 
         //insert işlevi:
-        public void Insert( string K_AD , string YAZAR , string KATEGORI, string  K_FIATI , string TARIH , int DEGERLENDIRME, MemoryStream K_RESIM)
+        public void Insert( string K_AD , string YAZAR , string KATIGORI, string  K_FIATI , string K_TARIH, int DEGERLENDIRME, MemoryStream K_RESIM)
         {
             SqlParameter[] pr = new SqlParameter[7];
             pr[0] = new SqlParameter("K_AD"         , K_AD);
             pr[1] = new SqlParameter("YAZAR"        , YAZAR);
-            pr[2] = new SqlParameter("KATEGORI"     , KATEGORI);
+            pr[2] = new SqlParameter("KATIGORI",    KATIGORI);
             pr[3] = new SqlParameter("K_FIATI"      , K_FIATI);
-            pr[4] = new SqlParameter("TARIH"        , TARIH);
+            pr[4] = new SqlParameter("K_TARIH", K_TARIH);
             pr[5] = new SqlParameter("DEGERLENDIRME", DEGERLENDIRME);
             pr[6] = new SqlParameter("K_RESIM"      ,  K_RESIM.ToArray());
             DAL.open();
-            DAL.execute("INSERT_COMBOBOX", pr); // P_ADDCAT => INSERRT NTO T_CAT VALUES(CAT_NAME);
+            DAL.execute("INSERT_COMBOBOX",pr); // P_ADDCAT => INSERRT NTO T_CAT VALUES(CAT_NAME);
             DAL.close();
         }
 

@@ -31,53 +31,53 @@ namespace WindowsFormsApp6.PL
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FROM_KITABLAR_EKLE));
-            this.txt_kat_name = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_kitap_ad = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.insert_txt = new System.Windows.Forms.Label();
             this.ADD_YENİ_CAT = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.txt_kitap_Fiati = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txt_yazar_name = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bunifuRating1 = new Bunifu.Framework.UI.BunifuRating();
-            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.txt_kitap_resım = new System.Windows.Forms.PictureBox();
+            this.txt_kitap_Degerlendırme = new Bunifu.Framework.UI.BunifuRating();
+            this.txt_kitap_Tarih = new Bunifu.Framework.UI.BunifuDatepicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_kitap_resım)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
-            // txt_kat_name
+            // txt_kitap_ad
             // 
-            this.txt_kat_name.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_kat_name.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_kat_name.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
-            this.txt_kat_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_kat_name.HintForeColor = System.Drawing.Color.Empty;
-            this.txt_kat_name.HintText = "";
-            this.txt_kat_name.isPassword = false;
-            this.txt_kat_name.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_kat_name.LineIdleColor = System.Drawing.Color.Gray;
-            this.txt_kat_name.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
-            this.txt_kat_name.LineThickness = 6;
-            this.txt_kat_name.Location = new System.Drawing.Point(9, 67);
-            this.txt_kat_name.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_kat_name.Name = "txt_kat_name";
-            this.txt_kat_name.Size = new System.Drawing.Size(301, 43);
-            this.txt_kat_name.TabIndex = 9;
-            this.txt_kat_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_kat_name.OnValueChanged += new System.EventHandler(this.txt_kat_name_OnValueChanged);
+            this.txt_kitap_ad.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_kitap_ad.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_kitap_ad.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+            this.txt_kitap_ad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_kitap_ad.HintForeColor = System.Drawing.Color.Empty;
+            this.txt_kitap_ad.HintText = "";
+            this.txt_kitap_ad.isPassword = false;
+            this.txt_kitap_ad.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txt_kitap_ad.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_kitap_ad.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
+            this.txt_kitap_ad.LineThickness = 6;
+            this.txt_kitap_ad.Location = new System.Drawing.Point(9, 67);
+            this.txt_kitap_ad.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_kitap_ad.Name = "txt_kitap_ad";
+            this.txt_kitap_ad.Size = new System.Drawing.Size(301, 43);
+            this.txt_kitap_ad.TabIndex = 9;
+            this.txt_kitap_ad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_kitap_ad.OnValueChanged += new System.EventHandler(this.txt_kat_name_OnValueChanged);
             // 
             // insert_txt
             // 
@@ -125,14 +125,14 @@ namespace WindowsFormsApp6.PL
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.linkLabel2);
             this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.bunifuMaterialTextbox3);
+            this.groupBox1.Controls.Add(this.linkLabel2);
+            this.groupBox1.Controls.Add(this.txt_kitap_Fiati);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.bunifuMaterialTextbox1);
+            this.groupBox1.Controls.Add(this.txt_yazar_name);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txt_kat_name);
+            this.groupBox1.Controls.Add(this.txt_kitap_ad);
             this.groupBox1.Controls.Add(this.insert_txt);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
@@ -141,25 +141,45 @@ namespace WindowsFormsApp6.PL
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kitap Bilgilaeri";
             // 
-            // bunifuMaterialTextbox3
+            // comboBox1
             // 
-            this.bunifuMaterialTextbox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
-            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox3.HintText = "";
-            this.bunifuMaterialTextbox3.isPassword = false;
-            this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
-            this.bunifuMaterialTextbox3.LineThickness = 6;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(9, 355);
-            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
-            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(301, 43);
-            this.bunifuMaterialTextbox3.TabIndex = 11;
-            this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(140, 327);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(154, 21);
+            this.comboBox1.TabIndex = 14;
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.linkLabel2.Location = new System.Drawing.Point(21, 278);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(40, 20);
+            this.linkLabel2.TabIndex = 13;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Ekle";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
+            // txt_kitap_Fiati
+            // 
+            this.txt_kitap_Fiati.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_kitap_Fiati.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_kitap_Fiati.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+            this.txt_kitap_Fiati.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_kitap_Fiati.HintForeColor = System.Drawing.Color.Empty;
+            this.txt_kitap_Fiati.HintText = "";
+            this.txt_kitap_Fiati.isPassword = false;
+            this.txt_kitap_Fiati.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txt_kitap_Fiati.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_kitap_Fiati.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
+            this.txt_kitap_Fiati.LineThickness = 6;
+            this.txt_kitap_Fiati.Location = new System.Drawing.Point(9, 355);
+            this.txt_kitap_Fiati.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_kitap_Fiati.Name = "txt_kitap_Fiati";
+            this.txt_kitap_Fiati.Size = new System.Drawing.Size(301, 43);
+            this.txt_kitap_Fiati.TabIndex = 11;
+            this.txt_kitap_Fiati.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -193,25 +213,25 @@ namespace WindowsFormsApp6.PL
             this.label2.Text = "kitap kategorisi :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // bunifuMaterialTextbox1
+            // txt_yazar_name
             // 
-            this.bunifuMaterialTextbox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
-            this.bunifuMaterialTextbox1.LineThickness = 6;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(9, 166);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(301, 43);
-            this.bunifuMaterialTextbox1.TabIndex = 11;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_yazar_name.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_yazar_name.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_yazar_name.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+            this.txt_yazar_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_yazar_name.HintForeColor = System.Drawing.Color.Empty;
+            this.txt_yazar_name.HintText = "";
+            this.txt_yazar_name.isPassword = false;
+            this.txt_yazar_name.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txt_yazar_name.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_yazar_name.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
+            this.txt_yazar_name.LineThickness = 6;
+            this.txt_yazar_name.Location = new System.Drawing.Point(9, 166);
+            this.txt_yazar_name.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_yazar_name.Name = "txt_yazar_name";
+            this.txt_yazar_name.Size = new System.Drawing.Size(301, 43);
+            this.txt_yazar_name.TabIndex = 11;
+            this.txt_yazar_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
@@ -232,9 +252,9 @@ namespace WindowsFormsApp6.PL
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.linkLabel1);
-            this.groupBox2.Controls.Add(this.pictureBox1);
-            this.groupBox2.Controls.Add(this.bunifuRating1);
-            this.groupBox2.Controls.Add(this.bunifuDatepicker1);
+            this.groupBox2.Controls.Add(this.txt_kitap_resım);
+            this.groupBox2.Controls.Add(this.txt_kitap_Degerlendırme);
+            this.groupBox2.Controls.Add(this.txt_kitap_Tarih);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label7);
@@ -245,41 +265,53 @@ namespace WindowsFormsApp6.PL
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Diğer kitap bilgileri";
             // 
-            // pictureBox1
+            // linkLabel1
             // 
-            this.pictureBox1.ErrorImage = global::WindowsFormsApp6.Properties.Resources.books_40px;
-            this.pictureBox1.Image = global::WindowsFormsApp6.Properties.Resources.borrow_book_40px;
-            this.pictureBox1.InitialImage = global::WindowsFormsApp6.Properties.Resources.books_40px;
-            this.pictureBox1.Location = new System.Drawing.Point(79, 269);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(144, 129);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.linkLabel1.Location = new System.Drawing.Point(105, 407);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(89, 20);
+            this.linkLabel1.TabIndex = 13;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Resim Ekle";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // bunifuRating1
+            // txt_kitap_resım
             // 
-            this.bunifuRating1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuRating1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuRating1.Location = new System.Drawing.Point(10, 163);
-            this.bunifuRating1.Name = "bunifuRating1";
-            this.bunifuRating1.Size = new System.Drawing.Size(308, 50);
-            this.bunifuRating1.TabIndex = 12;
-            this.bunifuRating1.Value = 0;
+            this.txt_kitap_resım.ErrorImage = global::WindowsFormsApp6.Properties.Resources.books_40px;
+            this.txt_kitap_resım.Image = global::WindowsFormsApp6.Properties.Resources.borrow_book_40px;
+            this.txt_kitap_resım.InitialImage = global::WindowsFormsApp6.Properties.Resources.books_40px;
+            this.txt_kitap_resım.Location = new System.Drawing.Point(79, 269);
+            this.txt_kitap_resım.Name = "txt_kitap_resım";
+            this.txt_kitap_resım.Size = new System.Drawing.Size(144, 129);
+            this.txt_kitap_resım.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.txt_kitap_resım.TabIndex = 13;
+            this.txt_kitap_resım.TabStop = false;
+            this.txt_kitap_resım.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // bunifuDatepicker1
+            // txt_kitap_Degerlendırme
             // 
-            this.bunifuDatepicker1.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuDatepicker1.BorderRadius = 0;
-            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(8, 73);
-            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(303, 36);
-            this.bunifuDatepicker1.TabIndex = 11;
-            this.bunifuDatepicker1.Value = new System.DateTime(2023, 6, 10, 14, 46, 12, 796);
+            this.txt_kitap_Degerlendırme.BackColor = System.Drawing.Color.Transparent;
+            this.txt_kitap_Degerlendırme.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txt_kitap_Degerlendırme.Location = new System.Drawing.Point(10, 163);
+            this.txt_kitap_Degerlendırme.Name = "txt_kitap_Degerlendırme";
+            this.txt_kitap_Degerlendırme.Size = new System.Drawing.Size(308, 50);
+            this.txt_kitap_Degerlendırme.TabIndex = 12;
+            this.txt_kitap_Degerlendırme.Value = 0;
+            // 
+            // txt_kitap_Tarih
+            // 
+            this.txt_kitap_Tarih.BackColor = System.Drawing.Color.SeaGreen;
+            this.txt_kitap_Tarih.BorderRadius = 0;
+            this.txt_kitap_Tarih.ForeColor = System.Drawing.Color.White;
+            this.txt_kitap_Tarih.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.txt_kitap_Tarih.FormatCustom = null;
+            this.txt_kitap_Tarih.Location = new System.Drawing.Point(8, 73);
+            this.txt_kitap_Tarih.Name = "txt_kitap_Tarih";
+            this.txt_kitap_Tarih.Size = new System.Drawing.Size(303, 36);
+            this.txt_kitap_Tarih.TabIndex = 11;
+            this.txt_kitap_Tarih.Value = new System.DateTime(2023, 6, 10, 14, 46, 12, 796);
             // 
             // label4
             // 
@@ -329,18 +361,6 @@ namespace WindowsFormsApp6.PL
             this.label7.Text = "Basım tarihi :";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.linkLabel1.Location = new System.Drawing.Point(105, 407);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(89, 20);
-            this.linkLabel1.TabIndex = 13;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Resim Ekle";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 10;
@@ -359,27 +379,6 @@ namespace WindowsFormsApp6.PL
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(67, 278);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(233, 21);
-            this.comboBox1.TabIndex = 12;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.linkLabel2.Location = new System.Drawing.Point(21, 278);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(40, 20);
-            this.linkLabel2.TabIndex = 13;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Ekle";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // FROM_KITABLAR_EKLE
             // 
@@ -401,7 +400,7 @@ namespace WindowsFormsApp6.PL
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_kitap_resım)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
@@ -410,25 +409,25 @@ namespace WindowsFormsApp6.PL
         #endregion
 
         public Bunifu.Framework.UI.BunifuThinButton2 ADD_YENİ_CAT;
-        public Bunifu.Framework.UI.BunifuMaterialTextbox txt_kat_name;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox txt_kitap_ad;
         private System.Windows.Forms.Label insert_txt;
         private System.Windows.Forms.GroupBox groupBox1;
-        public Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox txt_kitap_Fiati;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        public Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox txt_yazar_name;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private Bunifu.Framework.UI.BunifuRating bunifuRating1;
-        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
+        private System.Windows.Forms.PictureBox txt_kitap_resım;
+        private Bunifu.Framework.UI.BunifuRating txt_kitap_Degerlendırme;
+        private Bunifu.Framework.UI.BunifuDatepicker txt_kitap_Tarih;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
