@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp6.PL
 {
-    partial class FRM_ADDCAT
+    partial class FROM_KATIGORI_EKLE
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace WindowsFormsApp6.PL
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_ADDCAT));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FROM_KATIGORI_EKLE));
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.insert_txt = new System.Windows.Forms.Label();
             this.txt_kat_name = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -44,7 +44,7 @@ namespace WindowsFormsApp6.PL
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton1.Image = global::WindowsFormsApp6.Properties.Resources.rejected;
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(579, -1);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(573, 0);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(26, 22);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -122,7 +122,7 @@ namespace WindowsFormsApp6.PL
             this.bunifuElipse1.ElipseRadius = 20;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // FRM_ADDCAT
+            // FROM_KATIGORI_EKLE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -136,7 +136,7 @@ namespace WindowsFormsApp6.PL
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "FRM_ADDCAT";
+            this.Name = "FROM_KATIGORI_EKLE";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_ADDCAT";

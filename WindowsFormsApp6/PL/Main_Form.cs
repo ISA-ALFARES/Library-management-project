@@ -127,7 +127,7 @@ namespace WindowsFormsApp6.PL
         {
             P_HOME.Visible = false;              //Ana sayfayı gizledik
             P_MAIN.Visible = true;              //Kategori sayfasını gösterdik 
-            state = "KITABLAR";
+            state = "F_KITAPLAR";
             Lb_Title.Text = "  Kitablar    ";  //Sayfa ismi
             //Veritabanlarında depolanan verileri getirme
             try
@@ -202,14 +202,23 @@ namespace WindowsFormsApp6.PL
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            //ekleme işlemi
+            //Katigori ekleme işlemi
             if (state == "CAT") //Bu düğme kategoriler sayfasındaysa uygulanacaktır.
             {
-                PL.FRM_ADDCAT FCAT = new FRM_ADDCAT(); 
+                PL.FROM_KATIGORI_EKLE FCAT = new FROM_KATIGORI_EKLE(); 
                 FCAT.ADD_YENİ_CAT.ButtonText = "EKLE";
                 FCAT.ID = 0;
                 bunifuTransition1.ShowSync(FCAT);
                 
+            }
+            //KITAP ekleme işlemi
+            if (state == "F_KITAPLAR") //Bu düğme kategoriler sayfasındaysa uygulanacaktır.
+            {
+                PL.FROM_KITABLAR_EKLE F_KITAPLAR = new FROM_KITABLAR_EKLE();
+                F_KITAPLAR.ADD_YENİ_CAT.ButtonText = "EKLE";
+                F_KITAPLAR.ID = 0;
+                bunifuTransition1.ShowSync(F_KITAPLAR);
+
             }
         }
 
@@ -274,7 +283,7 @@ namespace WindowsFormsApp6.PL
             //Güncelleme  işlemi
             if (state == "CAT") //Bu düğme kategoriler sayfasındaysa uygulanacaktır.
             {
-                PL.FRM_ADDCAT FCAT = new FRM_ADDCAT();
+                PL.FROM_KATIGORI_EKLE FCAT = new FROM_KATIGORI_EKLE();
                 FCAT.ADD_YENİ_CAT.ButtonText = "Güncelleme";
                 FCAT.txt_kat_name.Text =Convert.ToString( dataGridView1.CurrentRow.Cells[1].Value);
                 FCAT.ID = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);

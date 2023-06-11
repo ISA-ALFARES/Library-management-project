@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp6.PL
 {
-    public partial class FRM_ADDCAT : Form
+    public partial class FROM_KATIGORI_EKLE : Form
     {
         public int ID;
-        public FRM_ADDCAT()
+        public FROM_KATIGORI_EKLE()
         {
             InitializeComponent();
         }
@@ -25,7 +25,7 @@ namespace WindowsFormsApp6.PL
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            this.Close();
 
         }
 
