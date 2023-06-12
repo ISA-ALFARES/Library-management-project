@@ -340,7 +340,7 @@ namespace WindowsFormsApp6.PL
 
             }
         }
-
+         
         private void bunifuThinButton23_Click(object sender, EventArgs e)
         {
             //Silme  işlemi

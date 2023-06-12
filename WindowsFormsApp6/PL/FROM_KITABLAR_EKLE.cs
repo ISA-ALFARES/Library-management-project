@@ -98,8 +98,9 @@ namespace WindowsFormsApp6.PL
                 else
                 {
                     //Güncelleme  işlemi
-                    BL.CLS_CAT BLCAT = new BL.CLS_CAT();
-                    BLCAT.Update(txt_kitap_ad.Text, ID);
+                    MemoryStream ma = new MemoryStream();
+                    BL.CLASS_KITABLAR BLCAT = new BL.CLASS_KITABLAR();
+                    BLCAT.Update(txt_kitap_ad.Text, txt_yazar_name.Text, comboBox1.Text, txt_kitap_Fiati.Text, txt_kitap_Tarih.Value.ToString(), txt_kitap_Degerlendırme.Value, ma ,ID);
                     PL.FRM_DEDIT Fedit = new FRM_DEDIT();
                     Fedit.Show();
                     this.Close();

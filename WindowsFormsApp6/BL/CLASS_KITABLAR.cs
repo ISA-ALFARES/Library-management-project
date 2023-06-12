@@ -55,5 +55,21 @@ namespace WindowsFormsApp6.BL
             dt = DAL.read("SELECT_KITAPLAR", pr); // Pr_LOADCAT => SELECT * FROM T_CAT(katigotıler tablo) 
             return dt;
         }
+        //Update işlevi: 
+        public void Update(string K_AD, string YAZAR, string KATIGORI, string K_FIATI, string K_TARIH, int DEGERLENDIRME, MemoryStream K_RESIM , int ID)
+        {
+            SqlParameter[] pr = new SqlParameter[8];
+            pr[0] = new SqlParameter("K_AD", K_AD);
+            pr[1] = new SqlParameter("YAZAR", YAZAR);
+            pr[2] = new SqlParameter("KATIGORI", KATIGORI);
+            pr[3] = new SqlParameter("K_FIATI", K_FIATI);
+            pr[4] = new SqlParameter("K_TARIH", K_TARIH);
+            pr[5] = new SqlParameter("DEGERLENDIRME", DEGERLENDIRME);
+            pr[6] = new SqlParameter("K_RESIM", K_RESIM.ToArray());
+            pr[7] = new SqlParameter("ID",ID);
+            DAL.open();
+            DAL.execute("UPDATE_KITAPLAR", pr); // P_ADDCAT => INSERRT NTO T_CAT VALUES(CAT_NAME);
+            DAL.close();
+        }
     }
 }
