@@ -41,5 +41,20 @@ namespace WindowsFormsApp6.FORMLAR
         {
             this.Close();
         }
+
+        private void txt_kitap_Tarih_onValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_kitap_Degerlendırme_onValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_kitap_resım_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

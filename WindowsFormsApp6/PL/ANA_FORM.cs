@@ -198,8 +198,49 @@ namespace WindowsFormsApp6.PL
 
         private void bunifuThinButton24_Click(object sender, EventArgs e)
         {
+            if (state == "F_KITAPLAR")
+            {
+                DataTable dt = new DataTable();
+                dt = BL_KITABLAR.LoadDuzenle(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
+                // Veritabanından değerleri çekme
+                object opj1 = dt.Rows[0]["K_AD"];         // Kitap adı
+                object opj2 = dt.Rows[0]["YAZAR"];        // Yazar adı
+                object opj3 = dt.Rows[0]["KATEGORI"];     // Kategori
+                object opj4 = dt.Rows[0]["K_FIATI"];      // Kitap fiyatı
+                object opj5 = dt.Rows[0]["TARIH"];        // Kitap tarihi
+                object opj6 = dt.Rows[0]["DEGERLENDIRME"];// Kitap değerlendirmesi
+                object opj7 = dt.Rows[0]["K_RESIM"];      // Kitap resmi
+                FORMLAR.FRM_DETYELER dETYELER = new FORMLAR.FRM_DETYELER();
+                // Değerleri form elemanlarına atama
+                dETYELER.txt_kitap_ad.Text = opj1.ToString();
+                dETYELER.txt_yazar_name.Text = opj2.ToString();
+                dETYELER.comboBox1.Text = opj3.ToString();
+                dETYELER.txt_kitap_Fiati.Text = opj4.ToString();
+                dETYELER.txt_kitap_Tarih.Value = Convert.ToDateTime(opj5);
+                if (opj6 != DBNull.Value)
+                {
+                    dETYELER.txt_kitap_Degerlendırme.Value = Convert.ToInt32(opj6);
+                }
+                else
+                {
+                    dETYELER.txt_kitap_Degerlendırme.Value = 0;
+                }
 
-        }
+                byte[] op = null;
+                if (opj7 != DBNull.Value)
+                {
+                    op = (byte[])opj7;
+                }
+
+                if (op != null)
+                {
+                    MemoryStream ma = new MemoryStream(op);
+                    dETYELER.txt_kitap_resım.Image = Image.FromStream(ma);
+                }
+
+                bunifuTransition1.ShowSync(dETYELER);
+            }
+         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {

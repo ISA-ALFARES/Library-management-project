@@ -37,14 +37,14 @@ namespace WindowsFormsApp6.FORMLAR
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.Label();
+            this.txt_kitap_ad = new System.Windows.Forms.Label();
+            this.txt_yazar_name = new System.Windows.Forms.Label();
+            this.txt_kitap_Fiati = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.insert_txt = new System.Windows.Forms.Label();
-            this.txt_kitap_Fiati = new System.Windows.Forms.Label();
-            this.txt_yazar_name = new System.Windows.Forms.Label();
-            this.txt_kitap_ad = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.Label();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_kitap_resım)).BeginInit();
@@ -54,6 +54,7 @@ namespace WindowsFormsApp6.FORMLAR
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.Controls.Add(this.txt_kitap_resım);
             this.groupBox2.Controls.Add(this.txt_kitap_Degerlendırme);
             this.groupBox2.Controls.Add(this.txt_kitap_Tarih);
@@ -61,9 +62,9 @@ namespace WindowsFormsApp6.FORMLAR
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(468, 35);
+            this.groupBox2.Location = new System.Drawing.Point(411, 35);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(422, 457);
+            this.groupBox2.Size = new System.Drawing.Size(479, 457);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Diğer kitap bilgileri";
@@ -79,6 +80,7 @@ namespace WindowsFormsApp6.FORMLAR
             this.txt_kitap_resım.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.txt_kitap_resım.TabIndex = 13;
             this.txt_kitap_resım.TabStop = false;
+            this.txt_kitap_resım.Click += new System.EventHandler(this.txt_kitap_resım_Click);
             // 
             // txt_kitap_Degerlendırme
             // 
@@ -89,6 +91,7 @@ namespace WindowsFormsApp6.FORMLAR
             this.txt_kitap_Degerlendırme.Size = new System.Drawing.Size(406, 50);
             this.txt_kitap_Degerlendırme.TabIndex = 12;
             this.txt_kitap_Degerlendırme.Value = 0;
+            this.txt_kitap_Degerlendırme.onValueChanged += new System.EventHandler(this.txt_kitap_Degerlendırme_onValueChanged);
             // 
             // txt_kitap_Tarih
             // 
@@ -102,6 +105,7 @@ namespace WindowsFormsApp6.FORMLAR
             this.txt_kitap_Tarih.Size = new System.Drawing.Size(408, 36);
             this.txt_kitap_Tarih.TabIndex = 11;
             this.txt_kitap_Tarih.Value = new System.DateTime(2023, 6, 10, 14, 46, 12, 796);
+            this.txt_kitap_Tarih.onValueChanged += new System.EventHandler(this.txt_kitap_Tarih_onValueChanged);
             // 
             // label4
             // 
@@ -153,6 +157,7 @@ namespace WindowsFormsApp6.FORMLAR
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.txt_kitap_ad);
             this.groupBox1.Controls.Add(this.txt_yazar_name);
@@ -164,10 +169,74 @@ namespace WindowsFormsApp6.FORMLAR
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(12, 35);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(422, 457);
+            this.groupBox1.Size = new System.Drawing.Size(367, 457);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kitap Bilgilaeri";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox1.AutoSize = true;
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.comboBox1.Font = new System.Drawing.Font("Rockwell", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.ForeColor = System.Drawing.Color.White;
+            this.comboBox1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.comboBox1.Location = new System.Drawing.Point(115, 292);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(0, 25);
+            this.comboBox1.TabIndex = 15;
+            this.comboBox1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.comboBox1.Click += new System.EventHandler(this.comboBox1_Click);
+            // 
+            // txt_kitap_ad
+            // 
+            this.txt_kitap_ad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_kitap_ad.AutoSize = true;
+            this.txt_kitap_ad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_kitap_ad.Font = new System.Drawing.Font("Rockwell", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_kitap_ad.ForeColor = System.Drawing.Color.White;
+            this.txt_kitap_ad.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.txt_kitap_ad.Location = new System.Drawing.Point(138, 73);
+            this.txt_kitap_ad.Name = "txt_kitap_ad";
+            this.txt_kitap_ad.Size = new System.Drawing.Size(0, 25);
+            this.txt_kitap_ad.TabIndex = 14;
+            this.txt_kitap_ad.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.txt_kitap_ad.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // txt_yazar_name
+            // 
+            this.txt_yazar_name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_yazar_name.AutoSize = true;
+            this.txt_yazar_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_yazar_name.Font = new System.Drawing.Font("Rockwell", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_yazar_name.ForeColor = System.Drawing.Color.White;
+            this.txt_yazar_name.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.txt_yazar_name.Location = new System.Drawing.Point(138, 178);
+            this.txt_yazar_name.Name = "txt_yazar_name";
+            this.txt_yazar_name.Size = new System.Drawing.Size(0, 25);
+            this.txt_yazar_name.TabIndex = 13;
+            this.txt_yazar_name.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.txt_yazar_name.Click += new System.EventHandler(this.txt_yazar_name_Click);
+            // 
+            // txt_kitap_Fiati
+            // 
+            this.txt_kitap_Fiati.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_kitap_Fiati.AutoSize = true;
+            this.txt_kitap_Fiati.BackColor = System.Drawing.Color.Transparent;
+            this.txt_kitap_Fiati.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_kitap_Fiati.ForeColor = System.Drawing.Color.White;
+            this.txt_kitap_Fiati.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.txt_kitap_Fiati.Location = new System.Drawing.Point(138, 395);
+            this.txt_kitap_Fiati.Name = "txt_kitap_Fiati";
+            this.txt_kitap_Fiati.Size = new System.Drawing.Size(0, 21);
+            this.txt_kitap_Fiati.TabIndex = 12;
+            this.txt_kitap_Fiati.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.txt_kitap_Fiati.Click += new System.EventHandler(this.txt_kitap_Fiati_Click);
             // 
             // label3
             // 
@@ -233,72 +302,9 @@ namespace WindowsFormsApp6.FORMLAR
             this.insert_txt.Text = "Kitap AD :";
             this.insert_txt.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // txt_kitap_Fiati
-            // 
-            this.txt_kitap_Fiati.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_kitap_Fiati.AutoSize = true;
-            this.txt_kitap_Fiati.BackColor = System.Drawing.Color.Transparent;
-            this.txt_kitap_Fiati.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_kitap_Fiati.ForeColor = System.Drawing.Color.White;
-            this.txt_kitap_Fiati.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.txt_kitap_Fiati.Location = new System.Drawing.Point(138, 395);
-            this.txt_kitap_Fiati.Name = "txt_kitap_Fiati";
-            this.txt_kitap_Fiati.Size = new System.Drawing.Size(0, 21);
-            this.txt_kitap_Fiati.TabIndex = 12;
-            this.txt_kitap_Fiati.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.txt_kitap_Fiati.Click += new System.EventHandler(this.txt_kitap_Fiati_Click);
-            // 
-            // txt_yazar_name
-            // 
-            this.txt_yazar_name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_yazar_name.AutoSize = true;
-            this.txt_yazar_name.BackColor = System.Drawing.Color.Transparent;
-            this.txt_yazar_name.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_yazar_name.ForeColor = System.Drawing.Color.White;
-            this.txt_yazar_name.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.txt_yazar_name.Location = new System.Drawing.Point(138, 178);
-            this.txt_yazar_name.Name = "txt_yazar_name";
-            this.txt_yazar_name.Size = new System.Drawing.Size(0, 21);
-            this.txt_yazar_name.TabIndex = 13;
-            this.txt_yazar_name.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.txt_yazar_name.Click += new System.EventHandler(this.txt_yazar_name_Click);
-            // 
-            // txt_kitap_ad
-            // 
-            this.txt_kitap_ad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_kitap_ad.AutoSize = true;
-            this.txt_kitap_ad.BackColor = System.Drawing.Color.Transparent;
-            this.txt_kitap_ad.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_kitap_ad.ForeColor = System.Drawing.Color.White;
-            this.txt_kitap_ad.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.txt_kitap_ad.Location = new System.Drawing.Point(138, 73);
-            this.txt_kitap_ad.Name = "txt_kitap_ad";
-            this.txt_kitap_ad.Size = new System.Drawing.Size(0, 21);
-            this.txt_kitap_ad.TabIndex = 14;
-            this.txt_kitap_ad.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.txt_kitap_ad.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.AutoSize = true;
-            this.comboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.comboBox1.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.Color.White;
-            this.comboBox1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.comboBox1.Location = new System.Drawing.Point(115, 292);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(0, 21);
-            this.comboBox1.TabIndex = 15;
-            this.comboBox1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.comboBox1.Click += new System.EventHandler(this.comboBox1_Click);
-            // 
             // bunifuImageButton1
             // 
+            this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton1.Image = global::WindowsFormsApp6.Properties.Resources.rejected;
             this.bunifuImageButton1.ImageActive = null;
@@ -322,7 +328,7 @@ namespace WindowsFormsApp6.FORMLAR
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FRM_DETYELER";
-            this.Opacity = 0.85D;
+            this.Opacity = 0.6D;
             this.Text = "Form_DETYELER";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox2.ResumeLayout(false);
@@ -345,14 +351,14 @@ namespace WindowsFormsApp6.FORMLAR
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label txt_kitap_ad;
-        private System.Windows.Forms.Label txt_yazar_name;
-        private System.Windows.Forms.Label txt_kitap_Fiati;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label insert_txt;
-        private System.Windows.Forms.Label comboBox1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        public System.Windows.Forms.Label txt_kitap_ad;
+        public System.Windows.Forms.Label txt_yazar_name;
+        public System.Windows.Forms.Label comboBox1;
+        public System.Windows.Forms.Label txt_kitap_Fiati;
     }
 }

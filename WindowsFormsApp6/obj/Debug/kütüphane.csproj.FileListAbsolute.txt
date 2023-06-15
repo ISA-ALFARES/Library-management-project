@@ -16,3 +16,4 @@ C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FRM_DUZENLE_MESAJ.resources
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FRM_SILME_MESAJ.resources
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FRM_EKLE_MESAJ.resources
+C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.FORMLAR.FRM_DETYELER.resources
