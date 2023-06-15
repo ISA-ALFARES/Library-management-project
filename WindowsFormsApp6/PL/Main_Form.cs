@@ -352,9 +352,9 @@ namespace WindowsFormsApp6.PL
 
 
             }
-            if (state == "F_KITAPLAR") //Bu düğme kategoriler sayfasındaysa uygulanacaktır.
+            else if (state == "F_KITAPLAR") //Bu düğme Kitablar sayfasındaysa uygulanacaktır.
             {
-                BLCAT.Delet(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
+                BL_KITABLAR.Delet(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
                 PL.FRM_DELET FDELET = new FRM_DELET();
                 FDELET.Show();
 

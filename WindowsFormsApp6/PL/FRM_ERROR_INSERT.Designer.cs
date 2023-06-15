@@ -37,7 +37,7 @@ namespace WindowsFormsApp6.PL
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 2000;
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Lb_Title
@@ -47,7 +47,7 @@ namespace WindowsFormsApp6.PL
             this.Lb_Title.AutoSize = true;
             this.Lb_Title.BackColor = System.Drawing.Color.Transparent;
             this.Lb_Title.Font = new System.Drawing.Font("Rockwell", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lb_Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Lb_Title.ForeColor = System.Drawing.Color.Red;
             this.Lb_Title.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Lb_Title.Location = new System.Drawing.Point(181, 198);
             this.Lb_Title.Name = "Lb_Title";
@@ -69,6 +69,7 @@ namespace WindowsFormsApp6.PL
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FRM_ERROR_INSERT";
             this.Opacity = 0.8D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_ERROR_INSERT";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FRM_ERROR_INSERT_Load);

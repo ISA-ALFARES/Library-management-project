@@ -52,7 +52,7 @@ namespace WindowsFormsApp6.BL
             SqlParameter[] pr =  new SqlParameter[1];
             pr[0] = new SqlParameter("ID", ID);
             DataTable dt = new DataTable();
-            dt = DAL.read("SELECT_KITAPLAR", pr); // Pr_LOADCAT => SELECT * FROM T_CAT(katigotıler tablo) 
+            dt = DAL.read("SELECT_KITAPLAR", pr); // KITAPLAR => SELECT * FROM KITAPLAR(KITAPLAR tablo) 
             return dt;
         }
         //Update işlevi: 
@@ -68,7 +68,16 @@ namespace WindowsFormsApp6.BL
             pr[6] = new SqlParameter("K_RESIM", K_RESIM.ToArray());
             pr[7] = new SqlParameter("ID",ID);
             DAL.open();
-            DAL.execute("UPDATE_KITAPLAR", pr); // P_ADDCAT => INSERRT NTO T_CAT VALUES(CAT_NAME);
+            DAL.execute("UPDATE_KITAPLAR", pr); 
+            DAL.close();
+        }
+        //Silme işlevi:
+        public void Delet(int ID)
+        {
+            SqlParameter[] pr = new SqlParameter[1];
+            pr[0] = new SqlParameter("ID", ID);
+            DAL.open();
+            DAL.execute("DELTE_KITAPLAR", pr); 
             DAL.close();
         }
     }

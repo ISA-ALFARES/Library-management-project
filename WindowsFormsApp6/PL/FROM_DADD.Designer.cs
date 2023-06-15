@@ -41,7 +41,7 @@ namespace WindowsFormsApp6.PL
             this.Lb_Title.AutoSize = true;
             this.Lb_Title.BackColor = System.Drawing.Color.Transparent;
             this.Lb_Title.Font = new System.Drawing.Font("Rockwell", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lb_Title.ForeColor = System.Drawing.Color.White;
+            this.Lb_Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.Lb_Title.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Lb_Title.Location = new System.Drawing.Point(142, 176);
             this.Lb_Title.Name = "Lb_Title";
@@ -67,6 +67,7 @@ namespace WindowsFormsApp6.PL
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FROM_DADD";
             this.Opacity = 0.8D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FROM_DADD";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
