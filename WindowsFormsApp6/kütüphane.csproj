@@ -53,71 +53,80 @@
     <Compile Include="BL\CLASS_KITABLAR.cs" />
     <Compile Include="BL\CLS_CAT.cs" />
     <Compile Include="DAL\CLS_DAL.cs" />
-    <Compile Include="PL\FROM_KITABLAR_EKLE.cs">
+    <Compile Include="FORMLAR\FRM_DETYELER.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PL\FROM_KITABLAR_EKLE.Designer.cs">
+    <Compile Include="FORMLAR\FRM_DETYELER.Designer.cs">
+      <DependentUpon>FRM_DETYELER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMLAR\FROM_KITABLAR_EKLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMLAR\FROM_KITABLAR_EKLE.Designer.cs">
       <DependentUpon>FROM_KITABLAR_EKLE.cs</DependentUpon>
     </Compile>
-    <Compile Include="PL\Main_Form.cs">
+    <Compile Include="FORMLAR\ANA_FORM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PL\Main_Form.Designer.cs">
-      <DependentUpon>Main_Form.cs</DependentUpon>
+    <Compile Include="FORMLAR\ANA_FORM.Designer.cs">
+      <DependentUpon>ANA_FORM.cs</DependentUpon>
     </Compile>
-    <Compile Include="PL\FROM_KATIGORI_EKLE.cs">
+    <Compile Include="FORMLAR\FROM_KATIGORI_EKLE.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PL\FROM_KATIGORI_EKLE.Designer.cs">
+    <Compile Include="FORMLAR\FROM_KATIGORI_EKLE.Designer.cs">
       <DependentUpon>FROM_KATIGORI_EKLE.cs</DependentUpon>
     </Compile>
-    <Compile Include="PL\FRM_DEDIT.cs">
+    <Compile Include="FORMLAR\FRM_DUZENLE_MESAJ.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PL\FRM_DEDIT.Designer.cs">
-      <DependentUpon>FRM_DEDIT.cs</DependentUpon>
+    <Compile Include="FORMLAR\FRM_DUZENLE_MESAJ.Designer.cs">
+      <DependentUpon>FRM_DUZENLE_MESAJ.cs</DependentUpon>
     </Compile>
-    <Compile Include="PL\FRM_DELET.cs">
+    <Compile Include="FORMLAR\FRM_SILME_MESAJ.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PL\FRM_DELET.Designer.cs">
-      <DependentUpon>FRM_DELET.cs</DependentUpon>
+    <Compile Include="FORMLAR\FRM_SILME_MESAJ.Designer.cs">
+      <DependentUpon>FRM_SILME_MESAJ.cs</DependentUpon>
     </Compile>
-    <Compile Include="PL\FRM_ERROR_INSERT.cs">
+    <Compile Include="FORMLAR\FRM_ERROR_INSERT.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PL\FRM_ERROR_INSERT.Designer.cs">
+    <Compile Include="FORMLAR\FRM_ERROR_INSERT.Designer.cs">
       <DependentUpon>FRM_ERROR_INSERT.cs</DependentUpon>
     </Compile>
-    <Compile Include="PL\FROM_DADD.cs">
+    <Compile Include="FORMLAR\FRM_EKLE_MESAJ.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PL\FROM_DADD.Designer.cs">
-      <DependentUpon>FROM_DADD.cs</DependentUpon>
+    <Compile Include="FORMLAR\FRM_EKLE_MESAJ.Designer.cs">
+      <DependentUpon>FRM_EKLE_MESAJ.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Proje referansı\CodeFile1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="PL\FROM_KITABLAR_EKLE.resx">
+    <EmbeddedResource Include="FORMLAR\FRM_DETYELER.resx">
+      <DependentUpon>FRM_DETYELER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMLAR\FROM_KITABLAR_EKLE.resx">
       <DependentUpon>FROM_KITABLAR_EKLE.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PL\Main_Form.resx">
-      <DependentUpon>Main_Form.cs</DependentUpon>
+    <EmbeddedResource Include="FORMLAR\ANA_FORM.resx">
+      <DependentUpon>ANA_FORM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PL\FROM_KATIGORI_EKLE.resx">
+    <EmbeddedResource Include="FORMLAR\FROM_KATIGORI_EKLE.resx">
       <DependentUpon>FROM_KATIGORI_EKLE.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PL\FRM_DEDIT.resx">
-      <DependentUpon>FRM_DEDIT.cs</DependentUpon>
+    <EmbeddedResource Include="FORMLAR\FRM_DUZENLE_MESAJ.resx">
+      <DependentUpon>FRM_DUZENLE_MESAJ.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PL\FRM_DELET.resx">
-      <DependentUpon>FRM_DELET.cs</DependentUpon>
+    <EmbeddedResource Include="FORMLAR\FRM_SILME_MESAJ.resx">
+      <DependentUpon>FRM_SILME_MESAJ.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PL\FRM_ERROR_INSERT.resx">
+    <EmbeddedResource Include="FORMLAR\FRM_ERROR_INSERT.resx">
       <DependentUpon>FRM_ERROR_INSERT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PL\FROM_DADD.resx">
-      <DependentUpon>FROM_DADD.cs</DependentUpon>
+    <EmbeddedResource Include="FORMLAR\FRM_EKLE_MESAJ.resx">
+      <DependentUpon>FRM_EKLE_MESAJ.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

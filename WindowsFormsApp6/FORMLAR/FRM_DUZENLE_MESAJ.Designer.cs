@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp6.PL
 {
-    partial class FRM_DEDIT
+    partial class FRM_DUZENLE_MESAJ
     {
         /// <summary>
         /// Required designer variable.

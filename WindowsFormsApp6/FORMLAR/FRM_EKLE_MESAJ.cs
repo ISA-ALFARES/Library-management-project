@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp6.PL
 {
-    public partial class FRM_DEDIT : Form
+    public partial class FRM_EKLE_MESAJ : Form
     {
-        public FRM_DEDIT()
+        public FRM_EKLE_MESAJ()
         {
             InitializeComponent();
         }

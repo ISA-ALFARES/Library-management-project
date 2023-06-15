@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp6.PL
 {
-    partial class FRM_DELET
+    partial class FRM_EKLE_MESAJ
     {
         /// <summary>
         /// Required designer variable.
@@ -30,48 +30,46 @@ namespace WindowsFormsApp6.PL
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Lb_Title = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
+            // 
+            // Lb_Title
+            // 
+            this.Lb_Title.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Lb_Title.AutoSize = true;
+            this.Lb_Title.BackColor = System.Drawing.Color.Transparent;
+            this.Lb_Title.Font = new System.Drawing.Font("Rockwell", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lb_Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Lb_Title.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Lb_Title.Location = new System.Drawing.Point(142, 176);
+            this.Lb_Title.Name = "Lb_Title";
+            this.Lb_Title.Size = new System.Drawing.Size(286, 38);
+            this.Lb_Title.TabIndex = 6;
+            this.Lb_Title.Text = "Başarıyla eklendi";
+            this.Lb_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
+            this.timer1.Interval = 3000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // Lb_Title
-            // 
-            this.Lb_Title.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Lb_Title.AutoSize = true;
-            this.Lb_Title.BackColor = System.Drawing.Color.Transparent;
-            this.Lb_Title.Font = new System.Drawing.Font("Rockwell", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lb_Title.ForeColor = System.Drawing.Color.Lime;
-            this.Lb_Title.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Lb_Title.Location = new System.Drawing.Point(55, 211);
-            this.Lb_Title.Name = "Lb_Title";
-            this.Lb_Title.Size = new System.Drawing.Size(520, 38);
-            this.Lb_Title.TabIndex = 7;
-            this.Lb_Title.Text = "Başarıyla Bir şekilde Silinmiştir !";
-            this.Lb_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Lb_Title.Click += new System.EventHandler(this.Lb_Title_Click);
-            // 
-            // FRM_DELET
+            // FROM_DADD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(630, 461);
+            this.ClientSize = new System.Drawing.Size(571, 390);
             this.Controls.Add(this.Lb_Title);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MinimizeBox = false;
-            this.Name = "FRM_DELET";
+            this.Name = "FROM_DADD";
             this.Opacity = 0.8D;
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FRM_DELET";
+            this.Text = "FROM_DADD";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FRM_DELET_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -79,7 +77,7 @@ namespace WindowsFormsApp6.PL
 
         #endregion
 
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label Lb_Title;
+        private System.Windows.Forms.Timer timer1;
     }
 }

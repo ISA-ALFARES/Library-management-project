@@ -347,7 +347,7 @@ namespace WindowsFormsApp6.PL
             if (state == "CAT") //Bu düğme kategoriler sayfasındaysa uygulanacaktır.
             {
                 BLCAT.Delet(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
-                PL.FRM_DELET FDELET = new FRM_DELET();
+                PL.FRM_SILME_MESAJ FDELET = new FRM_SILME_MESAJ();
                 FDELET.Show();
 
 
@@ -355,7 +355,7 @@ namespace WindowsFormsApp6.PL
             else if (state == "F_KITAPLAR") //Bu düğme Kitablar sayfasındaysa uygulanacaktır.
             {
                 BL_KITABLAR.Delet(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
-                PL.FRM_DELET FDELET = new FRM_DELET();
+                PL.FRM_SILME_MESAJ FDELET = new FRM_SILME_MESAJ();
                 FDELET.Show();
 
 

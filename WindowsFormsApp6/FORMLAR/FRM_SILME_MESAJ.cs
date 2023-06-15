@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp6.PL
 {
-    public partial class FRM_DELET : Form
+    public partial class FRM_SILME_MESAJ : Form
     {
-        public FRM_DELET()
+        public FRM_SILME_MESAJ()
         {
             InitializeComponent();
         }

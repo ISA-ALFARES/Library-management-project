@@ -4,10 +4,7 @@ C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\bin\Debug\Bunifu_UI_v1.52.dll
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\kütüphane.csproj.AssemblyReference.cache
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.F_MAIN.resources
-C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FRM_DEDIT.resources
-C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FRM_DELET.resources
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FRM_ERROR_INSERT.resources
-C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FROM_DADD.resources
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.Properties.Resources.resources
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\kütüphane.csproj.GenerateResource.cache
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\kütüphane.csproj.CoreCompileInputs.cache
@@ -16,3 +13,6 @@ C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.pdb
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FROM_KATIGORI_EKLE.resources
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FROM_KITABLAR_EKLE.resources
+C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FRM_DUZENLE_MESAJ.resources
+C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FRM_SILME_MESAJ.resources
+C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FRM_EKLE_MESAJ.resources

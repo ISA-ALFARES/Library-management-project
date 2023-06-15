@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp6.PL
 {
-    public partial class FROM_DADD : Form
+    public partial class FRM_DUZENLE_MESAJ : Form
     {
-        public FROM_DADD()
+        public FRM_DUZENLE_MESAJ()
         {
             InitializeComponent();
         }

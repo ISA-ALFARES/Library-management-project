@@ -43,7 +43,7 @@ namespace WindowsFormsApp6.PL
                     //ekleme işlemi
                     BL.CLS_CAT BLCAT = new BL.CLS_CAT();
                     BLCAT.Insert(txt_kat_name.Text);
-                    PL.FROM_DADD Fadd = new FROM_DADD();
+                    PL.FRM_EKLE_MESAJ Fadd = new FRM_EKLE_MESAJ();
                     Fadd.Show();
                     this.Close();
                 }
@@ -52,7 +52,7 @@ namespace WindowsFormsApp6.PL
                     //Güncelleme  işlemi
                     BL.CLS_CAT BLCAT = new BL.CLS_CAT();
                     BLCAT.Update(txt_kat_name.Text,ID);
-                    PL.FRM_DEDIT Fedit = new FRM_DEDIT();
+                    PL.FRM_DUZENLE_MESAJ Fedit = new FRM_DUZENLE_MESAJ();
                     Fedit.Show();
                     this.Close();
                 }
