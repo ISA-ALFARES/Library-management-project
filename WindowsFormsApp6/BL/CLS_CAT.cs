@@ -22,7 +22,7 @@ namespace WindowsFormsApp6.BL
             return dt;
         }
 
-        //select işlevi:
+        //Arama işlevi:
         public DataTable Search(string Search)
         {
             SqlParameter[] pr = new SqlParameter[1];

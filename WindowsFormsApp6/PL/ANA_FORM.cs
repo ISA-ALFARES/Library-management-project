@@ -413,6 +413,12 @@ namespace WindowsFormsApp6.PL
                 dataGridView1.DataSource = dt;
 
             }
+            else if( state == "F_KITAPLAR")
+            {
+                DataTable dt = new DataTable();
+                dt = BL_KITABLAR.Search(arama.Text);
+                dataGridView1.DataSource = dt;
+            }
         }
     }
 }
