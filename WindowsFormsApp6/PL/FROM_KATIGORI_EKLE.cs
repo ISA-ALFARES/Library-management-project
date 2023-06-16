@@ -41,7 +41,7 @@ namespace WindowsFormsApp6.PL
                 if(ID ==  0)
                 {
                     //ekleme işlemi
-                    BL.CLS_CAT BLCAT = new BL.CLS_CAT();
+                    BL.CLS_KATIGORI BLCAT = new BL.CLS_KATIGORI();
                     BLCAT.Insert(txt_kat_name.Text);
                     PL.FRM_EKLE_MESAJ Fadd = new FRM_EKLE_MESAJ();
                     Fadd.Show();
@@ -50,7 +50,7 @@ namespace WindowsFormsApp6.PL
                 else
                 {
                     //Güncelleme  işlemi
-                    BL.CLS_CAT BLCAT = new BL.CLS_CAT();
+                    BL.CLS_KATIGORI BLCAT = new BL.CLS_KATIGORI();
                     BLCAT.Update(txt_kat_name.Text,ID);
                     PL.FRM_DUZENLE_MESAJ Fedit = new FRM_DUZENLE_MESAJ();
                     Fedit.Show();

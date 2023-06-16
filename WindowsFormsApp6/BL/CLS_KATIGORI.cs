@@ -8,10 +8,10 @@ using System.Data.SqlClient;
 
 namespace WindowsFormsApp6.BL
 {
-    class CLS_CAT
+    class CLS_KATIGORI
     {
         //CLS_DAL sınıfının bir nesnesi olan DAL nesnesi oluşturulmuştur. Veritabanı işlemleriyle ilgilenmek için kullanılır.
-        DAL.CLS_DAL DAL = new WindowsFormsApp6.DAL.CLS_DAL();
+        DAL.CLS_SQL_IBAGLANTI DAL = new WindowsFormsApp6.DAL.CLS_SQL_IBAGLANTI();
         //Verileri CLS_DAL sınıfında bulunan read işlevi kullanarak veritabanından getirir. Verileri DataTable olarak döndürür.
         //select işlevi:
         public DataTable Load() 

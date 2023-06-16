@@ -30,10 +30,10 @@ namespace WindowsFormsApp6.PL
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_MAIN));
             this.P_MB = new System.Windows.Forms.Panel();
             this.button11 = new System.Windows.Forms.Button();
@@ -53,6 +53,7 @@ namespace WindowsFormsApp6.PL
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.ADD_CAT = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.bunifuImageButton7 = new Bunifu.Framework.UI.BunifuImageButton();
             this.arama = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.P_HOME = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
@@ -98,7 +99,6 @@ namespace WindowsFormsApp6.PL
             this.bunifuElipse12 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.P_Container_panel = new System.Windows.Forms.Panel();
             this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.bunifuImageButton7 = new Bunifu.Framework.UI.BunifuImageButton();
             this.P_MB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton6)).BeginInit();
@@ -106,6 +106,7 @@ namespace WindowsFormsApp6.PL
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton7)).BeginInit();
             this.P_HOME.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -120,7 +121,6 @@ namespace WindowsFormsApp6.PL
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
             this.P_Container_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton7)).BeginInit();
             this.SuspendLayout();
             // 
             // P_MB
@@ -153,7 +153,7 @@ namespace WindowsFormsApp6.PL
             this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button11.Location = new System.Drawing.Point(-25, 417);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(175, 51);
+            this.button11.Size = new System.Drawing.Size(183, 51);
             this.button11.TabIndex = 13;
             this.button11.Text = "Catigores";
             this.button11.UseVisualStyleBackColor = false;
@@ -225,6 +225,7 @@ namespace WindowsFormsApp6.PL
             this.button3.TabIndex = 9;
             this.button3.Text = "Öğrenci      ";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -282,7 +283,7 @@ namespace WindowsFormsApp6.PL
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.Location = new System.Drawing.Point(-14, 116);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 51);
+            this.button1.Size = new System.Drawing.Size(169, 51);
             this.button1.TabIndex = 6;
             this.button1.Text = "Anasayfa     ";
             this.button1.UseVisualStyleBackColor = false;
@@ -307,36 +308,36 @@ namespace WindowsFormsApp6.PL
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuTransition1.SetDecoration(this.dataGridView1, BunifuAnimatorNS.DecorationType.None);
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.GridColor = System.Drawing.Color.Black;
             this.dataGridView1.Location = new System.Drawing.Point(0, 95);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 30;
             this.dataGridView1.Size = new System.Drawing.Size(766, 294);
@@ -479,6 +480,21 @@ namespace WindowsFormsApp6.PL
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(766, 95);
             this.panel7.TabIndex = 0;
+            // 
+            // bunifuImageButton7
+            // 
+            this.bunifuImageButton7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuImageButton7.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.bunifuImageButton7, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuImageButton7.Image = global::WindowsFormsApp6.Properties.Resources.info_64px;
+            this.bunifuImageButton7.ImageActive = null;
+            this.bunifuImageButton7.Location = new System.Drawing.Point(565, 60);
+            this.bunifuImageButton7.Name = "bunifuImageButton7";
+            this.bunifuImageButton7.Size = new System.Drawing.Size(33, 27);
+            this.bunifuImageButton7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton7.TabIndex = 6;
+            this.bunifuImageButton7.TabStop = false;
+            this.bunifuImageButton7.Zoom = 10;
             // 
             // arama
             // 
@@ -1011,38 +1027,23 @@ namespace WindowsFormsApp6.PL
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.Scale;
             this.bunifuTransition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation1;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation2;
             this.bunifuTransition1.Interval = 3;
-            // 
-            // bunifuImageButton7
-            // 
-            this.bunifuImageButton7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuImageButton7.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition1.SetDecoration(this.bunifuImageButton7, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuImageButton7.Image = global::WindowsFormsApp6.Properties.Resources.info_64px;
-            this.bunifuImageButton7.ImageActive = null;
-            this.bunifuImageButton7.Location = new System.Drawing.Point(565, 60);
-            this.bunifuImageButton7.Name = "bunifuImageButton7";
-            this.bunifuImageButton7.Size = new System.Drawing.Size(33, 27);
-            this.bunifuImageButton7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton7.TabIndex = 6;
-            this.bunifuImageButton7.TabStop = false;
-            this.bunifuImageButton7.Zoom = 10;
             // 
             // F_MAIN
             // 
@@ -1070,6 +1071,7 @@ namespace WindowsFormsApp6.PL
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton7)).EndInit();
             this.P_HOME.ResumeLayout(false);
             this.P_HOME.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -1092,7 +1094,6 @@ namespace WindowsFormsApp6.PL
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
             this.P_Container_panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton7)).EndInit();
             this.ResumeLayout(false);
 
         }

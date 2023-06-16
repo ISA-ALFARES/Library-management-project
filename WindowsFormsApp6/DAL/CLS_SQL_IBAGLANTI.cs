@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace WindowsFormsApp6.DAL //"WindowsFormsApp6.DAL" adlı ad alanı tanımlanır ve içinde CLS_DAL sınıfı tanımlanır.
+namespace WindowsFormsApp6.DAL //"WindowsFormsApp6.DAL" adlı ad alanı tanımlanır ve içinde CLS_SQL_IBAGLANTI sınıfı tanımlanır.
 {
-    class CLS_DAL           //Veritabanıyla bağlantı kurmak için bir SqlConnection nesnesi oluşturulur.
+    class CLS_SQL_IBAGLANTI           //Veritabanıyla bağlantı kurmak için bir SqlConnection nesnesi oluşturulur.
     {
         SqlConnection con = new SqlConnection();
-        public CLS_DAL()
+        public CLS_SQL_IBAGLANTI()
         {
             con = new SqlConnection("data source=DESKTOP-04DQ1GM\\MSSQLSERVERISA;initial catalog=library;integrated security=SSPI");
         }
 
-        //fonksiyonu tanımlanır ve veritabanı bağlantısı kapalıysa açılır
+        // veritabanı bağlantısı kapalıysa açılır
         public void open() 
         {
             if(con.State == System.Data.ConnectionState.Closed)
@@ -26,7 +26,7 @@ namespace WindowsFormsApp6.DAL //"WindowsFormsApp6.DAL" adlı ad alanı tanımla
             }
         }
 
-        //fonksiyonu tanımlanır ve veritabanı bağlantısı açıksa kapatılır.
+        //veritabanı bağlantısı açıksa kapatılır.
         public void  close() 
         {
             if (con.State == System.Data.ConnectionState.Open)
@@ -36,7 +36,7 @@ namespace WindowsFormsApp6.DAL //"WindowsFormsApp6.DAL" adlı ad alanı tanımla
             }
         }
 
-        //  fonksiyonu tanımlanır ve veritabanından veri okumak için depolama prosedürü kullanılır.
+        // veritabanından veri okumak için depolama prosedürü kullanılır.
         public DataTable read (string store, SqlParameter[] pr) 
         {
             SqlCommand cmd =new SqlCommand();  //SqlCommand sınıfından bir cmd nesnesi oluşturulur.
@@ -54,7 +54,7 @@ namespace WindowsFormsApp6.DAL //"WindowsFormsApp6.DAL" adlı ad alanı tanımla
         }
 
 
-        //fonksiyonu tanımlanır ve veritabanını etkileyen (ekleme, güncelleme, silme gibi) bir sorguyu çalıştırır.
+        // veritabanını etkileyen (ekleme, güncelleme, silme gibi) bir sorguyu çalıştırır.
         public void execute(string store, SqlParameter[] pr)
         {
             SqlCommand cmd = new SqlCommand();

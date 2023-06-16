@@ -17,8 +17,9 @@ namespace WindowsFormsApp6.PL
         string state;  //Geçerli sayfanın adını saklar
         ///string ID ;
 
-         BL.CLS_CAT BLCAT = new BL.CLS_CAT(); 
-         BL.CLASS_KITABLAR BL_KITABLAR = new BL.CLASS_KITABLAR(); 
+         BL.CLS_KATIGORI BLCAT = new BL.CLS_KATIGORI(); 
+         BL.CLASS_KITABLAR BL_KITABLAR = new BL.CLASS_KITABLAR();
+         BL.CLASS_OGRENCILER BL_OGRENCILER = new BL.CLASS_OGRENCILER();
         /*
             * BLCAT nesnesini kullanarak verileri bir veritabanından yükler ve bunları DataGridView kontrolünde görüntüler.
             
@@ -294,7 +295,7 @@ namespace WindowsFormsApp6.PL
                     MessageBox.Show(ex.Message);
                 }
             }
-            else if(state == "KITABLAR")
+            else if(state == "F_KITAPLAR")
             {
                 P_HOME.Visible = false;              //Ana sayfayı gizledik
                 P_MAIN.Visible = true;              //Kategori sayfasını gösterdik 
@@ -311,6 +312,31 @@ namespace WindowsFormsApp6.PL
                     dataGridView1.Columns[2].HeaderText = "Yazar ad";
                     dataGridView1.Columns[3].HeaderText = "Katıgore";
                     dataGridView1.Columns[4].HeaderText = "kıtab Fıyatı";
+
+                }
+                catch (Exception ex) //Herhangi bir hata görünürse, görünecektir
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else if(state == "OGRENCILER")
+            {
+
+                P_HOME.Visible = false;              //Ana sayfayı gizledik
+                P_MAIN.Visible = true;              //OGRENCILER sayfasını gösterdik 
+                state = " ";
+                Lb_Title.Text = "  Öğrenciler    ";  //Sayfa ismi
+                                                     //Veritabanlarında depolanan verileri getirme
+                try
+                {
+                    DataTable dt = new DataTable();
+                    dt = BL_OGRENCILER.Load();
+                    dataGridView1.DataSource = dt;
+                    dataGridView1.Columns[0].HeaderText = "Öğrenci Numarası";
+                    dataGridView1.Columns[1].HeaderText = "Öğrenci ad";
+                    dataGridView1.Columns[2].HeaderText = "öğrenci adresi";
+                    dataGridView1.Columns[3].HeaderText = "öğrenci Telefonu";
+                    dataGridView1.Columns[4].HeaderText = "öğrenci e-postası";
 
                 }
                 catch (Exception ex) //Herhangi bir hata görünürse, görünecektir
@@ -418,6 +444,31 @@ namespace WindowsFormsApp6.PL
                 DataTable dt = new DataTable();
                 dt = BL_KITABLAR.Search(arama.Text);
                 dataGridView1.DataSource = dt;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            P_HOME.Visible = false;              //Ana sayfayı gizledik
+            P_MAIN.Visible = true;              //OGRENCILER sayfasını gösterdik 
+            state = " ";
+            Lb_Title.Text = "  Öğrenciler    ";  //Sayfa ismi
+            //Veritabanlarında depolanan verileri getirme
+            try
+            {
+                DataTable dt = new DataTable();
+                dt = BL_OGRENCILER.Load();
+                dataGridView1.DataSource = dt;
+                dataGridView1.Columns[0].HeaderText = "Öğrenci Numarası";
+                dataGridView1.Columns[1].HeaderText = "Öğrenci ad";
+                dataGridView1.Columns[2].HeaderText = "öğrenci adresi";
+                dataGridView1.Columns[3].HeaderText = "öğrenci Telefonu";
+                dataGridView1.Columns[4].HeaderText = "öğrenci e-postası";
+
+            }
+            catch (Exception ex) //Herhangi bir hata görünürse, görünecektir
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

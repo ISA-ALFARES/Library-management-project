@@ -51,8 +51,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BL\CLASS_KITABLAR.cs" />
-    <Compile Include="BL\CLS_CAT.cs" />
-    <Compile Include="DAL\CLS_DAL.cs" />
+    <Compile Include="BL\CLASS_OGRENCILER.cs" />
+    <Compile Include="BL\CLS_KATIGORI.cs" />
+    <Compile Include="DAL\CLS_SQL_IBAGLANTI.cs" />
     <Compile Include="PL\FRM_DETYELER.cs">
       <SubType>Form</SubType>
     </Compile>
