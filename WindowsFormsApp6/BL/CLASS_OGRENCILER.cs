@@ -63,6 +63,15 @@ namespace WindowsFormsApp6.BL
             DAL.execute("UPDATE_OGRENCILER", pr);
             DAL.close();
         }
+        //Silme işlevi:
+        public void Delet(int ID)
+        {
+            SqlParameter[] pr = new SqlParameter[1];
+            pr[0] = new SqlParameter("ID", ID);
+            DAL.open();
+            DAL.execute("DELTE_OGREMCILER", pr);
+            DAL.close();
+        }
     }
 
 }
