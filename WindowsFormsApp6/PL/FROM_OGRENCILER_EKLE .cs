@@ -53,7 +53,7 @@ namespace WindowsFormsApp6.PL
 
         private void ADD_YENİ_CAT_Click(object sender, EventArgs e)
         {
-            if (txt_ogrenci_NO.Text=="" ||txt_ogrenci_ad.Text == ""  || txt_ogrenci_adres.Text == "" || txt_ogrenci_Telefon.Text == ""  )
+            if (txt_ogrenci_NO.Text == "" || txt_ogrenci_ad.Text == ""  || txt_ogrenci_adres.Text == "" || txt_ogrenci_Telefon.Text == ""  )
             {
                 PL.FRM_ERROR_INSERT Ferror = new FRM_ERROR_INSERT();
                 Ferror.Show();
@@ -66,21 +66,21 @@ namespace WindowsFormsApp6.PL
                     txt_ogrenci_FOTO.Image.Save(ma, System.Drawing.Imaging.ImageFormat.Jpeg);
                     //ekleme işlemi
                     BL.CLASS_OGRENCILER BL_OGRENCI_EKLE = new BL.CLASS_OGRENCILER();
-                    BL_OGRENCI_EKLE.Insert(txt_ogrenci_NO.Text,txt_ogrenci_ad.Text,txt_ogrenci_adres.Text,txt_ogrenci_Telefon.Text,txt_ogrenci_EMAIL.Text, txt_ogrenci_Bolum.Text, ma);
+                    BL_OGRENCI_EKLE.Insert(txt_ogrenci_NO.Text, txt_ogrenci_ad.Text,txt_ogrenci_adres.Text,txt_ogrenci_Telefon.Text,txt_ogrenci_EMAIL.Text, txt_ogrenci_Bolum.Text, ma);
                     PL.FRM_EKLE_MESAJ Fadd = new FRM_EKLE_MESAJ();
                     Fadd.Show();
                     this.Close();
                 }
-                //else
-                //{
-                //    //Güncelleme  işlemi
-                //    MemoryStream ma = new MemoryStream();
-                //    BL.CLASS_KITABLAR BLCAT = new BL.CLASS_KITABLAR();
-                //    BLCAT.Update(txt_ogrenci_ad.Text, txt_ogrenci_NO.Text, comboBox1.Text, txt_ogrenci_Telefon.Text, txt_kitap_Tarih.Value.ToString(), txt_kitap_Degerlendırme.Value, ma, ID);
-                //    PL.FRM_DUZENLE_MESAJ Fedit = new FRM_DUZENLE_MESAJ();
-                //    Fedit.Show();
-                //    this.Close();
-                //}
+                else
+                {
+                    //OGRENCILER Güncelleme  işlemi
+                    MemoryStream ma = new MemoryStream();
+                    BL.CLASS_OGRENCILER BL_OGRENCI_EDIT = new BL.CLASS_OGRENCILER();
+                    BL_OGRENCI_EDIT.Update(txt_ogrenci_NO.Text,txt_ogrenci_ad.Text, txt_ogrenci_adres.Text, txt_ogrenci_Telefon.Text, txt_ogrenci_EMAIL.Text, txt_ogrenci_Bolum.Text,ma, ID);
+                    PL.FRM_DUZENLE_MESAJ Fedit = new FRM_DUZENLE_MESAJ();
+                    Fedit.Show();
+                    this.Close();
+                }
 
             }
         }

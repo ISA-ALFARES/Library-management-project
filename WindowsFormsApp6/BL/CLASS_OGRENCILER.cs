@@ -18,7 +18,7 @@ namespace WindowsFormsApp6.BL
         {
             SqlParameter[] pr = null;
             DataTable dt = new DataTable();
-            dt = DAL.read("Pr_LoadOGRENCILER", pr); // Pr_LoadOGRENCILER => SELECT * FROM KITABLAR(KITABLAR tablo) 
+            dt = DAL.read("Pr_LoadOGRENCILER", pr); // Pr_LOADCAT => SELECT * FROM T_CAT(katigotıler tablo) 
             return dt;
         }
         //insert işlevi:
@@ -44,6 +44,24 @@ namespace WindowsFormsApp6.BL
             DataTable dt = new DataTable();
             dt = DAL.read("SELECT_OGRENCI_YENI", pr); // OGRENCILER => SELECT * FROM OGRENCILER(OGRENCILER tablo) 
             return dt;
+        }
+        //Update işlevi: 
+        public void Update(string OGRENCI_NO , string AD, string ADRES, string TELEFON, string EMAIL, string BULUM,  MemoryStream RESIM , int ID)
+        {
+            SqlParameter[] pr = new SqlParameter[8];
+            pr[0] = new SqlParameter("OGRENCI_NO", OGRENCI_NO);
+            pr[1] = new SqlParameter("AD", AD);
+            pr[2] = new SqlParameter("ADRES", ADRES);
+            pr[3] = new SqlParameter("TELEFON", TELEFON);
+            pr[4] = new SqlParameter("EMAIL", EMAIL);
+            pr[5] = new SqlParameter("BULUM", BULUM);
+            pr[6] = new SqlParameter("RESIM", RESIM.ToArray());
+            pr[7] = new SqlParameter("ID", ID);
+
+
+            DAL.open();
+            DAL.execute("UPDATE_OGRENCILER", pr);
+            DAL.close();
         }
     }
 

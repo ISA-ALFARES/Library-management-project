@@ -35,23 +35,23 @@ namespace WindowsFormsApp6.PL
             this.insert_txt = new System.Windows.Forms.Label();
             this.ADD_YENİ_OGRENCI = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_ogrenci_adres = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_ogrenci_Telefon = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_ogrenci_NO = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txt_ogrenci_Bolum = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_ogrenci_EMAIL = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.label8 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.txt_ogrenci_FOTO = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.txt_ogrenci_adres = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txt_ogrenci_EMAIL = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txt_ogrenci_Bolum = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_ogrenci_FOTO)).BeginInit();
@@ -139,6 +139,26 @@ namespace WindowsFormsApp6.PL
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kitap Bilgilaeri";
+            // 
+            // txt_ogrenci_adres
+            // 
+            this.txt_ogrenci_adres.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_ogrenci_adres.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_ogrenci_adres.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+            this.txt_ogrenci_adres.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_ogrenci_adres.HintForeColor = System.Drawing.Color.Empty;
+            this.txt_ogrenci_adres.HintText = "";
+            this.txt_ogrenci_adres.isPassword = false;
+            this.txt_ogrenci_adres.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txt_ogrenci_adres.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_ogrenci_adres.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
+            this.txt_ogrenci_adres.LineThickness = 6;
+            this.txt_ogrenci_adres.Location = new System.Drawing.Point(9, 271);
+            this.txt_ogrenci_adres.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_ogrenci_adres.Name = "txt_ogrenci_adres";
+            this.txt_ogrenci_adres.Size = new System.Drawing.Size(301, 43);
+            this.txt_ogrenci_adres.TabIndex = 12;
+            this.txt_ogrenci_adres.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt_ogrenci_Telefon
             // 
@@ -245,6 +265,78 @@ namespace WindowsFormsApp6.PL
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Diğer kitap bilgileri";
             // 
+            // txt_ogrenci_Bolum
+            // 
+            this.txt_ogrenci_Bolum.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_ogrenci_Bolum.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_ogrenci_Bolum.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+            this.txt_ogrenci_Bolum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_ogrenci_Bolum.HintForeColor = System.Drawing.Color.Empty;
+            this.txt_ogrenci_Bolum.HintText = "";
+            this.txt_ogrenci_Bolum.isPassword = false;
+            this.txt_ogrenci_Bolum.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txt_ogrenci_Bolum.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_ogrenci_Bolum.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
+            this.txt_ogrenci_Bolum.LineThickness = 6;
+            this.txt_ogrenci_Bolum.Location = new System.Drawing.Point(9, 166);
+            this.txt_ogrenci_Bolum.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_ogrenci_Bolum.Name = "txt_ogrenci_Bolum";
+            this.txt_ogrenci_Bolum.Size = new System.Drawing.Size(301, 43);
+            this.txt_ogrenci_Bolum.TabIndex = 18;
+            this.txt_ogrenci_Bolum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label7.Location = new System.Drawing.Point(8, 138);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(158, 21);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "öğrenci bülümü :";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txt_ogrenci_EMAIL
+            // 
+            this.txt_ogrenci_EMAIL.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txt_ogrenci_EMAIL.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_ogrenci_EMAIL.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+            this.txt_ogrenci_EMAIL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_ogrenci_EMAIL.HintForeColor = System.Drawing.Color.Empty;
+            this.txt_ogrenci_EMAIL.HintText = "";
+            this.txt_ogrenci_EMAIL.isPassword = false;
+            this.txt_ogrenci_EMAIL.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txt_ogrenci_EMAIL.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_ogrenci_EMAIL.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
+            this.txt_ogrenci_EMAIL.LineThickness = 6;
+            this.txt_ogrenci_EMAIL.Location = new System.Drawing.Point(9, 67);
+            this.txt_ogrenci_EMAIL.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_ogrenci_EMAIL.Name = "txt_ogrenci_EMAIL";
+            this.txt_ogrenci_EMAIL.Size = new System.Drawing.Size(301, 43);
+            this.txt_ogrenci_EMAIL.TabIndex = 15;
+            this.txt_ogrenci_EMAIL.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label8.Location = new System.Drawing.Point(8, 39);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(145, 21);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "öğrenci  email :";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
@@ -321,98 +413,6 @@ namespace WindowsFormsApp6.PL
             this.bunifuImageButton1.Zoom = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
-            // txt_ogrenci_adres
-            // 
-            this.txt_ogrenci_adres.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_ogrenci_adres.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_ogrenci_adres.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
-            this.txt_ogrenci_adres.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_ogrenci_adres.HintForeColor = System.Drawing.Color.Empty;
-            this.txt_ogrenci_adres.HintText = "";
-            this.txt_ogrenci_adres.isPassword = false;
-            this.txt_ogrenci_adres.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_ogrenci_adres.LineIdleColor = System.Drawing.Color.Gray;
-            this.txt_ogrenci_adres.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
-            this.txt_ogrenci_adres.LineThickness = 6;
-            this.txt_ogrenci_adres.Location = new System.Drawing.Point(9, 271);
-            this.txt_ogrenci_adres.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_ogrenci_adres.Name = "txt_ogrenci_adres";
-            this.txt_ogrenci_adres.Size = new System.Drawing.Size(301, 43);
-            this.txt_ogrenci_adres.TabIndex = 12;
-            this.txt_ogrenci_adres.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label8.Location = new System.Drawing.Point(8, 39);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(145, 21);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "öğrenci  email :";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // txt_ogrenci_EMAIL
-            // 
-            this.txt_ogrenci_EMAIL.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_ogrenci_EMAIL.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_ogrenci_EMAIL.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
-            this.txt_ogrenci_EMAIL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_ogrenci_EMAIL.HintForeColor = System.Drawing.Color.Empty;
-            this.txt_ogrenci_EMAIL.HintText = "";
-            this.txt_ogrenci_EMAIL.isPassword = false;
-            this.txt_ogrenci_EMAIL.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_ogrenci_EMAIL.LineIdleColor = System.Drawing.Color.Gray;
-            this.txt_ogrenci_EMAIL.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
-            this.txt_ogrenci_EMAIL.LineThickness = 6;
-            this.txt_ogrenci_EMAIL.Location = new System.Drawing.Point(9, 67);
-            this.txt_ogrenci_EMAIL.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_ogrenci_EMAIL.Name = "txt_ogrenci_EMAIL";
-            this.txt_ogrenci_EMAIL.Size = new System.Drawing.Size(301, 43);
-            this.txt_ogrenci_EMAIL.TabIndex = 15;
-            this.txt_ogrenci_EMAIL.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label7.Location = new System.Drawing.Point(8, 138);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(158, 21);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "öğrenci bülümü :";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // txt_ogrenci_Bolum
-            // 
-            this.txt_ogrenci_Bolum.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_ogrenci_Bolum.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_ogrenci_Bolum.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
-            this.txt_ogrenci_Bolum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_ogrenci_Bolum.HintForeColor = System.Drawing.Color.Empty;
-            this.txt_ogrenci_Bolum.HintText = "";
-            this.txt_ogrenci_Bolum.isPassword = false;
-            this.txt_ogrenci_Bolum.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_ogrenci_Bolum.LineIdleColor = System.Drawing.Color.Gray;
-            this.txt_ogrenci_Bolum.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
-            this.txt_ogrenci_Bolum.LineThickness = 6;
-            this.txt_ogrenci_Bolum.Location = new System.Drawing.Point(9, 166);
-            this.txt_ogrenci_Bolum.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_ogrenci_Bolum.Name = "txt_ogrenci_Bolum";
-            this.txt_ogrenci_Bolum.Size = new System.Drawing.Size(301, 43);
-            this.txt_ogrenci_Bolum.TabIndex = 18;
-            this.txt_ogrenci_Bolum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // FROM_OGRENCILER_EKLE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -448,8 +448,6 @@ namespace WindowsFormsApp6.PL
         public Bunifu.Framework.UI.BunifuMaterialTextbox txt_ogrenci_Telefon;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        public Bunifu.Framework.UI.BunifuMaterialTextbox txt_ogrenci_NO;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
@@ -462,5 +460,7 @@ namespace WindowsFormsApp6.PL
         private System.Windows.Forms.Label label7;
         public Bunifu.Framework.UI.BunifuMaterialTextbox txt_ogrenci_EMAIL;
         private System.Windows.Forms.Label label8;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox txt_ogrenci_NO;
+        private System.Windows.Forms.Label label1;
     }
 }
