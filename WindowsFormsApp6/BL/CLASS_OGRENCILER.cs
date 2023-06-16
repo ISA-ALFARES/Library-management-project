@@ -36,6 +36,15 @@ namespace WindowsFormsApp6.BL
             DAL.execute("INSERT_OGRENCI_YENI", pr); // INSERT_OGRENCILER => INSERRT NTO KITABLAR .....;
             DAL.close();
         }
+        //select işlevi :
+        public DataTable LoadDuzenle(int ID)
+        {
+            SqlParameter[] pr = new SqlParameter[1];
+            pr[0] = new SqlParameter("ID", ID);
+            DataTable dt = new DataTable();
+            dt = DAL.read("SELECT_OGRENCI_YENI", pr); // OGRENCILER => SELECT * FROM OGRENCILER(OGRENCILER tablo) 
+            return dt;
+        }
     }
 
 }

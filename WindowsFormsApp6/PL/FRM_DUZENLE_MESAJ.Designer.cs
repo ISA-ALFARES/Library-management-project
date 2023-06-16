@@ -36,8 +36,7 @@ namespace WindowsFormsApp6.PL
             // 
             // Lb_Title
             // 
-            this.Lb_Title.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Lb_Title.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Lb_Title.AutoSize = true;
             this.Lb_Title.BackColor = System.Drawing.Color.Transparent;
             this.Lb_Title.Font = new System.Drawing.Font("Rockwell", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -56,7 +55,7 @@ namespace WindowsFormsApp6.PL
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // FRM_DEDIT
+            // FRM_DUZENLE_MESAJ
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -64,10 +63,11 @@ namespace WindowsFormsApp6.PL
             this.ClientSize = new System.Drawing.Size(959, 572);
             this.Controls.Add(this.Lb_Title);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FRM_DEDIT";
+            this.Name = "FRM_DUZENLE_MESAJ";
             this.Opacity = 0.8D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_DEDIT";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

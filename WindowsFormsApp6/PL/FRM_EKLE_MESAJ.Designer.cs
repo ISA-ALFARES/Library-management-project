@@ -36,13 +36,11 @@ namespace WindowsFormsApp6.PL
             // 
             // Lb_Title
             // 
-            this.Lb_Title.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Lb_Title.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Lb_Title.AutoSize = true;
             this.Lb_Title.BackColor = System.Drawing.Color.Transparent;
             this.Lb_Title.Font = new System.Drawing.Font("Rockwell", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb_Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.Lb_Title.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Lb_Title.Location = new System.Drawing.Point(142, 176);
             this.Lb_Title.Name = "Lb_Title";
             this.Lb_Title.Size = new System.Drawing.Size(286, 38);
@@ -56,7 +54,7 @@ namespace WindowsFormsApp6.PL
             this.timer1.Interval = 3000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // FROM_DADD
+            // FRM_EKLE_MESAJ
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -65,7 +63,7 @@ namespace WindowsFormsApp6.PL
             this.ClientSize = new System.Drawing.Size(571, 390);
             this.Controls.Add(this.Lb_Title);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FROM_DADD";
+            this.Name = "FRM_EKLE_MESAJ";
             this.Opacity = 0.8D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FROM_DADD";
