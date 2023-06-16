@@ -255,12 +255,21 @@ namespace WindowsFormsApp6.PL
                 
             }
             //KITAP ekleme işlemi
-            if (state == "F_KITAPLAR") //Bu düğme kategoriler sayfasındaysa uygulanacaktır.
+            else if (state == "F_KITAPLAR") //Bu düğme kategoriler sayfasındaysa uygulanacaktır.
             {
                 PL.FROM_KITABLAR_EKLE F_KITAPLAR = new FROM_KITABLAR_EKLE();
                 F_KITAPLAR.ADD_YENİ_CAT.ButtonText = "EKLE";
                 F_KITAPLAR.ID = 0;
                 bunifuTransition1.ShowSync(F_KITAPLAR);
+
+            }
+            //OGRENCI ekleme işlemi
+            else if (state == "OGRENCILER") //Bu düğme kategoriler sayfasındaysa uygulanacaktır.
+            {
+                PL.FROM_OGRENCILER_EKLE F_OGRANCILER = new FROM_OGRENCILER_EKLE();
+                F_OGRANCILER.ADD_YENİ_OGRENCI.ButtonText = "EKLE";
+                F_OGRANCILER.ID = 0;
+                bunifuTransition1.ShowSync(F_OGRANCILER);
 
             }
         }
@@ -270,6 +279,7 @@ namespace WindowsFormsApp6.PL
 
         }
 
+        //Bu kod Yeni veriler yüklenir ve DataGridView kontrolüne bağlanır. Böylece kullanıcı, güncellenmiş verileri görüntüleyebilir.
         private void F_MAIN_Activated(object sender, EventArgs e)
         {
             if(state == "CAT")
@@ -299,7 +309,7 @@ namespace WindowsFormsApp6.PL
             {
                 P_HOME.Visible = false;              //Ana sayfayı gizledik
                 P_MAIN.Visible = true;              //Kategori sayfasını gösterdik 
-                state = "KITABLAR";
+                state = "F_KITAPLAR";
                 Lb_Title.Text = "  Kitablar    ";  //Sayfa ismi
                                                    //Veritabanlarında depolanan verileri getirme
                 try
@@ -319,7 +329,7 @@ namespace WindowsFormsApp6.PL
                     MessageBox.Show(ex.Message);
                 }
             }
-            else if(state == "OGRENCILER")
+            else if (state == "OGRENCILER")
             {
 
                 P_HOME.Visible = false;              //Ana sayfayı gizledik
@@ -451,7 +461,7 @@ namespace WindowsFormsApp6.PL
         {
             P_HOME.Visible = false;              //Ana sayfayı gizledik
             P_MAIN.Visible = true;              //OGRENCILER sayfasını gösterdik 
-            state = " ";
+            state = "OGRENCILER";
             Lb_Title.Text = "  Öğrenciler    ";  //Sayfa ismi
             //Veritabanlarında depolanan verileri getirme
             try

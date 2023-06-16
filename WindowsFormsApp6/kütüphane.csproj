@@ -60,6 +60,12 @@
     <Compile Include="PL\FRM_DETYELER.Designer.cs">
       <DependentUpon>FRM_DETYELER.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\FROM_OGRENCILER_EKLE .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FROM_OGRENCILER_EKLE .Designer.cs">
+      <DependentUpon>FROM_OGRENCILER_EKLE .cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\FROM_KITABLAR_EKLE.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="PL\FRM_DETYELER.resx">
       <DependentUpon>FRM_DETYELER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FROM_OGRENCILER_EKLE .resx">
+      <DependentUpon>FROM_OGRENCILER_EKLE .cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FROM_KITABLAR_EKLE.resx">
       <DependentUpon>FROM_KITABLAR_EKLE.cs</DependentUpon>
