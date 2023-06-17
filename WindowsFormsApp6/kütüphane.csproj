@@ -54,6 +54,12 @@
     <Compile Include="BL\CLASS_OGRENCILER.cs" />
     <Compile Include="BL\CLS_KATIGORI.cs" />
     <Compile Include="DAL\CLS_SQL_IBAGLANTI.cs" />
+    <Compile Include="PL\FRM_DETYELER_OGRENCILER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_DETYELER_OGRENCILER.Designer.cs">
+      <DependentUpon>FRM_DETYELER_OGRENCILER.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\FRM_DETYELER.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Proje referansı\CodeFile1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PL\FRM_DETYELER_OGRENCILER.resx">
+      <DependentUpon>FRM_DETYELER_OGRENCILER.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_DETYELER.resx">
       <DependentUpon>FRM_DETYELER.cs</DependentUpon>
     </EmbeddedResource>

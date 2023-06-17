@@ -241,7 +241,43 @@ namespace WindowsFormsApp6.PL
 
                 bunifuTransition1.ShowSync(dETYELER);
             }
-         }
+            else if (state == "OGRENCILER")
+            {
+                DataTable dt = new DataTable();
+                dt = BL_OGRENCILER.LoadDuzenle(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
+                // Veritabanından değerleri çekme
+                object opj1 = dt.Rows[0]["OGRENCI_NO"];         // Kitap adı
+                object opj2 = dt.Rows[0]["AD"];        // Yazar adı
+                object opj3 = dt.Rows[0]["ADRES"];     // Kategori
+                object opj4 = dt.Rows[0]["TELEFON"];      // Kitap fiyatı
+                object opj5 = dt.Rows[0]["EMAIL"];        // Kitap tarihi
+                object opj6 = dt.Rows[0]["BULUM"];// Kitap değerlendirmesi
+                object opj7 = dt.Rows[0]["RESIM"];      // Kitap resmi
+                FORMLAR.FRM_DETYELER_OGRENCILER dETYELER = new FORMLAR.FRM_DETYELER_OGRENCILER();
+                // Değerleri form elemanlarına atama
+                dETYELER.txt_ogrenci_NO.Text = opj1.ToString();
+                dETYELER.txt_ogrenci_ad.Text = opj2.ToString();
+                dETYELER.txt_ogrenci_adres.Text = opj3.ToString();
+                dETYELER.txt_ogrenci_Telefon.Text = opj4.ToString();
+                dETYELER.txt_ogrenci_Telefon.Text = opj4.ToString();
+                dETYELER.txt_ogrenci_EMAIL.Text = opj5.ToString();
+                dETYELER.txt_ogrenci_Bolum.Text = opj6.ToString();
+
+                byte[] op = null;
+                if (opj7 != DBNull.Value)
+                {
+                    op = (byte[])opj7;
+                }
+
+                if (op != null)
+                {
+                    MemoryStream ma = new MemoryStream(op);
+                    dETYELER.txt_ogrenci_FOTO.Image = Image.FromStream(ma);
+                }
+
+                bunifuTransition1.ShowSync(dETYELER);
+            }
+        }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {

@@ -72,6 +72,15 @@ namespace WindowsFormsApp6.BL
             DAL.execute("DELTE_OGREMCILER", pr);
             DAL.close();
         }
+        //Arama işlevi:
+        public DataTable Search(string Search)
+        {
+            SqlParameter[] pr = new SqlParameter[1];
+            pr[0] = new SqlParameter("SEARCH", Search);
+            DataTable dt = new DataTable();
+            dt = DAL.read("OGRENCILER_SEARCH", pr); // Pr_LOADCAT => select * from  T_CAT where  CAT_NAME like '%'+ @SEARCH +'%' 
+            return dt;
+        }
     }
 
 }
