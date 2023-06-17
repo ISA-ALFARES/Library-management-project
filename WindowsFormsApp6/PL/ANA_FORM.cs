@@ -622,6 +622,14 @@ namespace WindowsFormsApp6.PL
 
 
             }
+            else if (state == "EMANET") //Bu düğme OGRENCILER sayfasındaysa uygulanacaktır.
+            {
+                BL_EMANET.Delet(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
+                PL.FRM_SILME_MESAJ FDELET = new FRM_SILME_MESAJ();
+                FDELET.Show();
+
+
+            }
         }
 
         private void arama_OnValueChanged(object sender, EventArgs e)

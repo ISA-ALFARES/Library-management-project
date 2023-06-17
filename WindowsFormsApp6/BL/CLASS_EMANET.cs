@@ -62,5 +62,14 @@ namespace WindowsFormsApp6.BL
             DAL.execute("UPDATE_EMANET", pr);
             DAL.close();
         }
+        //Silme işlevi:
+        public void Delet(int ID)
+        {
+            SqlParameter[] pr = new SqlParameter[1];
+            pr[0] = new SqlParameter("ID", ID);
+            DAL.open();
+            DAL.execute("Pr_DELET_EMANET", pr);
+            DAL.close();
+        }
     }
 }
