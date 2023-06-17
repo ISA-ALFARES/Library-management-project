@@ -201,81 +201,97 @@ namespace WindowsFormsApp6.PL
         {
             if (state == "F_KITAPLAR")
             {
-                DataTable dt = new DataTable();
-                dt = BL_KITABLAR.LoadDuzenle(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
-                // Veritabanından değerleri çekme
-                object opj1 = dt.Rows[0]["K_AD"];         // Kitap adı
-                object opj2 = dt.Rows[0]["YAZAR"];        // Yazar adı
-                object opj3 = dt.Rows[0]["KATEGORI"];     // Kategori
-                object opj4 = dt.Rows[0]["K_FIATI"];      // Kitap fiyatı
-                object opj5 = dt.Rows[0]["TARIH"];        // Kitap tarihi
-                object opj6 = dt.Rows[0]["DEGERLENDIRME"];// Kitap değerlendirmesi
-                object opj7 = dt.Rows[0]["K_RESIM"];      // Kitap resmi
-                FORMLAR.FRM_DETYELER dETYELER = new FORMLAR.FRM_DETYELER();
-                // Değerleri form elemanlarına atama
-                dETYELER.txt_kitap_ad.Text = opj1.ToString();
-                dETYELER.txt_yazar_name.Text = opj2.ToString();
-                dETYELER.comboBox1.Text = opj3.ToString();
-                dETYELER.txt_kitap_Fiati.Text = opj4.ToString();
-                dETYELER.txt_kitap_Tarih.Value = Convert.ToDateTime(opj5);
-                if (opj6 != DBNull.Value)
+                try
                 {
-                    dETYELER.txt_kitap_Degerlendırme.Value = Convert.ToInt32(opj6);
+                    DataTable dt = new DataTable();
+                    dt = BL_KITABLAR.LoadDuzenle(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
+                    // Veritabanından değerleri çekme
+                    object opj1 = dt.Rows[0]["K_AD"];         // Kitap adı
+                    object opj2 = dt.Rows[0]["YAZAR"];        // Yazar adı
+                    object opj3 = dt.Rows[0]["KATEGORI"];     // Kategori
+                    object opj4 = dt.Rows[0]["K_FIATI"];      // Kitap fiyatı
+                    object opj5 = dt.Rows[0]["TARIH"];        // Kitap tarihi
+                    object opj6 = dt.Rows[0]["DEGERLENDIRME"];// Kitap değerlendirmesi
+                    object opj7 = dt.Rows[0]["K_RESIM"];      // Kitap resmi
+                    FORMLAR.FRM_DETYELER dETYELER = new FORMLAR.FRM_DETYELER();
+                    // Değerleri form elemanlarına atama
+                    dETYELER.txt_kitap_ad.Text = opj1.ToString();
+                    dETYELER.txt_yazar_name.Text = opj2.ToString();
+                    dETYELER.comboBox1.Text = opj3.ToString();
+                    dETYELER.txt_kitap_Fiati.Text = opj4.ToString();
+                    dETYELER.txt_kitap_Tarih.Value = Convert.ToDateTime(opj5);
+                    if (opj6 != DBNull.Value)
+                    {
+                        dETYELER.txt_kitap_Degerlendırme.Value = Convert.ToInt32(opj6);
+                    }
+                    else
+                    {
+                        dETYELER.txt_kitap_Degerlendırme.Value = 0;
+                    }
+
+                    byte[] op = null;
+                    if (opj7 != DBNull.Value)
+                    {
+                        op = (byte[])opj7;
+                    }
+
+                    if (op != null)
+                    {
+                        MemoryStream ma = new MemoryStream(op);
+                        dETYELER.txt_kitap_resım.Image = Image.FromStream(ma);
+                    }
+
+                    bunifuTransition1.ShowSync(dETYELER);
                 }
-                else
+                catch
                 {
-                    dETYELER.txt_kitap_Degerlendırme.Value = 0;
+
                 }
 
-                byte[] op = null;
-                if (opj7 != DBNull.Value)
-                {
-                    op = (byte[])opj7;
-                }
-
-                if (op != null)
-                {
-                    MemoryStream ma = new MemoryStream(op);
-                    dETYELER.txt_kitap_resım.Image = Image.FromStream(ma);
-                }
-
-                bunifuTransition1.ShowSync(dETYELER);
             }
             else if (state == "OGRENCILER")
             {
-                DataTable dt = new DataTable();
-                dt = BL_OGRENCILER.LoadDuzenle(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
-                // Veritabanından değerleri çekme
-                object opj1 = dt.Rows[0]["OGRENCI_NO"];         // Kitap adı
-                object opj2 = dt.Rows[0]["AD"];        // Yazar adı
-                object opj3 = dt.Rows[0]["ADRES"];     // Kategori
-                object opj4 = dt.Rows[0]["TELEFON"];      // Kitap fiyatı
-                object opj5 = dt.Rows[0]["EMAIL"];        // Kitap tarihi
-                object opj6 = dt.Rows[0]["BULUM"];// Kitap değerlendirmesi
-                object opj7 = dt.Rows[0]["RESIM"];      // Kitap resmi
-                FORMLAR.FRM_DETYELER_OGRENCILER dETYELER = new FORMLAR.FRM_DETYELER_OGRENCILER();
-                // Değerleri form elemanlarına atama
-                dETYELER.txt_ogrenci_NO.Text = opj1.ToString();
-                dETYELER.txt_ogrenci_ad.Text = opj2.ToString();
-                dETYELER.txt_ogrenci_adres.Text = opj3.ToString();
-                dETYELER.txt_ogrenci_Telefon.Text = opj4.ToString();
-                dETYELER.txt_ogrenci_Telefon.Text = opj4.ToString();
-                dETYELER.txt_ogrenci_EMAIL.Text = opj5.ToString();
-                dETYELER.txt_ogrenci_Bolum.Text = opj6.ToString();
-
-                byte[] op = null;
-                if (opj7 != DBNull.Value)
+                try
                 {
-                    op = (byte[])opj7;
-                }
+                    DataTable dt = new DataTable();
+                    dt = BL_OGRENCILER.LoadDuzenle(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
+                    // Veritabanından değerleri çekme
+                    object opj1 = dt.Rows[0]["OGRENCI_NO"];         // Kitap adı
+                    object opj2 = dt.Rows[0]["AD"];        // Yazar adı
+                    object opj3 = dt.Rows[0]["ADRES"];     // Kategori
+                    object opj4 = dt.Rows[0]["TELEFON"];      // Kitap fiyatı
+                    object opj5 = dt.Rows[0]["EMAIL"];        // Kitap tarihi
+                    object opj6 = dt.Rows[0]["BULUM"];// Kitap değerlendirmesi
+                    object opj7 = dt.Rows[0]["RESIM"];      // Kitap resmi
+                    FORMLAR.FRM_DETYELER_OGRENCILER dETYELER = new FORMLAR.FRM_DETYELER_OGRENCILER();
+                    // Değerleri form elemanlarına atama
+                    dETYELER.txt_ogrenci_NO.Text = opj1.ToString();
+                    dETYELER.txt_ogrenci_ad.Text = opj2.ToString();
+                    dETYELER.txt_ogrenci_adres.Text = opj3.ToString();
+                    dETYELER.txt_ogrenci_Telefon.Text = opj4.ToString();
+                    dETYELER.txt_ogrenci_Telefon.Text = opj4.ToString();
+                    dETYELER.txt_ogrenci_EMAIL.Text = opj5.ToString();
+                    dETYELER.txt_ogrenci_Bolum.Text = opj6.ToString();
 
-                if (op != null)
+                    byte[] op = null;
+                    if (opj7 != DBNull.Value)
+                    {
+                        op = (byte[])opj7;
+                    }
+
+                    if (op != null)
+                    {
+                        MemoryStream ma = new MemoryStream(op);
+                        dETYELER.txt_ogrenci_FOTO.Image = Image.FromStream(ma);
+                    }
+
+                    bunifuTransition1.ShowSync(dETYELER);
+                }
+                catch
                 {
-                    MemoryStream ma = new MemoryStream(op);
-                    dETYELER.txt_ogrenci_FOTO.Image = Image.FromStream(ma);
-                }
 
-                bunifuTransition1.ShowSync(dETYELER);
+                }
+                
             }
         }
 
@@ -397,64 +413,80 @@ namespace WindowsFormsApp6.PL
              //Güncelleme  işlemi
             if (state == "CAT") //Bu düğme kategoriler sayfasındaysa uygulanacaktır.
             {
+                try{
+
                 PL.FROM_KATIGORI_EKLE FCAT = new FROM_KATIGORI_EKLE();
                 FCAT.ADD_YENİ_CAT.ButtonText = "Güncelleme";
                 FCAT.txt_kat_name.Text =Convert.ToString( dataGridView1.CurrentRow.Cells[1].Value);
                 FCAT.ID = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
                 bunifuTransition1.ShowSync(FCAT);
 
+                }
+                catch
+                {
+
+                }
+
             }
             //Güncelleme  işlemi
             else if(state == "F_KITAPLAR")
             {
-                PL.FROM_KITABLAR_EKLE DUZENLE_KITAP = new FROM_KITABLAR_EKLE();
-                DUZENLE_KITAP.ADD_YENİ_CAT.ButtonText = "Güncelleme";
-                DUZENLE_KITAP.ID = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
-                DataTable dt = new DataTable();
-                dt = BL_KITABLAR.LoadDuzenle(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
-                // Veritabanından değerleri çekme
-                object opj1 = dt.Rows[0]["K_AD"];         // Kitap adı
-                object opj2 = dt.Rows[0]["YAZAR"];        // Yazar adı
-                object opj3 = dt.Rows[0]["KATEGORI"];     // Kategori
-                object opj4 = dt.Rows[0]["K_FIATI"];      // Kitap fiyatı
-                object opj5 = dt.Rows[0]["TARIH"];        // Kitap tarihi
-                object opj6 = dt.Rows[0]["DEGERLENDIRME"];// Kitap değerlendirmesi
-                object opj7 = dt.Rows[0]["K_RESIM"];      // Kitap resmi
-
-                // Değerleri form elemanlarına atama
-                DUZENLE_KITAP.txt_kitap_ad.Text = opj1.ToString();
-                DUZENLE_KITAP.txt_yazar_name.Text = opj2.ToString();
-                DUZENLE_KITAP.comboBox1.Text = opj3.ToString();
-                DUZENLE_KITAP.txt_kitap_Fiati.Text = opj4.ToString();
-                DUZENLE_KITAP.txt_kitap_Tarih.Value = Convert.ToDateTime(opj5);
-
-                if (opj6 != DBNull.Value)
+                try
                 {
-                    DUZENLE_KITAP.txt_kitap_Degerlendırme.Value = Convert.ToInt32(opj6);
-                }
-                else
-                {
-                    DUZENLE_KITAP.txt_kitap_Degerlendırme.Value = 0;
-                }
+                    PL.FROM_KITABLAR_EKLE DUZENLE_KITAP = new FROM_KITABLAR_EKLE();
+                    DUZENLE_KITAP.ADD_YENİ_CAT.ButtonText = "Güncelleme";
+                    DUZENLE_KITAP.ID = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+                    DataTable dt = new DataTable();
+                    dt = BL_KITABLAR.LoadDuzenle(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
+                    // Veritabanından değerleri çekme
+                    object opj1 = dt.Rows[0]["K_AD"];         // Kitap adı
+                    object opj2 = dt.Rows[0]["YAZAR"];        // Yazar adı
+                    object opj3 = dt.Rows[0]["KATEGORI"];     // Kategori
+                    object opj4 = dt.Rows[0]["K_FIATI"];      // Kitap fiyatı
+                    object opj5 = dt.Rows[0]["TARIH"];        // Kitap tarihi
+                    object opj6 = dt.Rows[0]["DEGERLENDIRME"];// Kitap değerlendirmesi
+                    object opj7 = dt.Rows[0]["K_RESIM"];      // Kitap resmi
 
-                byte[] op = null;
-                if (opj7 != DBNull.Value)
-                {
-                    op = (byte[])opj7;
-                }
+                    // Değerleri form elemanlarına atama
+                    DUZENLE_KITAP.txt_kitap_ad.Text = opj1.ToString();
+                    DUZENLE_KITAP.txt_yazar_name.Text = opj2.ToString();
+                    DUZENLE_KITAP.comboBox1.Text = opj3.ToString();
+                    DUZENLE_KITAP.txt_kitap_Fiati.Text = opj4.ToString();
+                    DUZENLE_KITAP.txt_kitap_Tarih.Value = Convert.ToDateTime(opj5);
 
-                if (op != null)
-                {
-                    MemoryStream ma = new MemoryStream(op);
-                    DUZENLE_KITAP.txt_kitap_resım.Image = Image.FromStream(ma);
-                }
+                    if (opj6 != DBNull.Value)
+                    {
+                        DUZENLE_KITAP.txt_kitap_Degerlendırme.Value = Convert.ToInt32(opj6);
+                    }
+                    else
+                    {
+                        DUZENLE_KITAP.txt_kitap_Degerlendırme.Value = 0;
+                    }
 
-                bunifuTransition1.ShowSync(DUZENLE_KITAP);
+                    byte[] op = null;
+                    if (opj7 != DBNull.Value)
+                    {
+                        op = (byte[])opj7;
+                    }
+
+                    if (op != null)
+                    {
+                        MemoryStream ma = new MemoryStream(op);
+                        DUZENLE_KITAP.txt_kitap_resım.Image = Image.FromStream(ma);
+                    }
+
+                    bunifuTransition1.ShowSync(DUZENLE_KITAP);
+                }
+                catch
+                {
+
+                }
 
             }
             //Güncelleme  işlemi
             else if (state == "OGRENCILER")
             {
+
                 PL.FROM_OGRENCILER_EKLE DUZENLE_OGRENCI = new FROM_OGRENCILER_EKLE();
                 DUZENLE_OGRENCI.ADD_YENİ_OGRENCI.ButtonText = "Güncelleme";
                 DUZENLE_OGRENCI.ID = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
@@ -540,6 +572,12 @@ namespace WindowsFormsApp6.PL
             {
                 DataTable dt = new DataTable();
                 dt = BL_KITABLAR.Search(arama.Text);
+                dataGridView1.DataSource = dt;
+            }
+            else if (state == "OGRENCILER")
+            {
+                DataTable dt = new DataTable();
+                dt = BL_OGRENCILER.Search(arama.Text);
                 dataGridView1.DataSource = dt;
             }
         }

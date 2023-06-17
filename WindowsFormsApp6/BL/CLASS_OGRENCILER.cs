@@ -78,7 +78,7 @@ namespace WindowsFormsApp6.BL
             SqlParameter[] pr = new SqlParameter[1];
             pr[0] = new SqlParameter("SEARCH", Search);
             DataTable dt = new DataTable();
-            dt = DAL.read("OGRENCILER_SEARCH", pr); // Pr_LOADCAT => select * from  T_CAT where  CAT_NAME like '%'+ @SEARCH +'%' 
+            dt = DAL.read("OGRENCILER_SEARCH", pr); //select  OGRENCI_NO,AD ,ADRES, TELEFON , EMAIL , BULUM   from  OGRENCILER where  CONCAT(OGRENCI_NO,AD ,ADRES, TELEFON , EMAIL , BULUM) like '%'+ @SEARCH +'%' 
             return dt;
         }
     }
