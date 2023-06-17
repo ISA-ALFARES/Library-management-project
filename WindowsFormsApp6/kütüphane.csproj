@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\CLASS_EMANET.cs" />
     <Compile Include="BL\CLASS_KITABLAR.cs" />
     <Compile Include="BL\CLASS_OGRENCILER.cs" />
     <Compile Include="BL\CLS_KATIGORI.cs" />
@@ -65,6 +66,12 @@
     </Compile>
     <Compile Include="PL\FRM_DETYELER.Designer.cs">
       <DependentUpon>FRM_DETYELER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_EMANET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_EMANET.Designer.cs">
+      <DependentUpon>FRM_EMANET.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\FROM_OGRENCILER_EKLE .cs">
       <SubType>Form</SubType>
@@ -122,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_DETYELER.resx">
       <DependentUpon>FRM_DETYELER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_EMANET.resx">
+      <DependentUpon>FRM_EMANET.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FROM_OGRENCILER_EKLE .resx">
       <DependentUpon>FROM_OGRENCILER_EKLE .cs</DependentUpon>

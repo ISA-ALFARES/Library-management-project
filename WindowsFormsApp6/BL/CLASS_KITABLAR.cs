@@ -14,7 +14,7 @@ namespace WindowsFormsApp6.BL
         //CLS_DAL sınıfının bir nesnesi olan DAL nesnesi oluşturulmuştur. Veritabanı işlemleriyle ilgilenmek için kullanılır.
         DAL.CLS_SQL_IBAGLANTI DAL = new WindowsFormsApp6.DAL.CLS_SQL_IBAGLANTI();
         //Verileri CLS_DAL sınıfında bulunan read işlevi kullanarak veritabanından getirir. Verileri DataTable olarak döndürür.
-        //select işlevi:
+        // Bu, veritabanından dataGridView1'ye veri yükleme işlemidir.
         public DataTable Load()
         {
             SqlParameter[] pr = null;

@@ -15,11 +15,12 @@ namespace WindowsFormsApp6.PL
     public partial class F_MAIN : Form
     {
         string state;  //Geçerli sayfanın adını saklar
-        ///string ID ;
+       // string ID ;
 
          BL.CLS_KATIGORI BLCAT = new BL.CLS_KATIGORI(); 
          BL.CLASS_KITABLAR BL_KITABLAR = new BL.CLASS_KITABLAR();
          BL.CLASS_OGRENCILER BL_OGRENCILER = new BL.CLASS_OGRENCILER();
+         BL.CLASS_EMANET BL_EMANET= new BL.CLASS_EMANET();
         /*
             * BLCAT nesnesini kullanarak verileri bir veritabanından yükler ve bunları DataGridView kontrolünde görüntüler.
             
@@ -122,7 +123,28 @@ namespace WindowsFormsApp6.PL
 
         private void button6_Click(object sender, EventArgs e)
         {
+            P_HOME.Visible = false;              //Ana sayfayı gizledik
+            P_MAIN.Visible = true;              //Kategori sayfasını gösterdik 
+            state = "EMANET";
+            Lb_Title.Text = "  Emanet    ";  //Sayfa ismi
+            //Veritabanlarında depolanan verileri getirme
+            try
+            {
+                DataTable dt = new DataTable();
+                dt =BL_EMANET.Load();
+                dataGridView1.DataSource = dt;
+                dataGridView1.Columns[0].HeaderText = "ıd";
+                dataGridView1.Columns[1].HeaderText = "Öğrenci ad";
+                dataGridView1.Columns[2].HeaderText = "Kitap adı";
+                dataGridView1.Columns[3].HeaderText = "Alma Tarihi";
+                dataGridView1.Columns[4].HeaderText = "Teslim Tarihi";
+                dataGridView1.Columns[5].HeaderText = "Toplam Fiyat ";
 
+            }
+            catch (Exception ex) //Herhangi bir hata görünürse, görünecektir
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -324,6 +346,15 @@ namespace WindowsFormsApp6.PL
                 bunifuTransition1.ShowSync(F_OGRANCILER);
 
             }
+            //EManet ekleme işlemi
+            else if (state == "EMANET") //Bu düğme kategoriler sayfasındaysa uygulanacaktır.
+            {
+                PL.FRM_EMANET F_EMANET = new FRM_EMANET();
+                F_EMANET.ADD_YENİ_OGRENCI.ButtonText = "EKLE";
+                F_EMANET.ID = 0;
+                bunifuTransition1.ShowSync(F_EMANET);
+
+            }
         }
 
         private void P_HOME_Paint(object sender, PaintEventArgs e)
@@ -399,6 +430,31 @@ namespace WindowsFormsApp6.PL
                     dataGridView1.Columns[2].HeaderText = "öğrenci adresi";
                     dataGridView1.Columns[3].HeaderText = "öğrenci Telefonu";
                     dataGridView1.Columns[4].HeaderText = "öğrenci e-postası";
+
+                }
+                catch (Exception ex) //Herhangi bir hata görünürse, görünecektir
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else if(state == "EMANET")
+            {
+                P_HOME.Visible = false;              //Ana sayfayı gizledik
+                P_MAIN.Visible = true;              //Kategori sayfasını gösterdik 
+                state = "EMANET";
+                Lb_Title.Text = "  Emanet    ";  //Sayfa ismi
+                                                 //Veritabanlarında depolanan verileri getirme
+                try
+                {
+                    DataTable dt = new DataTable();
+                    dt = BL_EMANET.Load();
+                    dataGridView1.DataSource = dt;
+                    dataGridView1.Columns[0].HeaderText = "Öğrenci ıd";
+                    dataGridView1.Columns[1].HeaderText = "Öğrenci ad";
+                    dataGridView1.Columns[2].HeaderText = "Kitap adı";
+                    dataGridView1.Columns[3].HeaderText = "Alma Tarihi";
+                    dataGridView1.Columns[4].HeaderText = "Teslim Tarihi";
+                    dataGridView1.Columns[5].HeaderText = "Toplam Fiyat ";
 
                 }
                 catch (Exception ex) //Herhangi bir hata görünürse, görünecektir
@@ -605,6 +661,11 @@ namespace WindowsFormsApp6.PL
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
