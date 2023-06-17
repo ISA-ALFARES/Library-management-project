@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="BL\CLASS_EMANET.cs" />
     <Compile Include="BL\CLASS_KITABLAR.cs" />
+    <Compile Include="BL\CLASS_KULLANCILAR.cs" />
     <Compile Include="BL\CLASS_OGRENCILER.cs" />
     <Compile Include="BL\CLS_KATIGORI.cs" />
     <Compile Include="DAL\CLS_SQL_IBAGLANTI.cs" />

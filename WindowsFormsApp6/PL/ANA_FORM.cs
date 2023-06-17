@@ -21,6 +21,7 @@ namespace WindowsFormsApp6.PL
          BL.CLASS_KITABLAR BL_KITABLAR = new BL.CLASS_KITABLAR();
          BL.CLASS_OGRENCILER BL_OGRENCILER = new BL.CLASS_OGRENCILER();
          BL.CLASS_EMANET BL_EMANET= new BL.CLASS_EMANET();
+        BL.CLASS_KULLANCILAR BL_KULLANCILAR = new BL.CLASS_KULLANCILAR();
         /*
             * BLCAT nesnesini kullanarak verileri bir veritabanından yükler ve bunları DataGridView kontrolünde görüntüler.
             
@@ -118,7 +119,27 @@ namespace WindowsFormsApp6.PL
 
         private void button4_Click(object sender, EventArgs e)
         {
+            P_HOME.Visible = false;              //Ana sayfayı gizledik
+            P_MAIN.Visible = true;              //Kategori sayfasını gösterdik 
+            state = "KULANCILAR";
+            Lb_Title.Text = "  Kullancilar    ";  //Sayfa ismi
+            //Veritabanlarında depolanan verileri getirme
+            try
+            {
+                DataTable dt = new DataTable();
+                dt = BL_KULLANCILAR.Load();
+                dataGridView1.DataSource = dt;
+                dataGridView1.Columns[0].HeaderText = "ıd";
+                dataGridView1.Columns[0].HeaderText = "Adı";
+                dataGridView1.Columns[1].HeaderText = "Kullanci ad";
+                dataGridView1.Columns[2].HeaderText = "Şifre";
+                dataGridView1.Columns[3].HeaderText = "durum";
 
+            }
+            catch (Exception ex) //Herhangi bir hata görünürse, görünecektir
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -461,6 +482,27 @@ namespace WindowsFormsApp6.PL
                 {
                     MessageBox.Show(ex.Message);
                 }
+            }
+            P_HOME.Visible = false;              //Ana sayfayı gizledik
+            P_MAIN.Visible = true;              //Kategori sayfasını gösterdik 
+            state = "KULANCILAR";
+            Lb_Title.Text = "  Kullancilar    ";  //Sayfa ismi
+            //Veritabanlarında depolanan verileri getirme
+            try
+            {
+                DataTable dt = new DataTable();
+                dt = BL_KULLANCILAR.Load();
+                dataGridView1.DataSource = dt;
+                dataGridView1.Columns[0].HeaderText = "ıd";
+                dataGridView1.Columns[0].HeaderText = "Adı";
+                dataGridView1.Columns[1].HeaderText = "Kullanci ad";
+                dataGridView1.Columns[2].HeaderText = "Şifre";
+                dataGridView1.Columns[3].HeaderText = "durum";
+
+            }
+            catch (Exception ex) //Herhangi bir hata görünürse, görünecektir
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
