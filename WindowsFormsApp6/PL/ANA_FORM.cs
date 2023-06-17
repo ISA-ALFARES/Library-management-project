@@ -654,6 +654,12 @@ namespace WindowsFormsApp6.PL
                 dt = BL_OGRENCILER.Search(arama.Text);
                 dataGridView1.DataSource = dt;
             }
+            else if (state == "EMANET")
+            {
+                DataTable dt = new DataTable();
+                dt = BL_EMANET.Search(arama.Text);
+                dataGridView1.DataSource = dt;
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)

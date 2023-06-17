@@ -71,5 +71,14 @@ namespace WindowsFormsApp6.BL
             DAL.execute("Pr_DELET_EMANET", pr);
             DAL.close();
         }
+        //Arama işlevi:
+        public DataTable Search(string Search)
+        {
+            SqlParameter[] pr = new SqlParameter[1];
+            pr[0] = new SqlParameter("SEARCH", Search);
+            DataTable dt = new DataTable();
+            dt = DAL.read("EMANET_SEARCH", pr); 
+            return dt;
+        }
     }
 }
