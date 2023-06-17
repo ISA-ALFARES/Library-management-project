@@ -583,6 +583,16 @@ namespace WindowsFormsApp6.PL
                 bunifuTransition1.ShowSync(DUZENLE_OGRENCI);
 
             }
+            //Güncelleme  işlemi
+            else if (state == "EMANET")
+            {
+
+                PL.FRM_EMANET  F_EMANET= new FRM_EMANET();
+                F_EMANET.ADD_YENİ_OGRENCI.ButtonText = "Güncelleme";
+                F_EMANET.ID = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+                bunifuTransition1.ShowSync(F_EMANET);
+
+            }
         }
          
         private void bunifuThinButton23_Click(object sender, EventArgs e)

@@ -48,5 +48,19 @@ namespace WindowsFormsApp6.BL
             DAL.execute("INSERT_EMANET", pr); 
             DAL.close();
         }
+        //update işlevi:
+        public void update(string OGRENCI_ADI, string KITAP_ADI, string ALMA_TARIH, string GETIRME_TARIH, string FIAT , int ID)
+        {
+            SqlParameter[] pr = new SqlParameter[6];
+            pr[0] = new SqlParameter("OGRENCI_ADI", OGRENCI_ADI);
+            pr[1] = new SqlParameter("KITAP_ADI", KITAP_ADI);
+            pr[2] = new SqlParameter("ALMA_TARIH", ALMA_TARIH);
+            pr[3] = new SqlParameter("GETIRME_TARIH", GETIRME_TARIH);
+            pr[4] = new SqlParameter("FIAT", FIAT);
+            pr[5] = new SqlParameter("ID", ID);
+            DAL.open();
+            DAL.execute("UPDATE_EMANET", pr);
+            DAL.close();
+        }
     }
 }

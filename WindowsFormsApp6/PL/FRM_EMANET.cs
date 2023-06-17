@@ -46,6 +46,16 @@ namespace WindowsFormsApp6.PL
                     PL.FRM_EKLE_MESAJ Fadd = new FRM_EKLE_MESAJ();
                     Fadd.Show();
                     this.Close();
+
+                }
+                else
+                {
+                    //Güncelleme  işlemi
+                    BL.CLASS_EMANET BL_EMANET_DUZENLE= new BL.CLASS_EMANET();
+                    BL_EMANET_DUZENLE.update(Convert.ToString(dataGridView2.CurrentRow.Cells[1].Value), Convert.ToString(dataGridView3.CurrentRow.Cells[1].Value), Convert.ToString(txt_ogrenci_ad.Text), Convert.ToString(txt_kitap_Tarih1.Value), Convert.ToString(txt_kitap_Tarih2.Value),ID);
+                    PL.FRM_DUZENLE_MESAJ Fedit = new FRM_DUZENLE_MESAJ();
+                    Fedit.Show();
+                    this.Close();
                 }
             }
         }
