@@ -67,7 +67,7 @@ namespace WindowsFormsApp6.BL
             SqlParameter[] pr = new SqlParameter[1];
             pr[0] = new SqlParameter("SEARCH", Search);
             DataTable dt = new DataTable();
-            dt = DAL.read("KITAPLAR_SEARCH", pr); // Pr_LOADCAT => select * from  T_CAT where  CAT_NAME like '%'+ @SEARCH +'%' 
+            dt = DAL.read("KULLANCILAR_SEARCH", pr); // Pr_LOADCAT => select * from  T_CAT where  CAT_NAME like '%'+ @SEARCH +'%' 
             return dt;
         }
     }

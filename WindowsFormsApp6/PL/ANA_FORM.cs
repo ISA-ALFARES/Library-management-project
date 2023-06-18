@@ -734,6 +734,12 @@ namespace WindowsFormsApp6.PL
                 dt = BL_EMANET.Search(arama.Text);
                 dataGridView1.DataSource = dt;
             }
+            else if (state == "KULANCILAR")
+            {
+                DataTable dt = new DataTable();
+                dt = BL_KULLANCILAR.Search(arama.Text);
+                dataGridView1.DataSource = dt;
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
