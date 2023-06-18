@@ -313,20 +313,83 @@ AS
  **************************************************************************************************************************************
 
 **************Tüm KULANCILAR tablosu işlemlerinin başlangıcı***
-
-C
  
- 
- 
- 
- 
- 
- 
- 
- */
-
- CREATE PROCEDURE Pr_LOAD_KULLANCLAR
+ ALTER PROCEDURE Pr_LOAD_KULLANCLAR
 
  AS
 
-select AD , KULLANCI_ADI ,   , from  K
+select id ,  AD , KULLANCI_AD , SIFRE , durum from  KULANCILAR
+
+
+ ************************Silme işlemi******************
+ALTER PROCEDURE Pr_LOAD_KITAPLAR_EMANET
+AS
+	select id,K_AD  from KITABLAR
+	
+ ************************Silme işlemi******************
+
+CREATE PROCEDURE Pr_LOAD_KULLANI
+
+ AS
+
+select id ,  AD , KULLANCI_AD , SIFRE , YETKILER from  KULANCILAR
+
+ ************************Silme işlemi******************
+ ALTER PROCEDURE INSERT_KULLANCILAR
+  @AD				nvarchar(50) ,
+  @KULLANCI_ADI     nvarchar(50) ,
+  @SIFRE			nvarchar(50) ,
+  @YETKILER         nvarchar(50) ,
+  @durum		    nvarchar(50) 
+
+
+AS
+	insert into KULANCILAR values(@AD,@KULLANCI_ADI,@SIFRE,@YETKILER,@durum)
+
+
+	************************Silme işlemi******************
+
+ CREATE PROCEDURE SELECT_KULLANCILAR
+	@ID int
+AS
+select AD ,KULLANCI_AD ,SIFRE, YETKILER from KULANCILAR where id = @ID
+
+
+
+************************Silme işlemi******************
+
+ALTER PROCEDURE Pr_Load_Kullancilar
+  @AD				nvarchar(50) ,
+  @KULLANCI_ADI     nvarchar(50) ,
+  @SIFRE			nvarchar(50) ,
+  @YETKILER         nvarchar(50) ,
+  @ID int
+
+
+AS
+	update  KULANCILAR SET AD = @AD , KULLANCI_AD = @KULLANCI_ADI , SIFRE = @SIFRE ,YETKILER = @YETKILER  where id = @ID 
+
+************************Silme işlemi******************
+ */
+  CREATE PROCEDURE DELTE_KULLANCILAR
+  @ID int
+AS
+	Delete KULANCILAR  where id = @ID 
+
+ ************************Arama işlemi******************
+ CREATE PROCEDURE KULLANCILAR_SEARCH
+  @SEARCH varchar(100)
+
+AS
+
+	select id , AD ,KULLANCI_AD , SIFRE , YETKILER from KULANCILAR where  CONCAT(id,AD,KULLANCI_AD,SIFRE,YETKILER ) like '%'+ @SEARCH +'%'
+
+/*CONCAT fonksiyonu, "OGRENCILER" tablosundaki birkaç alanı birleştirmek için kullanılıyor*/
+ 
+
+
+ALTER PROCEDURE  Pr_PROGRAM_CIKIS
+
+AS
+
+update  KULANCILAR SET durum = 'False'  where id=id
