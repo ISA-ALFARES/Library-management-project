@@ -130,10 +130,10 @@ namespace WindowsFormsApp6.PL
                 dt = BL_KULLANCILAR.Load();
                 dataGridView1.DataSource = dt;
                 dataGridView1.Columns[0].HeaderText = "ıd";
-                dataGridView1.Columns[0].HeaderText = "Adı";
-                dataGridView1.Columns[1].HeaderText = "Kullanci ad";
-                dataGridView1.Columns[2].HeaderText = "Şifre";
-                dataGridView1.Columns[3].HeaderText = "durum";
+                dataGridView1.Columns[1].HeaderText = "Adı";
+                dataGridView1.Columns[2].HeaderText = "Kullanci ad";
+                dataGridView1.Columns[3].HeaderText = "Şifre";
+                dataGridView1.Columns[4].HeaderText = "durum";
 
             }
             catch (Exception ex) //Herhangi bir hata görünürse, görünecektir
@@ -376,6 +376,15 @@ namespace WindowsFormsApp6.PL
                 bunifuTransition1.ShowSync(F_EMANET);
 
             }
+            //Kullanci ekleme işlemi
+            else if (state == "KULANCILAR") //Bu düğme kategoriler sayfasındaysa uygulanacaktır.
+            {
+                PL.FROM_KULLANCI_EKLE F_KULLANCI = new FROM_KULLANCI_EKLE();
+                F_KULLANCI.ADD_YENİ_OGRENCI.ButtonText = "EKLE";
+                F_KULLANCI.ID = 0;
+                bunifuTransition1.ShowSync(F_KULLANCI);
+
+            }
         }
 
         private void P_HOME_Paint(object sender, PaintEventArgs e)
@@ -483,26 +492,29 @@ namespace WindowsFormsApp6.PL
                     MessageBox.Show(ex.Message);
                 }
             }
-            P_HOME.Visible = false;              //Ana sayfayı gizledik
-            P_MAIN.Visible = true;              //Kategori sayfasını gösterdik 
-            state = "KULANCILAR";
-            Lb_Title.Text = "  Kullancilar    ";  //Sayfa ismi
-            //Veritabanlarında depolanan verileri getirme
-            try
+            else if(state == "KULANCILAR")
             {
-                DataTable dt = new DataTable();
-                dt = BL_KULLANCILAR.Load();
-                dataGridView1.DataSource = dt;
-                dataGridView1.Columns[0].HeaderText = "ıd";
-                dataGridView1.Columns[0].HeaderText = "Adı";
-                dataGridView1.Columns[1].HeaderText = "Kullanci ad";
-                dataGridView1.Columns[2].HeaderText = "Şifre";
-                dataGridView1.Columns[3].HeaderText = "durum";
+                P_HOME.Visible = false;              //Ana sayfayı gizledik
+                P_MAIN.Visible = true;              //Kategori sayfasını gösterdik 
+                state = "KULANCILAR";
+                Lb_Title.Text = "  Kullancilar    ";  //Sayfa ismi
+                                                      //Veritabanlarında depolanan verileri getirme
+                try
+                {
+                    DataTable dt = new DataTable();
+                    dt = BL_KULLANCILAR.Load();
+                    dataGridView1.DataSource = dt;
+                    dataGridView1.Columns[0].HeaderText = "ıd";
+                    dataGridView1.Columns[1].HeaderText = "Adı";
+                    dataGridView1.Columns[2].HeaderText = "Kullanci ad";
+                    dataGridView1.Columns[3].HeaderText = "Şifre";
+                    dataGridView1.Columns[4].HeaderText = "Yetkiler";
 
-            }
-            catch (Exception ex) //Herhangi bir hata görünürse, görünecektir
-            {
-                MessageBox.Show(ex.Message);
+                }
+                catch (Exception ex) //Herhangi bir hata görünürse, görünecektir
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
 
@@ -730,6 +742,11 @@ namespace WindowsFormsApp6.PL
         }
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton7_Click(object sender, EventArgs e)
         {
 
         }

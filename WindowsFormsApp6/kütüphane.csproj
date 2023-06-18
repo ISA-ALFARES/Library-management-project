@@ -74,6 +74,12 @@
     <Compile Include="PL\FRM_EMANET.Designer.cs">
       <DependentUpon>FRM_EMANET.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\FROM_KULLANCI_EKLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FROM_KULLANCI_EKLE.Designer.cs">
+      <DependentUpon>FROM_KULLANCI_EKLE.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\FROM_OGRENCILER_EKLE .cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_EMANET.resx">
       <DependentUpon>FRM_EMANET.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FROM_KULLANCI_EKLE.resx">
+      <DependentUpon>FROM_KULLANCI_EKLE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FROM_OGRENCILER_EKLE .resx">
       <DependentUpon>FROM_OGRENCILER_EKLE .cs</DependentUpon>
