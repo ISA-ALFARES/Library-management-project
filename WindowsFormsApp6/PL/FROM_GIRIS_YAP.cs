@@ -24,7 +24,7 @@ namespace WindowsFormsApp6.PL
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Environment.Exit(0);
         }
 
         private void ADD_YENİ_CAT_Click(object sender, EventArgs e)
@@ -38,6 +38,10 @@ namespace WindowsFormsApp6.PL
                 {
                     CALSS_KULLANCI.UPDATE_GIRIS(txt_kullanci_ad.Text, txt_ogrenci_sifre.Text);
                     PL.F_MAIN FROM_MAIN = new F_MAIN();
+                    object username = dt.Rows[0]["AD"];
+                    object kim = dt.Rows[0]["YETKILER"];
+                    FROM_MAIN.USER_AD.Text = username.ToString();
+                    FROM_MAIN.KIM.Text = kim.ToString();
                     FROM_MAIN.Show();
                     this.Close();
                 }

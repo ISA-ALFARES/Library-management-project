@@ -779,5 +779,10 @@ namespace WindowsFormsApp6.PL
             this.Hide();
             login.Show();
         }
+
+        private void P_MB_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
