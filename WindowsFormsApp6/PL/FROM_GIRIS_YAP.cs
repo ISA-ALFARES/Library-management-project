@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace WindowsFormsApp6.PL
 {
     public partial class FROM_GIRIS_YAP : Form
@@ -25,6 +25,29 @@ namespace WindowsFormsApp6.PL
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ADD_YENİ_CAT_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                BL.CLASS_KULLANCILAR CALSS_KULLANCI = new BL.CLASS_KULLANCILAR();
+                DataTable dt = new DataTable();
+                dt = CALSS_KULLANCI.GIRIS(txt_kullanci_ad.Text, txt_ogrenci_sifre.Text);
+                if (dt.Rows.Count > 0)
+                {
+                    CALSS_KULLANCI.UPDATE_GIRIS(txt_kullanci_ad.Text, txt_ogrenci_sifre.Text);
+                    PL.F_MAIN FROM_MAIN = new F_MAIN();
+                    FROM_MAIN.Show();
+                    this.Close();
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("giriş bilgilarinde bir yalınş vardır..!!!");
+                MessageBox.Show(ex.Message);
+            }
+
         }
     }
 }

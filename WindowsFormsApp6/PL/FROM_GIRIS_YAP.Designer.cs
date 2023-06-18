@@ -47,7 +47,7 @@ namespace WindowsFormsApp6.PL
             this.txt_ogrenci_sifre.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.txt_ogrenci_sifre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt_ogrenci_sifre.HintForeColor = System.Drawing.Color.Empty;
-            this.txt_ogrenci_sifre.HintText = "önek:  1234";
+            this.txt_ogrenci_sifre.HintText = "";
             this.txt_ogrenci_sifre.isPassword = false;
             this.txt_ogrenci_sifre.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.txt_ogrenci_sifre.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -84,7 +84,7 @@ namespace WindowsFormsApp6.PL
             this.txt_kullanci_ad.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.txt_kullanci_ad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt_kullanci_ad.HintForeColor = System.Drawing.Color.Empty;
-            this.txt_kullanci_ad.HintText = "önek:  isa101";
+            this.txt_kullanci_ad.HintText = "";
             this.txt_kullanci_ad.isPassword = false;
             this.txt_kullanci_ad.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.txt_kullanci_ad.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -132,17 +132,17 @@ namespace WindowsFormsApp6.PL
             this.ADD_YENİ_CAT.IdleFillColor = System.Drawing.Color.White;
             this.ADD_YENİ_CAT.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.ADD_YENİ_CAT.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.ADD_YENİ_CAT.Location = new System.Drawing.Point(148, 343);
+            this.ADD_YENİ_CAT.Location = new System.Drawing.Point(62, 364);
             this.ADD_YENİ_CAT.Margin = new System.Windows.Forms.Padding(20, 19, 20, 19);
             this.ADD_YENİ_CAT.Name = "ADD_YENİ_CAT";
-            this.ADD_YENİ_CAT.Size = new System.Drawing.Size(465, 82);
+            this.ADD_YENİ_CAT.Size = new System.Drawing.Size(561, 76);
             this.ADD_YENİ_CAT.TabIndex = 20;
             this.ADD_YENİ_CAT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ADD_YENİ_CAT.Click += new System.EventHandler(this.ADD_YENİ_CAT_Click);
             // 
             // insert_txt
             // 
-            this.insert_txt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.insert_txt.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.insert_txt.AutoSize = true;
             this.insert_txt.BackColor = System.Drawing.Color.Transparent;
             this.insert_txt.Font = new System.Drawing.Font("Rockwell", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

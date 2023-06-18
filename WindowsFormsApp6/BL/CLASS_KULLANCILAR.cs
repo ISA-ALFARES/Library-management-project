@@ -78,6 +78,25 @@ namespace WindowsFormsApp6.BL
             DAL.execute("Pr_PROGRAM_CIKIS", pr);
             DAL.close();
         }
+        //GIRIŞ işlevi:
+        public DataTable GIRIS(string KULLANCI_ADI , string SIFRE)
+        {
+            SqlParameter[] pr = new SqlParameter[2];
+            pr[0] = new SqlParameter("KULLANCI_ADI", KULLANCI_ADI);
+            pr[1] = new SqlParameter("SIFRE", SIFRE);
+            DataTable dt = new DataTable();
+            dt = DAL.read("Pr_GIRIS_YAP", pr);
+            return dt;
+        }
+        //Update giriş işlevi:
+        public void UPDATE_GIRIS(string KULLANCI_ADI, string SIFRE)
+        {
+            SqlParameter[] pr = new SqlParameter[2];
+            pr[0] = new SqlParameter("KULLANCI_ADI", KULLANCI_ADI);
+            pr[1] = new SqlParameter("SIFRE", SIFRE);
+            DAL.open();
+            DAL.execute("Pr_GIRIS_YAP_UPDATE", pr);
+        }
 
     }
 }

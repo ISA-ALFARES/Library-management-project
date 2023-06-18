@@ -370,7 +370,6 @@ AS
 	update  KULANCILAR SET AD = @AD , KULLANCI_AD = @KULLANCI_ADI , SIFRE = @SIFRE ,YETKILER = @YETKILER  where id = @ID 
 
 ************************Silme işlemi******************
- */
   CREATE PROCEDURE DELTE_KULLANCILAR
   @ID int
 AS
@@ -393,3 +392,14 @@ ALTER PROCEDURE  Pr_PROGRAM_CIKIS
 AS
 
 update  KULANCILAR SET durum = 'False'  where id=id
+ */
+
+**************************************************************************************************************************************
+
+CREATE PROCEDURE Pr_GIRIS_YAP 
+@KULLANCI_ADI   nvarchar(50)
+@SIFRE          nvarchar(50)
+
+
+AS
+	select *  from   
