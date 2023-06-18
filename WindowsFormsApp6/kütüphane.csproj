@@ -74,6 +74,12 @@
     <Compile Include="PL\FRM_EMANET.Designer.cs">
       <DependentUpon>FRM_EMANET.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\FROM_GIRIS_YAP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FROM_GIRIS_YAP.Designer.cs">
+      <DependentUpon>FROM_GIRIS_YAP.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\FROM_KULLANCI_DUZENLE .cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_EMANET.resx">
       <DependentUpon>FRM_EMANET.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FROM_GIRIS_YAP.resx">
+      <DependentUpon>FROM_GIRIS_YAP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FROM_KULLANCI_DUZENLE .resx">
       <DependentUpon>FROM_KULLANCI_DUZENLE .cs</DependentUpon>

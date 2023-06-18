@@ -70,5 +70,14 @@ namespace WindowsFormsApp6.BL
             dt = DAL.read("KULLANCILAR_SEARCH", pr); // Pr_LOADCAT => select * from  T_CAT where  CAT_NAME like '%'+ @SEARCH +'%' 
             return dt;
         }
+        //Çıkış işlevi:
+        public void cikis_out()
+        {
+            SqlParameter[] pr = null ;
+            DAL.open();
+            DAL.execute("Pr_PROGRAM_CIKIS", pr);
+            DAL.close();
+        }
+
     }
 }

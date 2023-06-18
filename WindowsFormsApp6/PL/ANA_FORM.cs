@@ -774,7 +774,10 @@ namespace WindowsFormsApp6.PL
 
         private void bunifuImageButton7_Click(object sender, EventArgs e)
         {
-
+            PL.FROM_GIRIS_YAP login = new FROM_GIRIS_YAP();
+            BL_KULLANCILAR.cikis_out();
+            this.Hide();
+            login.Show();
         }
     }
 }
