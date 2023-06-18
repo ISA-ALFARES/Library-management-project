@@ -93,7 +93,6 @@ namespace WindowsFormsApp6.PL
                 button2.RightToLeft = RightToLeft.Yes;
                 button3.RightToLeft = RightToLeft.Yes;
                 button4.RightToLeft = RightToLeft.Yes;
-                button5.RightToLeft = RightToLeft.Yes;
                 button6.RightToLeft = RightToLeft.Yes;
                 button11.RightToLeft = RightToLeft.Yes;
             }
@@ -104,7 +103,6 @@ namespace WindowsFormsApp6.PL
                 button2.RightToLeft = RightToLeft.No;
                 button3.RightToLeft = RightToLeft.No;
                 button4.RightToLeft = RightToLeft.No;
-                button5.RightToLeft = RightToLeft.No;
                 button6.RightToLeft = RightToLeft.No;
                 button11.RightToLeft = RightToLeft.No;
             }
@@ -693,6 +691,14 @@ namespace WindowsFormsApp6.PL
             else if (state == "EMANET") //Bu düğme OGRENCILER sayfasındaysa uygulanacaktır.
             {
                 BL_EMANET.Delet(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
+                PL.FRM_SILME_MESAJ FDELET = new FRM_SILME_MESAJ();
+                FDELET.Show();
+
+
+            }
+            else if (state == "KULANCILAR") //Bu düğme vKULANCILAR sayfasındaysa uygulanacaktır.
+            {
+                BL_KULLANCILAR.Delet(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
                 PL.FRM_SILME_MESAJ FDELET = new FRM_SILME_MESAJ();
                 FDELET.Show();
 
