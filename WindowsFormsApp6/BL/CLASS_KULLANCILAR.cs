@@ -31,5 +31,26 @@ namespace WindowsFormsApp6.BL
             DAL.open();
             DAL.execute("INSERT_KULLANCILAR", pr); 
         }
+        ////select işlevi :
+        //public DataTable LoadDuzenle(int ID)
+        //{
+        //    SqlParameter[] pr = new SqlParameter[1];
+        //    pr[0] = new SqlParameter("ID", ID);
+        //    DataTable dt = new DataTable();
+        //    dt = DAL.read("SELECT_KULLANCILAR", pr);  
+        //    return dt;
+        //}
+        //update işlevi:
+        public void update(string AD, string KULLANCI_ADI, string SIFRE, string YETKILER, int ID)
+        {
+            SqlParameter[] pr = new SqlParameter[5];
+            pr[0] = new SqlParameter("AD", AD);
+            pr[1] = new SqlParameter("KULLANCI_ADI", KULLANCI_ADI);
+            pr[2] = new SqlParameter("SIFRE", SIFRE);
+            pr[3] = new SqlParameter("YETKILER", YETKILER);
+            pr[4] = new SqlParameter("ID", ID);
+            DAL.open();
+            DAL.execute("Pr_Load_Kullancilar", pr);
+        }
     }
 }

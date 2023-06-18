@@ -647,6 +647,20 @@ namespace WindowsFormsApp6.PL
                 bunifuTransition1.ShowSync(F_EMANET);
 
             }
+            else if (state == "KULANCILAR")
+            {
+                try{
+
+                    PL.FROM_KULLANCI_DUZENLE F_KULLANCILAR = new FROM_KULLANCI_DUZENLE();
+                    F_KULLANCILAR.ADD_YENİ_OGRENCI.ButtonText = "Güncelleme";
+                    F_KULLANCILAR.ID = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+                    bunifuTransition1.ShowSync(F_KULLANCILAR);
+                }
+                catch
+                {
+
+                }
+            }
         }
          
         private void bunifuThinButton23_Click(object sender, EventArgs e)
