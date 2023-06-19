@@ -36,7 +36,9 @@ namespace WindowsFormsApp6.PL
             this.txt_kat_name = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.ADD_YENİ_CAT = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuImageButton7 = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton7)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuImageButton1
@@ -64,9 +66,9 @@ namespace WindowsFormsApp6.PL
             this.insert_txt.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.insert_txt.Location = new System.Drawing.Point(140, 83);
             this.insert_txt.Name = "insert_txt";
-            this.insert_txt.Size = new System.Drawing.Size(317, 60);
+            this.insert_txt.Size = new System.Drawing.Size(310, 60);
             this.insert_txt.TabIndex = 5;
-            this.insert_txt.Text = "Catigori Ad";
+            this.insert_txt.Text = "Katigori Ad";
             this.insert_txt.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txt_kat_name
@@ -122,6 +124,20 @@ namespace WindowsFormsApp6.PL
             this.bunifuElipse1.ElipseRadius = 20;
             this.bunifuElipse1.TargetControl = this;
             // 
+            // bunifuImageButton7
+            // 
+            this.bunifuImageButton7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.bunifuImageButton7.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton7.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton7.Image")));
+            this.bunifuImageButton7.ImageActive = null;
+            this.bunifuImageButton7.Location = new System.Drawing.Point(459, 167);
+            this.bunifuImageButton7.Name = "bunifuImageButton7";
+            this.bunifuImageButton7.Size = new System.Drawing.Size(49, 43);
+            this.bunifuImageButton7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton7.TabIndex = 16;
+            this.bunifuImageButton7.TabStop = false;
+            this.bunifuImageButton7.Zoom = 10;
+            // 
             // FROM_KATIGORI_EKLE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -129,6 +145,7 @@ namespace WindowsFormsApp6.PL
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(597, 454);
+            this.Controls.Add(this.bunifuImageButton7);
             this.Controls.Add(this.ADD_YENİ_CAT);
             this.Controls.Add(this.txt_kat_name);
             this.Controls.Add(this.insert_txt);
@@ -142,6 +159,7 @@ namespace WindowsFormsApp6.PL
             this.Text = "FRM_ADDCAT";
             this.Load += new System.EventHandler(this.FRM_ADDCAT_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,5 +172,6 @@ namespace WindowsFormsApp6.PL
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         public Bunifu.Framework.UI.BunifuThinButton2 ADD_YENİ_CAT;
         public Bunifu.Framework.UI.BunifuMaterialTextbox txt_kat_name;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton7;
     }
 }

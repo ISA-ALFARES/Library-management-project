@@ -88,7 +88,7 @@ namespace WindowsFormsApp6.PL
             this.insert_txt.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.insert_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.insert_txt.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.insert_txt.Location = new System.Drawing.Point(8, 39);
+            this.insert_txt.Location = new System.Drawing.Point(11, 39);
             this.insert_txt.Name = "insert_txt";
             this.insert_txt.Size = new System.Drawing.Size(126, 21);
             this.insert_txt.TabIndex = 8;
@@ -189,7 +189,7 @@ namespace WindowsFormsApp6.PL
             this.label3.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label3.Location = new System.Drawing.Point(8, 333);
+            this.label3.Location = new System.Drawing.Point(11, 333);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(175, 21);
             this.label3.TabIndex = 10;
@@ -205,7 +205,7 @@ namespace WindowsFormsApp6.PL
             this.label2.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Location = new System.Drawing.Point(8, 241);
+            this.label2.Location = new System.Drawing.Point(11, 241);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(159, 21);
             this.label2.TabIndex = 10;
@@ -241,7 +241,7 @@ namespace WindowsFormsApp6.PL
             this.label1.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(8, 138);
+            this.label1.Location = new System.Drawing.Point(11, 138);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(172, 21);
             this.label1.TabIndex = 10;

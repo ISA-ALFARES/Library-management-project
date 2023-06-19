@@ -407,7 +407,7 @@ namespace WindowsFormsApp6.PL
             try
             {
                 DataTable dt = new DataTable();
-                dt = BL_KITABLAR.Load();
+                dt = BL_OGRENCILER.Load();
                 ogrencı.Text = dt.Rows.Count.ToString();
 
             }
@@ -418,7 +418,7 @@ namespace WindowsFormsApp6.PL
             try
             {
                 DataTable dt = new DataTable();
-                dt = BL_KITABLAR.Load();
+                dt = BL_EMANET.Load();
                 emanet.Text = dt.Rows.Count.ToString();
 
             }
@@ -429,7 +429,7 @@ namespace WindowsFormsApp6.PL
             try
             {
                 DataTable dt = new DataTable();
-                dt = BL_KITABLAR.Load();
+                dt = BLCAT.Load();
                 katıgores.Text = dt.Rows.Count.ToString();
 
             }
@@ -448,16 +448,16 @@ namespace WindowsFormsApp6.PL
             {
 
             }
-            try
-            {
-                DataTable dt = new DataTable();
-                dt = BL_KITABLAR.Load();
-                ktap_sayisi.Text = dt.Rows.Count.ToString();
-            }
-            catch
-            {
+            //try
+            //{
+            //    DataTable dt = new DataTable();
+            //    dt = BL_KITABLAR.Load();
+            //    ktap_sayisi.Text = dt.Rows.Count.ToString();
+            //}
+            //catch
+            //{
 
-            }
+            //}
            //Kullanıcı izinler 
             if (KIM.Text == "Admin")
             {
@@ -891,6 +891,16 @@ namespace WindowsFormsApp6.PL
         }
 
         private void P_TB_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
         {
 
         }

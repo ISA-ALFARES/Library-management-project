@@ -37,7 +37,13 @@ namespace WindowsFormsApp6.PL
             this.ADD_YENİ_CAT = new Bunifu.Framework.UI.BunifuThinButton2();
             this.insert_txt = new System.Windows.Forms.Label();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton7 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_ogrenci_sifre
@@ -56,7 +62,7 @@ namespace WindowsFormsApp6.PL
             this.txt_ogrenci_sifre.Location = new System.Drawing.Point(230, 238);
             this.txt_ogrenci_sifre.Margin = new System.Windows.Forms.Padding(4);
             this.txt_ogrenci_sifre.Name = "txt_ogrenci_sifre";
-            this.txt_ogrenci_sifre.Size = new System.Drawing.Size(301, 43);
+            this.txt_ogrenci_sifre.Size = new System.Drawing.Size(257, 43);
             this.txt_ogrenci_sifre.TabIndex = 18;
             this.txt_ogrenci_sifre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -93,7 +99,7 @@ namespace WindowsFormsApp6.PL
             this.txt_kullanci_ad.Location = new System.Drawing.Point(230, 153);
             this.txt_kullanci_ad.Margin = new System.Windows.Forms.Padding(4);
             this.txt_kullanci_ad.Name = "txt_kullanci_ad";
-            this.txt_kullanci_ad.Size = new System.Drawing.Size(301, 43);
+            this.txt_kullanci_ad.Size = new System.Drawing.Size(257, 43);
             this.txt_kullanci_ad.TabIndex = 17;
             this.txt_kullanci_ad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -170,12 +176,58 @@ namespace WindowsFormsApp6.PL
             this.bunifuImageButton1.Zoom = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
+            // bunifuImageButton7
+            // 
+            this.bunifuImageButton7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.bunifuImageButton7.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton7.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton7.Image")));
+            this.bunifuImageButton7.ImageActive = null;
+            this.bunifuImageButton7.Location = new System.Drawing.Point(501, 253);
+            this.bunifuImageButton7.Name = "bunifuImageButton7";
+            this.bunifuImageButton7.Size = new System.Drawing.Size(21, 36);
+            this.bunifuImageButton7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton7.TabIndex = 22;
+            this.bunifuImageButton7.TabStop = false;
+            this.bunifuImageButton7.Zoom = 10;
+            this.bunifuImageButton7.Click += new System.EventHandler(this.bunifuImageButton7_Click);
+            // 
+            // bunifuImageButton2
+            // 
+            this.bunifuImageButton2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
+            this.bunifuImageButton2.ImageActive = null;
+            this.bunifuImageButton2.Location = new System.Drawing.Point(501, 168);
+            this.bunifuImageButton2.Name = "bunifuImageButton2";
+            this.bunifuImageButton2.Size = new System.Drawing.Size(21, 36);
+            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton2.TabIndex = 23;
+            this.bunifuImageButton2.TabStop = false;
+            this.bunifuImageButton2.Zoom = 10;
+            // 
+            // bunifuImageButton3
+            // 
+            this.bunifuImageButton3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.bunifuImageButton3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton3.Image")));
+            this.bunifuImageButton3.ImageActive = null;
+            this.bunifuImageButton3.Location = new System.Drawing.Point(521, 373);
+            this.bunifuImageButton3.Name = "bunifuImageButton3";
+            this.bunifuImageButton3.Size = new System.Drawing.Size(39, 60);
+            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton3.TabIndex = 24;
+            this.bunifuImageButton3.TabStop = false;
+            this.bunifuImageButton3.Zoom = 10;
+            // 
             // FROM_GIRIS_YAP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(709, 468);
+            this.Controls.Add(this.bunifuImageButton3);
+            this.Controls.Add(this.bunifuImageButton2);
+            this.Controls.Add(this.bunifuImageButton7);
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.ADD_YENİ_CAT);
             this.Controls.Add(this.insert_txt);
@@ -189,6 +241,9 @@ namespace WindowsFormsApp6.PL
             this.Text = "FROM_GIRIS_YAP";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,5 +257,8 @@ namespace WindowsFormsApp6.PL
         public Bunifu.Framework.UI.BunifuThinButton2 ADD_YENİ_CAT;
         private System.Windows.Forms.Label insert_txt;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton7;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
     }
 }

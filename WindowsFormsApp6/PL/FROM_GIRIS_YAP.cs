@@ -53,5 +53,10 @@ namespace WindowsFormsApp6.PL
             }
 
         }
+
+        private void bunifuImageButton7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
