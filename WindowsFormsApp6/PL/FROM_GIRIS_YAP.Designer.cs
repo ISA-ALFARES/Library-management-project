@@ -50,7 +50,7 @@ namespace WindowsFormsApp6.PL
             this.txt_ogrenci_sifre.HintText = "";
             this.txt_ogrenci_sifre.isPassword = false;
             this.txt_ogrenci_sifre.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_ogrenci_sifre.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_ogrenci_sifre.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.txt_ogrenci_sifre.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
             this.txt_ogrenci_sifre.LineThickness = 6;
             this.txt_ogrenci_sifre.Location = new System.Drawing.Point(230, 238);
@@ -67,7 +67,7 @@ namespace WindowsFormsApp6.PL
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Rockwell", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Location = new System.Drawing.Point(24, 238);
             this.label2.Name = "label2";
@@ -87,7 +87,7 @@ namespace WindowsFormsApp6.PL
             this.txt_kullanci_ad.HintText = "";
             this.txt_kullanci_ad.isPassword = false;
             this.txt_kullanci_ad.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_kullanci_ad.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_kullanci_ad.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.txt_kullanci_ad.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
             this.txt_kullanci_ad.LineThickness = 6;
             this.txt_kullanci_ad.Location = new System.Drawing.Point(230, 153);
@@ -104,7 +104,7 @@ namespace WindowsFormsApp6.PL
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Rockwell", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(24, 165);
             this.label1.Name = "label1";
@@ -130,7 +130,7 @@ namespace WindowsFormsApp6.PL
             this.ADD_YENİ_CAT.IdleBorderThickness = 1;
             this.ADD_YENİ_CAT.IdleCornerRadius = 20;
             this.ADD_YENİ_CAT.IdleFillColor = System.Drawing.Color.White;
-            this.ADD_YENİ_CAT.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.ADD_YENİ_CAT.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.ADD_YENİ_CAT.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.ADD_YENİ_CAT.Location = new System.Drawing.Point(62, 364);
             this.ADD_YENİ_CAT.Margin = new System.Windows.Forms.Padding(20, 19, 20, 19);
@@ -146,7 +146,7 @@ namespace WindowsFormsApp6.PL
             this.insert_txt.AutoSize = true;
             this.insert_txt.BackColor = System.Drawing.Color.Transparent;
             this.insert_txt.Font = new System.Drawing.Font("Rockwell", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.insert_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.insert_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.insert_txt.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.insert_txt.Location = new System.Drawing.Point(222, 50);
             this.insert_txt.Name = "insert_txt";

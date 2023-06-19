@@ -56,5 +56,10 @@ namespace WindowsFormsApp6.FORMLAR
         {
 
         }
+
+        private void FRM_DETYELER_OGRENCILER_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

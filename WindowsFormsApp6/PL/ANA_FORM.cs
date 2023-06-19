@@ -393,7 +393,73 @@ namespace WindowsFormsApp6.PL
         //Bu kod Yeni veriler yüklenir ve DataGridView kontrolüne bağlanır. Böylece kullanıcı, güncellenmiş verileri görüntüleyebilir.
         private void F_MAIN_Activated(object sender, EventArgs e)
         {
-            if(KIM.Text == "Admin")
+            try
+            {
+            DataTable dt = new DataTable();
+            dt = BL_KITABLAR.Load();
+            ktap_sayisi.Text = dt.Rows.Count.ToString();
+
+            }
+            catch
+            {
+
+            }
+            try
+            {
+                DataTable dt = new DataTable();
+                dt = BL_KITABLAR.Load();
+                ogrencı.Text = dt.Rows.Count.ToString();
+
+            }
+            catch
+            {
+
+            }
+            try
+            {
+                DataTable dt = new DataTable();
+                dt = BL_KITABLAR.Load();
+                emanet.Text = dt.Rows.Count.ToString();
+
+            }
+            catch
+            {
+
+            }
+            try
+            {
+                DataTable dt = new DataTable();
+                dt = BL_KITABLAR.Load();
+                katıgores.Text = dt.Rows.Count.ToString();
+
+            }
+            catch
+            {
+
+            }
+            try
+            {
+                DataTable dt = new DataTable();
+                dt = BL_KITABLAR.Load();
+                kullnancılar.Text = dt.Rows.Count.ToString();
+
+            }
+            catch
+            {
+
+            }
+            try
+            {
+                DataTable dt = new DataTable();
+                dt = BL_KITABLAR.Load();
+                ktap_sayisi.Text = dt.Rows.Count.ToString();
+            }
+            catch
+            {
+
+            }
+           //Kullanıcı izinler 
+            if (KIM.Text == "Admin")
             {
                 bunifuThinButton23.Enabled = true;
                 button4.Enabled = true;
@@ -791,6 +857,40 @@ namespace WindowsFormsApp6.PL
         }
 
         private void P_MB_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+                //Katigori ekleme işlemi
+                PL.FROM_KATIGORI_EKLE FCAT = new FROM_KATIGORI_EKLE();
+                FCAT.ADD_YENİ_CAT.ButtonText = "EKLE";
+                FCAT.ID = 0;
+                bunifuTransition1.ShowSync(FCAT);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+                        //OGRENCI ekleme işlemi
+                PL.FROM_OGRENCILER_EKLE F_OGRANCILER = new FROM_OGRENCILER_EKLE();
+                F_OGRANCILER.ADD_YENİ_OGRENCI.ButtonText = "EKLE";
+                F_OGRANCILER.ID = 0;
+                bunifuTransition1.ShowSync(F_OGRANCILER);
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+                        //EManet ekleme işlemi
+                PL.FRM_EMANET F_EMANET = new FRM_EMANET();
+                F_EMANET.ADD_YENİ_OGRENCI.ButtonText = "EKLE";
+                F_EMANET.ID = 0;
+                bunifuTransition1.ShowSync(F_EMANET);
+
+        }
+
+        private void P_TB_Paint(object sender, PaintEventArgs e)
         {
 
         }

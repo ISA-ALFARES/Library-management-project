@@ -97,6 +97,13 @@ namespace WindowsFormsApp6.BL
             DAL.open();
             DAL.execute("Pr_GIRIS_YAP_UPDATE", pr);
         }
+        public DataTable BASLA_Load()
+        {
+            SqlParameter[] pr = null;
+            DataTable dt = new DataTable();
+            dt = DAL.read("PR_BASLA", pr);
+            return dt;
+        }
 
     }
 }

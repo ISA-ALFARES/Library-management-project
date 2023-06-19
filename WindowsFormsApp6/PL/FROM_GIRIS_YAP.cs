@@ -43,7 +43,7 @@ namespace WindowsFormsApp6.PL
                     FROM_MAIN.USER_AD.Text = username.ToString();
                     FROM_MAIN.KIM.Text = kim.ToString();
                     FROM_MAIN.Show();
-                    this.Close();
+                    this.Hide();
                 }
             }
             catch(Exception ex)

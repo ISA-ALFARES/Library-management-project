@@ -23,3 +23,4 @@ C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FROM_KULLANCI_EKLE.resources
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FROM_KULLANCI_DUZENLE.resources
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FROM_GIRIS_YAP.resources
+C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.BAŞLA_FROM.resources

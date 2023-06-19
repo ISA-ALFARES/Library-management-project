@@ -272,7 +272,7 @@ namespace WindowsFormsApp6.FORMLAR
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Location = new System.Drawing.Point(80, 367);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(175, 21);
+            this.label3.Size = new System.Drawing.Size(131, 21);
             this.label3.TabIndex = 10;
             this.label3.Text = "öğrenci telefeonu :";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -354,6 +354,7 @@ namespace WindowsFormsApp6.FORMLAR
             this.Opacity = 0.8D;
             this.Text = "Form_DETYELER";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FRM_DETYELER_OGRENCILER_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_ogrenci_FOTO)).EndInit();

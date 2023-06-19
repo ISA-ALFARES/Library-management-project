@@ -16,7 +16,7 @@ namespace WindowsFormsApp6
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PL.F_MAIN());
+            Application.Run(new PL.BAŞLA_FROM());
         }
     }
 }

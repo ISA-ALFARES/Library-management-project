@@ -60,7 +60,7 @@ namespace WindowsFormsApp6.PL
             this.insert_txt.AutoSize = true;
             this.insert_txt.BackColor = System.Drawing.Color.Transparent;
             this.insert_txt.Font = new System.Drawing.Font("Rockwell", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.insert_txt.ForeColor = System.Drawing.Color.Black;
+            this.insert_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.insert_txt.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.insert_txt.Location = new System.Drawing.Point(140, 83);
             this.insert_txt.Name = "insert_txt";
@@ -79,7 +79,7 @@ namespace WindowsFormsApp6.PL
             this.txt_kat_name.HintText = "";
             this.txt_kat_name.isPassword = false;
             this.txt_kat_name.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_kat_name.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_kat_name.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.txt_kat_name.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
             this.txt_kat_name.LineThickness = 6;
             this.txt_kat_name.Location = new System.Drawing.Point(53, 176);
@@ -107,7 +107,7 @@ namespace WindowsFormsApp6.PL
             this.ADD_YENİ_CAT.IdleBorderThickness = 1;
             this.ADD_YENİ_CAT.IdleCornerRadius = 20;
             this.ADD_YENİ_CAT.IdleFillColor = System.Drawing.Color.White;
-            this.ADD_YENİ_CAT.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.ADD_YENİ_CAT.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.ADD_YENİ_CAT.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.ADD_YENİ_CAT.Location = new System.Drawing.Point(53, 358);
             this.ADD_YENİ_CAT.Margin = new System.Windows.Forms.Padding(20, 19, 20, 19);

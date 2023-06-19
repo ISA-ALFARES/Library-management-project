@@ -68,7 +68,7 @@ namespace WindowsFormsApp6.PL
             this.txt_kitap_ad.HintText = "";
             this.txt_kitap_ad.isPassword = false;
             this.txt_kitap_ad.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_kitap_ad.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_kitap_ad.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.txt_kitap_ad.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
             this.txt_kitap_ad.LineThickness = 6;
             this.txt_kitap_ad.Location = new System.Drawing.Point(9, 67);
@@ -86,7 +86,7 @@ namespace WindowsFormsApp6.PL
             this.insert_txt.AutoSize = true;
             this.insert_txt.BackColor = System.Drawing.Color.Transparent;
             this.insert_txt.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.insert_txt.ForeColor = System.Drawing.Color.Black;
+            this.insert_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.insert_txt.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.insert_txt.Location = new System.Drawing.Point(8, 39);
             this.insert_txt.Name = "insert_txt";
@@ -113,7 +113,7 @@ namespace WindowsFormsApp6.PL
             this.ADD_YENİ_CAT.IdleBorderThickness = 1;
             this.ADD_YENİ_CAT.IdleCornerRadius = 20;
             this.ADD_YENİ_CAT.IdleFillColor = System.Drawing.Color.White;
-            this.ADD_YENİ_CAT.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.ADD_YENİ_CAT.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.ADD_YENİ_CAT.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.ADD_YENİ_CAT.Location = new System.Drawing.Point(63, 471);
             this.ADD_YENİ_CAT.Margin = new System.Windows.Forms.Padding(20, 19, 20, 19);
@@ -134,6 +134,7 @@ namespace WindowsFormsApp6.PL
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txt_kitap_ad);
             this.groupBox1.Controls.Add(this.insert_txt);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(318, 437);
@@ -171,7 +172,7 @@ namespace WindowsFormsApp6.PL
             this.txt_kitap_Fiati.HintText = "";
             this.txt_kitap_Fiati.isPassword = false;
             this.txt_kitap_Fiati.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_kitap_Fiati.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_kitap_Fiati.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.txt_kitap_Fiati.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
             this.txt_kitap_Fiati.LineThickness = 6;
             this.txt_kitap_Fiati.Location = new System.Drawing.Point(9, 355);
@@ -188,7 +189,7 @@ namespace WindowsFormsApp6.PL
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Location = new System.Drawing.Point(8, 327);
             this.label3.Name = "label3";
@@ -204,7 +205,7 @@ namespace WindowsFormsApp6.PL
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Location = new System.Drawing.Point(8, 241);
             this.label2.Name = "label2";
@@ -223,7 +224,7 @@ namespace WindowsFormsApp6.PL
             this.txt_yazar_name.HintText = "";
             this.txt_yazar_name.isPassword = false;
             this.txt_yazar_name.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_yazar_name.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_yazar_name.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.txt_yazar_name.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
             this.txt_yazar_name.LineThickness = 6;
             this.txt_yazar_name.Location = new System.Drawing.Point(9, 166);
@@ -240,7 +241,7 @@ namespace WindowsFormsApp6.PL
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(8, 138);
             this.label1.Name = "label1";
@@ -258,6 +259,7 @@ namespace WindowsFormsApp6.PL
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.groupBox2.Location = new System.Drawing.Point(378, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(318, 437);
@@ -293,7 +295,7 @@ namespace WindowsFormsApp6.PL
             // txt_kitap_Degerlendırme
             // 
             this.txt_kitap_Degerlendırme.BackColor = System.Drawing.Color.Transparent;
-            this.txt_kitap_Degerlendırme.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txt_kitap_Degerlendırme.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.txt_kitap_Degerlendırme.Location = new System.Drawing.Point(10, 163);
             this.txt_kitap_Degerlendırme.Name = "txt_kitap_Degerlendırme";
             this.txt_kitap_Degerlendırme.Size = new System.Drawing.Size(308, 50);
@@ -302,7 +304,7 @@ namespace WindowsFormsApp6.PL
             // 
             // txt_kitap_Tarih
             // 
-            this.txt_kitap_Tarih.BackColor = System.Drawing.Color.SeaGreen;
+            this.txt_kitap_Tarih.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.txt_kitap_Tarih.BorderRadius = 0;
             this.txt_kitap_Tarih.ForeColor = System.Drawing.Color.White;
             this.txt_kitap_Tarih.Format = System.Windows.Forms.DateTimePickerFormat.Long;
@@ -320,7 +322,7 @@ namespace WindowsFormsApp6.PL
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label4.Location = new System.Drawing.Point(6, 241);
             this.label4.Name = "label4";
@@ -352,7 +354,7 @@ namespace WindowsFormsApp6.PL
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label7.Location = new System.Drawing.Point(6, 32);
             this.label7.Name = "label7";

@@ -83,7 +83,7 @@ namespace WindowsFormsApp6.PL
             this.ADD_YENİ_OGRENCI.ButtonText = "Ekle";
             this.ADD_YENİ_OGRENCI.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ADD_YENİ_OGRENCI.Font = new System.Drawing.Font("Century Gothic", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ADD_YENİ_OGRENCI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ADD_YENİ_OGRENCI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.ADD_YENİ_OGRENCI.IdleBorderThickness = 1;
             this.ADD_YENİ_OGRENCI.IdleCornerRadius = 20;
             this.ADD_YENİ_OGRENCI.IdleFillColor = System.Drawing.Color.White;
@@ -107,6 +107,7 @@ namespace WindowsFormsApp6.PL
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txt_kullanci_tum_ad);
             this.groupBox1.Controls.Add(this.insert_txt);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(374, 538);
@@ -135,7 +136,7 @@ namespace WindowsFormsApp6.PL
             this.txt_ogrenci_sifre.HintText = "önek:  1234";
             this.txt_ogrenci_sifre.isPassword = false;
             this.txt_ogrenci_sifre.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_ogrenci_sifre.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_ogrenci_sifre.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.txt_ogrenci_sifre.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
             this.txt_ogrenci_sifre.LineThickness = 6;
             this.txt_ogrenci_sifre.Location = new System.Drawing.Point(37, 271);
@@ -152,7 +153,7 @@ namespace WindowsFormsApp6.PL
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Location = new System.Drawing.Point(8, 341);
             this.label3.Name = "label3";
@@ -168,7 +169,7 @@ namespace WindowsFormsApp6.PL
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Location = new System.Drawing.Point(8, 241);
             this.label2.Name = "label2";
@@ -187,7 +188,7 @@ namespace WindowsFormsApp6.PL
             this.txt_kullanci_ad.HintText = "önek:  isa101";
             this.txt_kullanci_ad.isPassword = false;
             this.txt_kullanci_ad.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_kullanci_ad.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_kullanci_ad.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.txt_kullanci_ad.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
             this.txt_kullanci_ad.LineThickness = 6;
             this.txt_kullanci_ad.Location = new System.Drawing.Point(37, 166);
@@ -204,7 +205,7 @@ namespace WindowsFormsApp6.PL
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(8, 138);
             this.label1.Name = "label1";
@@ -223,7 +224,7 @@ namespace WindowsFormsApp6.PL
             this.txt_kullanci_tum_ad.HintText = "önek:  isa";
             this.txt_kullanci_tum_ad.isPassword = false;
             this.txt_kullanci_tum_ad.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_kullanci_tum_ad.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_kullanci_tum_ad.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.txt_kullanci_tum_ad.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
             this.txt_kullanci_tum_ad.LineThickness = 6;
             this.txt_kullanci_tum_ad.Location = new System.Drawing.Point(37, 67);
@@ -240,7 +241,7 @@ namespace WindowsFormsApp6.PL
             this.insert_txt.AutoSize = true;
             this.insert_txt.BackColor = System.Drawing.Color.Transparent;
             this.insert_txt.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.insert_txt.ForeColor = System.Drawing.Color.Black;
+            this.insert_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.insert_txt.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.insert_txt.Location = new System.Drawing.Point(8, 39);
             this.insert_txt.Name = "insert_txt";
@@ -251,7 +252,7 @@ namespace WindowsFormsApp6.PL
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.bunifuImageButton2);

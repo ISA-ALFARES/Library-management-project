@@ -68,7 +68,7 @@ namespace WindowsFormsApp6.PL
             this.txt_ogrenci_ad.HintText = "";
             this.txt_ogrenci_ad.isPassword = false;
             this.txt_ogrenci_ad.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_ogrenci_ad.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_ogrenci_ad.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.txt_ogrenci_ad.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
             this.txt_ogrenci_ad.LineThickness = 6;
             this.txt_ogrenci_ad.Location = new System.Drawing.Point(9, 67);
@@ -86,7 +86,7 @@ namespace WindowsFormsApp6.PL
             this.insert_txt.AutoSize = true;
             this.insert_txt.BackColor = System.Drawing.Color.Transparent;
             this.insert_txt.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.insert_txt.ForeColor = System.Drawing.Color.Black;
+            this.insert_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.insert_txt.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.insert_txt.Location = new System.Drawing.Point(8, 39);
             this.insert_txt.Name = "insert_txt";
@@ -150,7 +150,7 @@ namespace WindowsFormsApp6.PL
             this.txt_ogrenci_adres.HintText = "";
             this.txt_ogrenci_adres.isPassword = false;
             this.txt_ogrenci_adres.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_ogrenci_adres.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_ogrenci_adres.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.txt_ogrenci_adres.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
             this.txt_ogrenci_adres.LineThickness = 6;
             this.txt_ogrenci_adres.Location = new System.Drawing.Point(9, 271);
@@ -170,7 +170,7 @@ namespace WindowsFormsApp6.PL
             this.txt_ogrenci_Telefon.HintText = "";
             this.txt_ogrenci_Telefon.isPassword = false;
             this.txt_ogrenci_Telefon.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_ogrenci_Telefon.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_ogrenci_Telefon.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.txt_ogrenci_Telefon.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
             this.txt_ogrenci_Telefon.LineThickness = 6;
             this.txt_ogrenci_Telefon.Location = new System.Drawing.Point(9, 355);
@@ -187,7 +187,7 @@ namespace WindowsFormsApp6.PL
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Location = new System.Drawing.Point(8, 333);
             this.label3.Name = "label3";
@@ -203,7 +203,7 @@ namespace WindowsFormsApp6.PL
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Location = new System.Drawing.Point(8, 241);
             this.label2.Name = "label2";
@@ -222,7 +222,7 @@ namespace WindowsFormsApp6.PL
             this.txt_ogrenci_NO.HintText = "";
             this.txt_ogrenci_NO.isPassword = false;
             this.txt_ogrenci_NO.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_ogrenci_NO.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_ogrenci_NO.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.txt_ogrenci_NO.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
             this.txt_ogrenci_NO.LineThickness = 6;
             this.txt_ogrenci_NO.Location = new System.Drawing.Point(9, 166);
@@ -239,7 +239,7 @@ namespace WindowsFormsApp6.PL
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(8, 138);
             this.label1.Name = "label1";
@@ -275,7 +275,7 @@ namespace WindowsFormsApp6.PL
             this.txt_ogrenci_Bolum.HintText = "";
             this.txt_ogrenci_Bolum.isPassword = false;
             this.txt_ogrenci_Bolum.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_ogrenci_Bolum.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_ogrenci_Bolum.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.txt_ogrenci_Bolum.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
             this.txt_ogrenci_Bolum.LineThickness = 6;
             this.txt_ogrenci_Bolum.Location = new System.Drawing.Point(9, 166);
@@ -292,7 +292,7 @@ namespace WindowsFormsApp6.PL
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label7.Location = new System.Drawing.Point(8, 138);
             this.label7.Name = "label7";
@@ -311,7 +311,7 @@ namespace WindowsFormsApp6.PL
             this.txt_ogrenci_EMAIL.HintText = "";
             this.txt_ogrenci_EMAIL.isPassword = false;
             this.txt_ogrenci_EMAIL.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.txt_ogrenci_EMAIL.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_ogrenci_EMAIL.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.txt_ogrenci_EMAIL.LineMouseHoverColor = System.Drawing.Color.Fuchsia;
             this.txt_ogrenci_EMAIL.LineThickness = 6;
             this.txt_ogrenci_EMAIL.Location = new System.Drawing.Point(9, 67);
@@ -328,7 +328,7 @@ namespace WindowsFormsApp6.PL
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label8.Location = new System.Drawing.Point(8, 39);
             this.label8.Name = "label8";
@@ -369,7 +369,7 @@ namespace WindowsFormsApp6.PL
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label4.Location = new System.Drawing.Point(6, 241);
             this.label4.Name = "label4";
@@ -424,6 +424,7 @@ namespace WindowsFormsApp6.PL
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ADD_YENİ_OGRENCI);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FROM_OGRENCILER_EKLE";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
