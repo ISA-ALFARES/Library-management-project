@@ -393,6 +393,16 @@ namespace WindowsFormsApp6.PL
         //Bu kod Yeni veriler yüklenir ve DataGridView kontrolüne bağlanır. Böylece kullanıcı, güncellenmiş verileri görüntüleyebilir.
         private void F_MAIN_Activated(object sender, EventArgs e)
         {
+            if(KIM.Text == "Admin")
+            {
+                bunifuThinButton23.Enabled = true;
+                button4.Enabled = true;
+            }
+            else
+            {
+                bunifuThinButton23.Visible = false;
+                button4.Enabled = false;
+            }
             if(state == "CAT")
             {
                 try

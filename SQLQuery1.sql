@@ -392,14 +392,23 @@ ALTER PROCEDURE  Pr_PROGRAM_CIKIS
 AS
 
 update  KULANCILAR SET durum = 'False'  where id=id
+**************************************************************************************************************************************
  */
 
-**************************************************************************************************************************************
 
-CREATE PROCEDURE Pr_GIRIS_YAP 
-@KULLANCI_ADI   nvarchar(50)
+ALTER PROCEDURE Pr_GIRIS_YAP 
+@KULLANCI_ADI   nvarchar(50) ,
 @SIFRE          nvarchar(50)
 
 
 AS
-	select *  from   
+select  AD, KULLANCI_AD ,SIFRE,YETKILER from  KULANCILAR   where  KULLANCI_AD =@KULLANCI_ADI AND SIFRE = @SIFRE
+
+
+ALTER PROCEDURE Pr_GIRIS_YAP_UPDATE 
+
+@KULLANCI_ADI   nvarchar(50) ,
+@SIFRE          nvarchar(50) 
+
+AS
+update KULANCILAR SET durum = 'True'  Where KULLANCI_AD = @KULLANCI_ADI   AND SIFRE = @SIFRE

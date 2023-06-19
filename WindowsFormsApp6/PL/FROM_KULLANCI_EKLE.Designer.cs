@@ -118,7 +118,7 @@ namespace WindowsFormsApp6.PL
             // 
             this.txt_Yetkiler.FormattingEnabled = true;
             this.txt_Yetkiler.Items.AddRange(new object[] {
-            "ADMIN",
+            "Admin",
             "KUllanci"});
             this.txt_Yetkiler.Location = new System.Drawing.Point(23, 389);
             this.txt_Yetkiler.Name = "txt_Yetkiler";
