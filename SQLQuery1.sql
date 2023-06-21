@@ -2,84 +2,6 @@
 /*
 
 **************************************************************************************************************************************
-**************Tüm Katigori tablosu işlemlerinin başlangıcı***
-************************************************************
-************************görüntüleme işlemi******************
-
- CREATE PROCEDURE Pr_LOADCATSS
-
-AS
-	select * from  T_CAT
-
-************************************************************
-************************ekleme işlemi******************
-
-
-	CREATE PROCEDURE CAT_ADDss
-	@CAT_NAME varchar(100)
-	AS
-	insert into T_CAT values (@CAT_NAME)
-
-************************************************************
-silme işlemi
---TRUNCATE TABLE T_CAT
-
-************************************************************
-************************güncelleme işlemi ******************
-
-ALTER PROCEDURE CAT_EDIT
-@CAT_NAME varchar(100),
-@ID int
-AS
-UPDATE T_CAT SET CAT_NAME = @CAT_NAME WHERE id = @ID
-
-************************************************************
-************************Silme işlemi******************
-
-	CREATE PROCEDURE CAT_DELET
-	@ID int 
-	AS
-	Delete   T_CAT where id  = @ID
- 
-************************************************************
-************************Arama işlemi******************
-
-  CREATE PROCEDURE CAT_SEARCH
-  @SEARCH varchar(100)
-
-AS
-	select * from  T_CAT where  CAT_NAME like '%'+ @SEARCH +'%'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**************************************************************************************************************************************
-
-
-
-
-
-
-
-
-
 
 **************Tüm KITABLAR tablosu işlemlerinin başlangıcı***
 ************************************************************
@@ -167,25 +89,56 @@ AS
 
 /*CONCAT fonksiyonu, "KITAPLAR" tablosundaki birkaç alanı birleştirmek için kullanılıyor*/
 
+**************************************************************************************************************************************
+**************Tüm Katigori tablosu işlemlerinin başlangıcı***
+************************************************************
+************************görüntüleme işlemi******************
+ CREATE PROCEDURE Pr_LOADCATSS
+
+AS
+	select * from  T_CAT
+
+************************************************************
+************************ekleme işlemi******************
 
 
+	CREATE PROCEDURE CAT_ADDss
+	@CAT_NAME varchar(100)
+	AS
+	insert into T_CAT values (@CAT_NAME)
 
+************************************************************
+silme işlemi
+--TRUNCATE TABLE T_CAT
 
+************************************************************
+************************güncelleme işlemi ******************
 
+ALTER PROCEDURE CAT_EDIT
+@CAT_NAME varchar(100),
+@ID int
+AS
+UPDATE T_CAT SET CAT_NAME = @CAT_NAME WHERE id = @ID
 
+************************************************************
+************************Silme işlemi******************
 
+	CREATE PROCEDURE CAT_DELET
+	@ID int 
+	AS
+	Delete   T_CAT where id  = @ID
+ 
+************************************************************
+************************Arama işlemi******************
 
+  CREATE PROCEDURE CAT_SEARCH
+  @SEARCH varchar(100)
+
+AS
+	select * from  T_CAT where  CAT_NAME like '%'+ @SEARCH +'%'
 
 
 **************************************************************************************************************************************
-
-
-
-
-
-
-
-
 
 **************Tüm Öğrenci tablosu işlemlerinin başlangıcı***
 ******************************************************************
@@ -321,12 +274,13 @@ AS
 select id ,  AD , KULLANCI_AD , SIFRE , durum from  KULANCILAR
 
 
- ************************Silme işlemi******************
+ ************************select işlemi******************
+
 ALTER PROCEDURE Pr_LOAD_KITAPLAR_EMANET
 AS
 	select id,K_AD  from KITABLAR
 	
- ************************Silme işlemi******************
+ ************************select işlemi******************
 
 CREATE PROCEDURE Pr_LOAD_KULLANI
 
@@ -334,7 +288,8 @@ CREATE PROCEDURE Pr_LOAD_KULLANI
 
 select id ,  AD , KULLANCI_AD , SIFRE , YETKILER from  KULANCILAR
 
- ************************Silme işlemi******************
+ ************************ekleme işlemi******************
+
  ALTER PROCEDURE INSERT_KULLANCILAR
   @AD				nvarchar(50) ,
   @KULLANCI_ADI     nvarchar(50) ,
@@ -347,7 +302,7 @@ AS
 	insert into KULANCILAR values(@AD,@KULLANCI_ADI,@SIFRE,@YETKILER,@durum)
 
 
-	************************Silme işlemi******************
+************************ekleme işlemi******************
 
  CREATE PROCEDURE SELECT_KULLANCILAR
 	@ID int
@@ -356,7 +311,7 @@ select AD ,KULLANCI_AD ,SIFRE, YETKILER from KULANCILAR where id = @ID
 
 
 
-************************Silme işlemi******************
+************************Duzenle işlemi******************
 
 ALTER PROCEDURE Pr_Load_Kullancilar
   @AD				nvarchar(50) ,
@@ -392,8 +347,9 @@ ALTER PROCEDURE  Pr_PROGRAM_CIKIS
 AS
 
 update  KULANCILAR SET durum = 'False'  where id=id
+
+
 **************************************************************************************************************************************
- */
 
 
 ALTER PROCEDURE Pr_GIRIS_YAP 
@@ -412,3 +368,15 @@ ALTER PROCEDURE Pr_GIRIS_YAP_UPDATE
 
 AS
 update KULANCILAR SET durum = 'True'  Where KULLANCI_AD = @KULLANCI_ADI   AND SIFRE = @SIFRE
+
+
+
+
+**************************************************************************************************************************************
+ CREATE PROCEDURE PR_BASLA  
+
+ AS
+ select AD ,YETKILER  from KULANCILAR  where durum = 'True'
+ */
+
+TRUNCATE TABLE T_CAT

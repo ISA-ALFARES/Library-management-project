@@ -19,7 +19,7 @@ namespace WindowsFormsApp6.BL
         {
             SqlParameter[] pr = null;
             DataTable dt = new DataTable();
-            dt = DAL.read("Pr_LoadKitablar", pr); // Pr_LOADCAT => SELECT * FROM T_CAT(katigotıler tablo) 
+            dt = DAL.read("Pr_LoadKitablar", pr); // Pr_LOADCAT =>  SELECT id, K_AD, YAZAR, KATEGORI, K_FIATIFROM KITABLAR
             return dt;
         }
         //Combo_box select işlevi:
@@ -27,7 +27,7 @@ namespace WindowsFormsApp6.BL
         {
             SqlParameter[] pr = null ;
             DataTable dt = new DataTable();
-            dt = DAL.read("EKLE_COMBO_BOX", pr); // EKLE_COMBO_BOX => select * from  T_CAT where  CAT_NAME like '%'+ @SEARCH +'%' 
+            dt = DAL.read("EKLE_COMBO_BOX", pr); 
             return dt;
         }
 
@@ -43,7 +43,7 @@ namespace WindowsFormsApp6.BL
             pr[5] = new SqlParameter("DEGERLENDIRME", DEGERLENDIRME);
             pr[6] = new SqlParameter("K_RESIM"      ,  K_RESIM.ToArray());
             DAL.open();
-            DAL.execute("INSERT_COMBOBOX",pr); // P_ADDCAT => INSERRT NTO T_CAT VALUES(CAT_NAME);
+            DAL.execute("INSERT_COMBOBOX",pr); // INSERT_COMBOBOX => 	insert into KITABLAR (K_AD ,YAZAR ,KATEGORI, K_FIATI , TARIH , DEGERLENDIRME, K_RESIM) values(@K_AD, @YAZAR, @KATIGORI, @K_FIATI, @K_TARIH, @DEGERLENDIRME, @K_RESIM)
             DAL.close();
         }
         //select işlevi :
@@ -77,7 +77,7 @@ namespace WindowsFormsApp6.BL
             SqlParameter[] pr = new SqlParameter[1];
             pr[0] = new SqlParameter("ID", ID);
             DAL.open();
-            DAL.execute("DELTE_KITAPLAR", pr); 
+            DAL.execute("DELTE_KITAPLAR", pr); //	Delete KITABLAR  where id = @ID   
             DAL.close();
         }
         //Arama işlevi:
@@ -86,7 +86,8 @@ namespace WindowsFormsApp6.BL
             SqlParameter[] pr = new SqlParameter[1];
             pr[0] = new SqlParameter("SEARCH", Search);
             DataTable dt = new DataTable();
-            dt = DAL.read("KITAPLAR_SEARCH", pr); // Pr_LOADCAT => select * from  T_CAT where  CAT_NAME like '%'+ @SEARCH +'%' 
+            dt = DAL.read("KITAPLAR_SEARCH", pr); // KITAPLAR_SEARCH => 	select K_AD ,YAZAR ,KATEGORI, K_FIATI , TARIH , DEGERLENDIRME  from  KITABLAR where  CONCAT(K_AD ,YAZAR ,KATEGORI, K_FIATI , TARIH , DEGERLENDIRME) like '%'+ @SEARCH +'%'
+
             return dt;
         }
     }

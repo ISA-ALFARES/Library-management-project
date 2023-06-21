@@ -69,5 +69,40 @@ namespace WindowsFormsApp6.PL
         {
 
         }
+
+        private void hesapla_Click(object sender, EventArgs e)
+        {
+                DateTime tarih1 = txt_kitap_Tarih1.Value; // Teslim alma tarihini al
+                DateTime tarih2 = txt_kitap_Tarih2.Value;  // Teslim tarihini al
+
+            // İki tarih arasındaki farkı hesapla
+            TimeSpan gunlar = tarih2 - tarih1;
+                int gun = gunlar.Days;
+
+            // ucret hısaplama
+                int ucret = 0;
+                if (gun <= 10)
+                {
+                    ucret = gun * 5;
+                }
+                else if (gun > 10 && gun <= 30)
+                {
+                    ucret = gun * 3;
+                }
+                else if (gun > 30)
+                {
+                    ucret = gun * 2;
+                }
+                string message = "";
+                if (gun > 10  )
+                {
+                    message = "Özel indirim..";
+                }
+
+            // Sonucu txt_ogrenci_FIAT metin kutusuna yazdır
+            txt_ogrenci_FIAT.Text = ucret.ToString();
+            lbl_message.Text = message;
+
+        }
     }
 }

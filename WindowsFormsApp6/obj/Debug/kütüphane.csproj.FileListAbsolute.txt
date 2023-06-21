@@ -1,6 +1,3 @@
-C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\bin\Debug\WindowsFormsApp6.exe.config
-C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\bin\Debug\WindowsFormsApp6.exe
-C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\bin\Debug\WindowsFormsApp6.pdb
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\bin\Debug\Bunifu_UI_v1.52.dll
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\kütüphane.csproj.AssemblyReference.cache
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.F_MAIN.resources
@@ -9,8 +6,6 @@ C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\kütüphane.csproj.GenerateResource.cache
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\kütüphane.csproj.CoreCompileInputs.cache
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\kütüphane.csproj.CopyComplete
-C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.exe
-C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.pdb
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FROM_KATIGORI_EKLE.resources
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FROM_KITABLAR_EKLE.resources
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FRM_DUZENLE_MESAJ.resources
@@ -24,3 +19,8 @@ C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FROM_KULLANCI_DUZENLE.resources
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.FROM_GIRIS_YAP.resources
 C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.PL.BAŞLA_FROM.resources
+C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\bin\Debug\Kütüphane.exe.config
+C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\bin\Debug\Kütüphane.exe
+C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\bin\Debug\Kütüphane.pdb
+C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\Kütüphane.exe
+C:\Users\Isaal\OneDrive\سطح المكتب\_EMYO_\4.yeryıl\Görsel programlama\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\Kütüphane.pdb

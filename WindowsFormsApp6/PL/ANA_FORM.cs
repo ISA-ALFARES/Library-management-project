@@ -15,29 +15,22 @@ namespace WindowsFormsApp6.PL
     public partial class F_MAIN : Form
     {
         string state;  //Geçerli sayfanın adını saklar
-       // string ID ;
-
-         BL.CLS_KATIGORI BLCAT = new BL.CLS_KATIGORI(); 
-         BL.CLASS_KITABLAR BL_KITABLAR = new BL.CLASS_KITABLAR();
-         BL.CLASS_OGRENCILER BL_OGRENCILER = new BL.CLASS_OGRENCILER();
-         BL.CLASS_EMANET BL_EMANET= new BL.CLASS_EMANET();
-        BL.CLASS_KULLANCILAR BL_KULLANCILAR = new BL.CLASS_KULLANCILAR();
-        /*
-            * BLCAT nesnesini kullanarak verileri bir veritabanından yükler ve bunları DataGridView kontrolünde görüntüler.
-            
-        */
+        // BL.CLS_KATIGORI sınıfından bir nesne oluşturuldu ve BLCAT değişkenine atandı.
+         BL.CLS_KATIGORI      BLCAT          = new BL.CLS_KATIGORI(); 
+         BL.CLASS_KITABLAR    BL_KITABLAR    = new BL.CLASS_KITABLAR();
+         BL.CLASS_OGRENCILER  BL_OGRENCILER  = new BL.CLASS_OGRENCILER();
+         BL.CLASS_EMANET      BL_EMANET      = new BL.CLASS_EMANET();
+         BL.CLASS_KULLANCILAR BL_KULLANCILAR = new BL.CLASS_KULLANCILAR();
         public F_MAIN()
         {
             InitializeComponent();
             
         }
         // Bu değişkenler formun boyutlarına özeldir.
-        int move;
-        int movx;
-        int movy;
+
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);                    //Çıkış simgesine tıkladığınızda program kapanır
+            Environment.Exit(0);//Çıkış simgesine tıkladığınızda program kapanır
         }
 
         private void bunifuImageButton3_Click(object sender, EventArgs e)
@@ -66,27 +59,22 @@ namespace WindowsFormsApp6.PL
 
         private void P_TB_MouseDown(object sender, MouseEventArgs e)// P_TB sayfa Event
         {
-            move = 1;
-            movx = e.X;
-            movy = e.Y;
+ 
         }
 
         private void P_TB_MouseUp(object sender, MouseEventArgs e) // P_TB sayfa Event
         {
-            move = 0;
         }
 
         private void P_TB_MouseMove(object sender, MouseEventArgs e)// P_TB sayfa Event
         {
-            if (move == 1) //P_TB'de fare hareketiyle sayfayı hareket ettirin
-            {
-                this.SetDesktopLocation(MousePosition.X - movx, MousePosition.Y - movy);
-            }
+
         }
 
+        //Menu Button
         private void bunifuImageButton6_Click(object sender, EventArgs e)
         {
-            if(P_MB.Size.Width  == 175) //Basıldığında, kelimeler kaybolur ve simgeler görünür kalır
+            if(P_MB.Size.Width  == 175) //Basıldığında, sadece simgeler görünür 
             {
                 P_MB.Width = 50;
                 button1.RightToLeft = RightToLeft.Yes;
@@ -110,15 +98,15 @@ namespace WindowsFormsApp6.PL
 
         private void button1_Click(object sender, EventArgs e)
         {
-            P_HOME.Visible = true;              // Bu ana sayfasıdır
-            P_MAIN.Visible = false;             // Bu kategoriler sayfasıdır
+            P_HOME.Visible = true;             // Bu ana sayfasıdır
+            P_MAIN.Visible = false;            // Bu kategoriler sayfasıdır
             Lb_Title.Text = "Anasayfa       "; //Sayfa ismi
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             P_HOME.Visible = false;              //Ana sayfayı gizledik
-            P_MAIN.Visible = true;              //Kategori sayfasını gösterdik 
+            P_MAIN.Visible = true;              //KULANCILAR sayfasını gösterdik 
             state = "KULANCILAR";
             Lb_Title.Text = "  Kullancilar    ";  //Sayfa ismi
             //Veritabanlarında depolanan verileri getirme
@@ -393,6 +381,7 @@ namespace WindowsFormsApp6.PL
         //Bu kod Yeni veriler yüklenir ve DataGridView kontrolüne bağlanır. Böylece kullanıcı, güncellenmiş verileri görüntüleyebilir.
         private void F_MAIN_Activated(object sender, EventArgs e)
         {
+            //Ana sayfadaki panenlde kirap sayisi yazdiriyor
             try
             {
             DataTable dt = new DataTable();
@@ -404,6 +393,7 @@ namespace WindowsFormsApp6.PL
             {
 
             }
+            //Ana sayfadaki panenlde ogrencı sayisi yazdiriyor
             try
             {
                 DataTable dt = new DataTable();
@@ -415,6 +405,7 @@ namespace WindowsFormsApp6.PL
             {
 
             }
+            //Ana sayfadaki panenlde emanet sayisi yazdiriyor
             try
             {
                 DataTable dt = new DataTable();
@@ -426,6 +417,7 @@ namespace WindowsFormsApp6.PL
             {
 
             }
+            //Ana sayfadaki panenlde katıgori sayisi yazdiriyor
             try
             {
                 DataTable dt = new DataTable();
@@ -437,6 +429,7 @@ namespace WindowsFormsApp6.PL
             {
 
             }
+            //Ana sayfadaki panenlde emanet sayisi yazdiriyor
             try
             {
                 DataTable dt = new DataTable();
@@ -448,26 +441,16 @@ namespace WindowsFormsApp6.PL
             {
 
             }
-            //try
-            //{
-            //    DataTable dt = new DataTable();
-            //    dt = BL_KITABLAR.Load();
-            //    ktap_sayisi.Text = dt.Rows.Count.ToString();
-            //}
-            //catch
-            //{
-
-            //}
            //Kullanıcı izinler 
             if (KIM.Text == "Admin")
             {
-                bunifuThinButton23.Enabled = true;
-                button4.Enabled = true;
+                bunifuThinButton23.Enabled = true; //silme işlemi
+                button4.Enabled = true;            //kullancilar butunu
             }
             else
             {
-                bunifuThinButton23.Visible = false;
-                button4.Enabled = false;
+                bunifuThinButton23.Visible = false; //silme işlemi
+                button4.Enabled = false;            //silme işlemi
             }
             if(state == "CAT")
             {
@@ -785,34 +768,40 @@ namespace WindowsFormsApp6.PL
         private void arama_OnValueChanged(object sender, EventArgs e)
         {
             //Arama  işlemi
-            if (state == "CAT") //Bu düğme kategoriler sayfasındaysa uygulanacaktır.
+            if (state == "CAT") // Eğer durum "CAT" ise, bu kategoriler sayfasında uygulanacak
             {
+                // Yeni bir DataTable nesnesi oluşturulur
                 DataTable dt = new DataTable();
+                // BLCAT sınıfındaki Search metodu çağrılır ve sonuç dt değişkenine atanır
                 dt = BLCAT.Search(arama.Text);
+                // DataGridView'in veri kaynağı dt olarak ayarlanır
                 dataGridView1.DataSource = dt;
-
             }
             else if( state == "F_KITAPLAR")
             {
                 DataTable dt = new DataTable();
+                //   Search metodu çağrılır ve sonuç dt değişkenine atanır
                 dt = BL_KITABLAR.Search(arama.Text);
-                dataGridView1.DataSource = dt;
+                dataGridView1.DataSource = dt; //veriler gosteriyor
             }
             else if (state == "OGRENCILER")
             {
                 DataTable dt = new DataTable();
+                //   Search metodu çağrılır ve sonuç dt değişkenine atanır
                 dt = BL_OGRENCILER.Search(arama.Text);
                 dataGridView1.DataSource = dt;
             }
             else if (state == "EMANET")
             {
                 DataTable dt = new DataTable();
+                //   Search metodu çağrılır ve sonuç dt değişkenine atanır
                 dt = BL_EMANET.Search(arama.Text);
                 dataGridView1.DataSource = dt;
             }
             else if (state == "KULANCILAR")
             {
                 DataTable dt = new DataTable();
+                //   Search metodu çağrılır ve sonuç dt değişkenine atanır
                 dt = BL_KULLANCILAR.Search(arama.Text);
                 dataGridView1.DataSource = dt;
             }
@@ -850,10 +839,18 @@ namespace WindowsFormsApp6.PL
 
         private void bunifuImageButton7_Click(object sender, EventArgs e)
         {
-            PL.FROM_GIRIS_YAP login = new FROM_GIRIS_YAP();
-            BL_KULLANCILAR.cikis_out();
-            this.Hide();
-            login.Show();
+                // Giriş yapma formu oluşturulur
+                PL.FROM_GIRIS_YAP login = new FROM_GIRIS_YAP();
+
+                // Kullanıcı çıkış işlemi yapılır
+                BL_KULLANCILAR.cikis_out();
+
+                // Şu anki formu gizlenir
+                this.Hide();
+
+                // Giriş  formu gösterilir
+                login.Show();
+
         }
 
         private void P_MB_Paint(object sender, PaintEventArgs e)
@@ -863,16 +860,26 @@ namespace WindowsFormsApp6.PL
 
         private void button7_Click(object sender, EventArgs e)
         {
-                //Katigori ekleme işlemi
-                PL.FROM_KATIGORI_EKLE FCAT = new FROM_KATIGORI_EKLE();
-                FCAT.ADD_YENİ_CAT.ButtonText = "EKLE";
-                FCAT.ID = 0;
-                bunifuTransition1.ShowSync(FCAT);
+                //KITAP ekleme işlemi
+                PL.FROM_KITABLAR_EKLE F_KITAPLAR = new FROM_KITABLAR_EKLE();
+                F_KITAPLAR.ADD_YENİ_CAT.ButtonText = "EKLE";
+                F_KITAPLAR.ID = 0;
+                bunifuTransition1.ShowSync(F_KITAPLAR);
+
+        }
+        private void kat_ekle(object sender, EventArgs e)
+        {
+            //KITAP ekleme işlemi
+            PL.FROM_KITABLAR_EKLE F_KITAPLAR = new FROM_KITABLAR_EKLE();
+            F_KITAPLAR.ADD_YENİ_CAT.ButtonText = "EKLE";
+            F_KITAPLAR.ID = 0;
+            bunifuTransition1.ShowSync(F_KITAPLAR);
+
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-                        //OGRENCI ekleme işlemi
+                //OGRENCI ekleme işlemi
                 PL.FROM_OGRENCILER_EKLE F_OGRANCILER = new FROM_OGRENCILER_EKLE();
                 F_OGRANCILER.ADD_YENİ_OGRENCI.ButtonText = "EKLE";
                 F_OGRANCILER.ID = 0;
@@ -882,7 +889,7 @@ namespace WindowsFormsApp6.PL
 
         private void button10_Click(object sender, EventArgs e)
         {
-                        //EManet ekleme işlemi
+                //EManet ekleme işlemi
                 PL.FRM_EMANET F_EMANET = new FRM_EMANET();
                 F_EMANET.ADD_YENİ_OGRENCI.ButtonText = "EKLE";
                 F_EMANET.ID = 0;
@@ -903,6 +910,15 @@ namespace WindowsFormsApp6.PL
         private void panel6_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+                //Katigori ekleme işlemi
+                PL.FROM_KATIGORI_EKLE FCAT = new FROM_KATIGORI_EKLE();
+                FCAT.ADD_YENİ_CAT.ButtonText = "EKLE";
+                FCAT.ID = 0;
+                bunifuTransition1.ShowSync(FCAT);
         }
     }
 }

@@ -116,7 +116,7 @@ namespace WindowsFormsApp6.FORMLAR
             this.label4.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Location = new System.Drawing.Point(6, 241);
+            this.label4.Location = new System.Drawing.Point(23, 241);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(128, 21);
             this.label4.TabIndex = 10;
@@ -148,7 +148,7 @@ namespace WindowsFormsApp6.FORMLAR
             this.label7.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label7.Location = new System.Drawing.Point(6, 32);
+            this.label7.Location = new System.Drawing.Point(23, 32);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(125, 21);
             this.label7.TabIndex = 8;

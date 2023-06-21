@@ -58,12 +58,12 @@ namespace WindowsFormsApp6.PL
             this.arama = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuImageButton7 = new Bunifu.Framework.UI.BunifuImageButton();
             this.P_HOME = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ktap_sayisi = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.katıgores = new System.Windows.Forms.Label();
@@ -99,6 +99,7 @@ namespace WindowsFormsApp6.PL
             this.P_Container_panel = new System.Windows.Forms.Panel();
             this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.bunifuElipse13 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse14 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.P_MB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton6)).BeginInit();
@@ -527,7 +528,7 @@ namespace WindowsFormsApp6.PL
             this.arama.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
             this.arama.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.arama.HintForeColor = System.Drawing.Color.Empty;
-            this.arama.HintText = "ara";
+            this.arama.HintText = "";
             this.arama.isPassword = false;
             this.arama.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.arama.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -560,10 +561,10 @@ namespace WindowsFormsApp6.PL
             // P_HOME
             // 
             this.P_HOME.BackColor = System.Drawing.Color.White;
+            this.P_HOME.Controls.Add(this.button5);
             this.P_HOME.Controls.Add(this.button10);
             this.P_HOME.Controls.Add(this.panel1);
             this.P_HOME.Controls.Add(this.button8);
-            this.P_HOME.Controls.Add(this.button5);
             this.P_HOME.Controls.Add(this.button7);
             this.P_HOME.Controls.Add(this.panel6);
             this.P_HOME.Controls.Add(this.panel5);
@@ -577,6 +578,26 @@ namespace WindowsFormsApp6.PL
             this.P_HOME.Size = new System.Drawing.Size(850, 496);
             this.P_HOME.TabIndex = 0;
             this.P_HOME.Paint += new System.Windows.Forms.PaintEventHandler(this.P_HOME_Paint);
+            // 
+            // button5
+            // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
+            this.bunifuTransition1.SetDecoration(this.button5, BunifuAnimatorNS.DecorationType.None);
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Rockwell", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Image = global::WindowsFormsApp6.Properties.Resources.add_64px;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button5.Location = new System.Drawing.Point(434, 376);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(160, 108);
+            this.button5.TabIndex = 14;
+            this.button5.Text = "Katıgori Ekle";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button10
             // 
@@ -656,26 +677,6 @@ namespace WindowsFormsApp6.PL
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // button5
-            // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
-            this.bunifuTransition1.SetDecoration(this.button5, BunifuAnimatorNS.DecorationType.None);
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Rockwell", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = global::WindowsFormsApp6.Properties.Resources.add_64px;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button5.Location = new System.Drawing.Point(429, 377);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(160, 108);
-            this.button5.TabIndex = 13;
-            this.button5.Text = "Katigore  Ekle";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button7_Click);
-            // 
             // button7
             // 
             this.button7.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -729,9 +730,9 @@ namespace WindowsFormsApp6.PL
             this.label13.Font = new System.Drawing.Font("Simple Indust Outline", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(61, 29);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(130, 32);
+            this.label13.Size = new System.Drawing.Size(128, 32);
             this.label13.TabIndex = 0;
-            this.label13.Text = "Katıgores";
+            this.label13.Text = "Katıgoiler";
             // 
             // panel5
             // 
@@ -875,7 +876,7 @@ namespace WindowsFormsApp6.PL
             this.bunifuTransition1.SetDecoration(this.bunifuImageButton5, BunifuAnimatorNS.DecorationType.None);
             this.bunifuImageButton5.Image = global::WindowsFormsApp6.Properties.Resources.house;
             this.bunifuImageButton5.ImageActive = null;
-            this.bunifuImageButton5.Location = new System.Drawing.Point(440, 12);
+            this.bunifuImageButton5.Location = new System.Drawing.Point(451, 12);
             this.bunifuImageButton5.Name = "bunifuImageButton5";
             this.bunifuImageButton5.Size = new System.Drawing.Size(27, 23);
             this.bunifuImageButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -909,7 +910,7 @@ namespace WindowsFormsApp6.PL
             this.Lb_Title.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb_Title.ForeColor = System.Drawing.Color.Black;
             this.Lb_Title.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Lb_Title.Location = new System.Drawing.Point(314, 9);
+            this.Lb_Title.Location = new System.Drawing.Point(314, 10);
             this.Lb_Title.Name = "Lb_Title";
             this.Lb_Title.Size = new System.Drawing.Size(114, 27);
             this.Lb_Title.TabIndex = 4;
@@ -1025,8 +1026,8 @@ namespace WindowsFormsApp6.PL
             // 
             // P_Container_panel
             // 
-            this.P_Container_panel.Controls.Add(this.P_HOME);
             this.P_Container_panel.Controls.Add(this.P_MAIN);
+            this.P_Container_panel.Controls.Add(this.P_HOME);
             this.bunifuTransition1.SetDecoration(this.P_Container_panel, BunifuAnimatorNS.DecorationType.None);
             this.P_Container_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.P_Container_panel.Location = new System.Drawing.Point(175, 0);
@@ -1059,7 +1060,12 @@ namespace WindowsFormsApp6.PL
             // bunifuElipse13
             // 
             this.bunifuElipse13.ElipseRadius = 15;
-            this.bunifuElipse13.TargetControl = this.button5;
+            this.bunifuElipse13.TargetControl = this;
+            // 
+            // bunifuElipse14
+            // 
+            this.bunifuElipse14.ElipseRadius = 15;
+            this.bunifuElipse14.TargetControl = this.button5;
             // 
             // F_MAIN
             // 
@@ -1177,8 +1183,9 @@ namespace WindowsFormsApp6.PL
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton7;
         public System.Windows.Forms.Label KIM;
         public System.Windows.Forms.Label USER_AD;
-        private System.Windows.Forms.Button button5;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse13;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton8;
+        private System.Windows.Forms.Button button5;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse14;
     }
 }

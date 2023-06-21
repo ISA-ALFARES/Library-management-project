@@ -138,7 +138,7 @@ namespace WindowsFormsApp6.PL
             this.groupBox1.Size = new System.Drawing.Size(318, 437);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Kitap Bilgilaeri";
+            this.groupBox1.Text = "öğrenci Bilgilaeri";
             // 
             // txt_ogrenci_adres
             // 
@@ -263,7 +263,7 @@ namespace WindowsFormsApp6.PL
             this.groupBox2.Size = new System.Drawing.Size(318, 437);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Diğer kitap bilgileri";
+            this.groupBox2.Text = "Diğer Öğrenci  bilgileri";
             // 
             // txt_ogrenci_Bolum
             // 
@@ -294,7 +294,7 @@ namespace WindowsFormsApp6.PL
             this.label7.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label7.Location = new System.Drawing.Point(8, 138);
+            this.label7.Location = new System.Drawing.Point(20, 138);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(158, 21);
             this.label7.TabIndex = 17;
@@ -330,11 +330,11 @@ namespace WindowsFormsApp6.PL
             this.label8.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label8.Location = new System.Drawing.Point(8, 39);
+            this.label8.Location = new System.Drawing.Point(20, 39);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(145, 21);
+            this.label8.Size = new System.Drawing.Size(161, 21);
             this.label8.TabIndex = 14;
-            this.label8.Text = "öğrenci  email :";
+            this.label8.Text = "öğrenci e-postası";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // linkLabel1
@@ -352,11 +352,11 @@ namespace WindowsFormsApp6.PL
             // txt_ogrenci_FOTO
             // 
             this.txt_ogrenci_FOTO.ErrorImage = global::WindowsFormsApp6.Properties.Resources.books_40px;
-            this.txt_ogrenci_FOTO.Image = global::WindowsFormsApp6.Properties.Resources.borrow_book_40px;
+            this.txt_ogrenci_FOTO.Image = ((System.Drawing.Image)(resources.GetObject("txt_ogrenci_FOTO.Image")));
             this.txt_ogrenci_FOTO.InitialImage = global::WindowsFormsApp6.Properties.Resources.books_40px;
             this.txt_ogrenci_FOTO.Location = new System.Drawing.Point(79, 269);
             this.txt_ogrenci_FOTO.Name = "txt_ogrenci_FOTO";
-            this.txt_ogrenci_FOTO.Size = new System.Drawing.Size(144, 129);
+            this.txt_ogrenci_FOTO.Size = new System.Drawing.Size(140, 119);
             this.txt_ogrenci_FOTO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.txt_ogrenci_FOTO.TabIndex = 13;
             this.txt_ogrenci_FOTO.TabStop = false;
@@ -371,7 +371,7 @@ namespace WindowsFormsApp6.PL
             this.label4.Font = new System.Drawing.Font("Rockwell", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
             this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Location = new System.Drawing.Point(6, 241);
+            this.label4.Location = new System.Drawing.Point(18, 241);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(163, 21);
             this.label4.TabIndex = 10;

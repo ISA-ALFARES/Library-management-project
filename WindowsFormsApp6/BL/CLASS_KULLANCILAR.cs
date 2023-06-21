@@ -85,7 +85,7 @@ namespace WindowsFormsApp6.BL
             pr[0] = new SqlParameter("KULLANCI_ADI", KULLANCI_ADI);
             pr[1] = new SqlParameter("SIFRE", SIFRE);
             DataTable dt = new DataTable();
-            dt = DAL.read("Pr_GIRIS_YAP", pr);
+            dt = DAL.read("Pr_GIRIS_YAP", pr); //select  AD, KULLANCI_AD ,SIFRE,YETKILER from  KULANCILAR   where  KULLANCI_AD =@KULLANCI_ADI AND SIFRE = @SIFRE
             return dt;
         }
         //Update giriş işlevi:
