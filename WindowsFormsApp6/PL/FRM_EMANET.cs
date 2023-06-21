@@ -42,7 +42,7 @@ namespace WindowsFormsApp6.PL
                 {
                     //ekleme işlemi
                     BL.CLASS_EMANET BL_EMANET_EKLE = new BL.CLASS_EMANET();
-                    BL_EMANET_EKLE.Insert(Convert.ToString(dataGridView1.CurrentRow.Cells[1].Value), Convert.ToString(dataGridView2.CurrentRow.Cells[1].Value), Convert.ToString(txt_ogrenci_FIAT.Text), Convert.ToString(txt_kitap_Tarih1.Value), Convert.ToString(txt_kitap_Tarih2.Value));
+                    BL_EMANET_EKLE.Insert(Convert.ToString(dataGridView1.CurrentRow.Cells[1].Value), Convert.ToString(dataGridView2.CurrentRow.Cells[1].Value),Convert.ToString(txt_kitap_Tarih1.Value), Convert.ToString(txt_kitap_Tarih2.Value), Convert.ToString(txt_ogrenci_FIAT.Text));
                     PL.FRM_EKLE_MESAJ Fadd = new FRM_EKLE_MESAJ();
                     Fadd.Show();
                     this.Close();

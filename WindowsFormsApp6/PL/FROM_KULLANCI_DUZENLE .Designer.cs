@@ -279,9 +279,9 @@ namespace WindowsFormsApp6.PL
             this.insert_txt.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.insert_txt.Location = new System.Drawing.Point(8, 39);
             this.insert_txt.Name = "insert_txt";
-            this.insert_txt.Size = new System.Drawing.Size(54, 21);
+            this.insert_txt.Size = new System.Drawing.Size(152, 21);
             this.insert_txt.TabIndex = 8;
-            this.insert_txt.Text = "ADI :";
+            this.insert_txt.Text = "Adı ve Soyasdı :";
             this.insert_txt.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel2

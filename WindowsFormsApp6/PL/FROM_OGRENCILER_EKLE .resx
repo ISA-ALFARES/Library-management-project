@@ -120,8 +120,8 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ADD_YENİ_OGRENCI.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAj8AAABCCAYAAAC4j7cBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMfSURBVHhe7dy9a1NRGMBh/yK3Tm5O3TqJSyc7iNBBl3ax
+        iVBORw0KGgoAAAANSUhEUgAAAj8AAABXCAYAAADrlCQpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOASURBVHhe7dy9a1NRGMBh/yK3Tm5O3TqJSyc7iNBBl3ax
         QycHC1aHDIUODopgh4BDJkGKhaKDSClKhwhCBpWiSIagw5H35ANrbebkvs8DL729STv/OOfce6kAACQi
         fgCAVMQPAJCK+AEAUhE/AEAq4gcASGVq/Ax+/yqdDwdl7cXDsvJssyzurJbL968bY4wxxszURKNEq9xu
         b5X20avyc9Af1cx5F8bP6+67+o8ifCKA3n4+Lr0fX0efAgDMjmiUaJWXJ2/KRqdVGyYi6H/OxU+UUvzR
@@ -130,12 +130,13 @@
         45dPdfWnxs/S7p26DAQA0FSx9bXwYHkYP1ce3Zj6JkQAgCaIt0HX+IkLAICmEz8AQCriBwBIRfwAAKmI
         HwAgFfEDAKQifgCAVMQPAJCK+AEAUhE/AEAq4gcASEX8AACpiB8AIBXxAwCkIn4AgFTEDwCQivgBAFIR
         PwBAKuIHAEhF/AAAqYgfACAV8QMApCJ+AIBUxA8AkIr4AQBSET8AQCriBwBIRfwAAKmIHwAgFfEDAKQi
-        fgCAVMQPAJCK+AEAUpnEz8KD5TL4/aveBABoqkn8LO6slt6Pr/UmAEBTTeLn1t698rr7rt4EAGii7mmv
-        LO3eGcbP7mG7bO8/rR8AADRR++hV2ei0hvETW15RQs79AABNdbu9VV6evBnGT2gdPK8DANA0nQ8HZe3F
-        w3o9iZ9Y9Vl5tlne905GdwAA5t+3/ve6w/Vz0K+/T+InxEGga4/X608AgHkX4ROLO28/H4/u/BM/IVZ+
-        IoDiEDQAwLyK8z2x4vN3+IRz8RNiCyye/opSipPRUU0AALMutrbG53vigPN4q+tv/42fsSileCTsautm
-        fSmQMcYYY8wsz5VHN2r4RABdZGr8AAA0jfgBAFIRPwBAKuIHAEhF/AAAiZTyBx7xh6ONn0uiAAAAAElF
-        TkSuQmCC
+        fgCAVMQPAJCK+AEAUhE/AEAq4gcASEX8AACpiB8AIBXxAwCkIn4AgFTEDwCQivgBAFIRPwBAKuIHAEhF
+        /AAAqYgfACAV8QMApCJ+AIBUxA8AkIr4AQBSET8AQCriBwBIRfwAAKmIHwAgFfEDAKQyiZ+FB8tl8PtX
+        vQkA0FST+FncWS29H1/rTQCApprEz629e+V19129CQDQRN3TXlnavTOMn93Ddtnef1o/AABoovbRq7LR
+        aQ3jJ7a8ooSc+wEAmup2e6u8PHkzjJ/QOnheBwCgaTofDsrai4f1ehI/seqz8myzvO+djO4AAMy/b/3v
+        dYfr56Bff5/ET4iDQNcer9efAADzLsInFnfefj4e3fknfkKs/EQAxSFoAIB5Fed7YsXn7/AJ5+InxBZY
+        PP0VpRQno6OaAABmXWxtjc/3xAHn8VbX3/4bP2NRSvFI2NXWzfpSIGOMMcaYWZ4rj27U8IkAusjU+AEA
+        aBrxAwCkIn4AgFTEDwCQivgBABIp5Q/PbzEZSIyqOAAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="txt_ogrenci_FOTO.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

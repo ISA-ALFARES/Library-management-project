@@ -143,9 +143,9 @@ namespace WindowsFormsApp6.PL
                 dataGridView1.Columns[0].HeaderText = "ıd";
                 dataGridView1.Columns[1].HeaderText = "Öğrenci ad";
                 dataGridView1.Columns[2].HeaderText = "Kitap adı";
-                dataGridView1.Columns[3].HeaderText = "Alma Tarihi";
-                dataGridView1.Columns[4].HeaderText = "Teslim Tarihi";
-                dataGridView1.Columns[5].HeaderText = "Toplam Fiyat ";
+                dataGridView1.Columns[3].HeaderText = "Teslim alma tarihi";
+                dataGridView1.Columns[4].HeaderText = "Teslim tarihit  ";
+                dataGridView1.Columns[5].HeaderText = "Toplam Fiyat";
 
             }
             catch (Exception ex) //Herhangi bir hata görünürse, görünecektir
