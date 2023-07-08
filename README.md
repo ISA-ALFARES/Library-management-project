@@ -8,15 +8,9 @@ This application for library where to manage the details of memebres and books e
 * ![IDE](https://img.shields.io/badge/IDE-Microsoft_Visual_Studio-purple)
 
 ## Features
-  
+
   * Book Management: Manage the details of books such as title, author, genre, and publication information. Add, edit, and delete books from the library inventory.
-  
   * Customer Management: Maintain a database of library customers. Manage customer information, including name, contact details, and membership status.
-  
-  * Borrow Book
-  
-  * Return Book 
-  
   * Book Borrowing: Enable customers to borrow books from the library. Track borrowed books, due dates, and issue return reminders. Implement a system to handle book reservations and queues.
   * Login System: Implement a secure login system for users to access the application. Allow users to register for an account, reset passwords, and manage their profile information.
   * Search and Filtering: Provide search functionality to easily find books based on various criteria such as title, author, or genre. Implement filtering options to refine search results.
