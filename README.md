@@ -21,7 +21,7 @@ This application for library where to manage the details of memebres and books e
   * Login System: Implement a secure login system for users to access the application. Allow users to register for an account, reset passwords, and manage their profile information.
   * Search and Filtering: Provide search functionality to easily find books based on various criteria such as title, author, or genre. Implement filtering options to refine search results.
   *  User-friendly Interface: Design an intuitive and user-friendly interface for easy navigation and interaction with the application.
-  *  
+    
 
 
 
