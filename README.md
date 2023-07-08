@@ -7,17 +7,21 @@ This application for library where to manage the details of memebres and books e
 * ![C#](https://img.shields.io/badge/Language-C_sharp-green)
 * ![IDE](https://img.shields.io/badge/IDE-Microsoft_Visual_Studio-purple)
 
-## Functions
+## Features
   
-  * Add new Member, View Memebers, Delete Members, Update Member details
+  * Book Management: Manage the details of books such as title, author, genre, and publication information. Add, edit, and delete books from the library inventory.
   
-  * Add new Books, View Books, Delete Books, Update Book details
+  * Customer Management: Maintain a database of library customers. Manage customer information, including name, contact details, and membership status.
   
   * Borrow Book
   
   * Return Book 
   
-  * Edit, delete, add, details of books, students and catigories
+  * Book Borrowing: Enable customers to borrow books from the library. Track borrowed books, due dates, and issue return reminders. Implement a system to handle book reservations and queues.
+  * Login System: Implement a secure login system for users to access the application. Allow users to register for an account, reset passwords, and manage their profile information.
+  * Search and Filtering: Provide search functionality to easily find books based on various criteria such as title, author, or genre. Implement filtering options to refine search results.
+  *  User-friendly Interface: Design an intuitive and user-friendly interface for easy navigation and interaction with the application.
+  *  
 
 
 
